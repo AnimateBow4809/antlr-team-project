@@ -23,7 +23,7 @@ public class Main {
 //        System.out.println(engines.get(0).getMin() + "mmqqm");
         engines.sort(Comparator.comparing(Engine::getMin));
         for (int i = 0; i < points; i++) {
-            System.out.println(engines.get(i).getMin()+" "+engines.get(i).getPoint());
+            System.out.println(engines.get(i).getPoint()+" "+engines.get(i).getMin());
         }
 
     }
