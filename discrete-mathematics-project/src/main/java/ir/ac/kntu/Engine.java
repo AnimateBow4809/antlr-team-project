@@ -92,6 +92,6 @@ public class Engine implements Runnable {
         } catch (Exception ignored) {
             this.min=9999;
         }
-        System.out.println(mins);
+//        System.out.println(mins);
     }
 }

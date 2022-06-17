@@ -13,7 +13,7 @@ public class Main {
         int lines = scanner.nextInt();
         Geraph geraph = new Geraph(points, lines);
         geraph.setList(scanner);
-        System.out.println(Arrays.deepToString(geraph.getList()));
+//        System.out.println(Arrays.deepToString(geraph.getList()));
         ArrayList<Engine> engines = new ArrayList<>();
 
         for (int i = 0; i < points; i++) {
@@ -22,8 +22,13 @@ public class Main {
         }
 //        System.out.println(engines.get(0).getMin() + "mmqqm");
         engines.sort(Comparator.comparing(Engine::getMin));
-        for (int i = 0; i < points; i++) {
-            System.out.println(engines.get(i).getPoint()+" "+engines.get(i).getMin());
+//        for (int i = 0; i < points; i++) {
+//            System.out.println(engines.get(i).getPoint()+" "+engines.get(i).getMin());
+//        }
+        if (engines.get(0).getMin()==9999){
+            System.out.println("No roads found");
+        }else {
+            System.out.println(engines.get(0).getMin());
         }
 
     }
