@@ -88,9 +88,9 @@ public class Engine implements Runnable {
         }
         mins.sort(Comparator.naturalOrder());
         try {
-            this.min=mins.get(0);
+            this.min = mins.get(0);
         } catch (Exception ignored) {
-            this.min=9999;
+            this.min = 9999;
         }
 //        System.out.println(mins);
     }

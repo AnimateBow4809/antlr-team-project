@@ -15,7 +15,6 @@ public class Main {
         geraph.setList(scanner);
 //        System.out.println(Arrays.deepToString(geraph.getList()));
         ArrayList<Engine> engines = new ArrayList<>();
-
         for (int i = 0; i < points; i++) {
             engines.add(new Engine(geraph, i + 1));
             engines.get(i).run();
@@ -25,9 +24,9 @@ public class Main {
 //        for (int i = 0; i < points; i++) {
 //            System.out.println(engines.get(i).getPoint()+" "+engines.get(i).getMin());
 //        }
-        if (engines.get(0).getMin()==9999){
-            System.out.println("No roads found");
-        }else {
+        if (engines.get(0).getMin() == 9999) {
+            System.out.println("No orbit found");
+        } else {
             System.out.println(engines.get(0).getMin());
         }
 
