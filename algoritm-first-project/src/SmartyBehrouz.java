@@ -47,19 +47,14 @@ public class SmartyBehrouz {
     }
 
     private static boolean checkSum(List<Integer> subList, int devs) {
-        int sum;
-        boolean b = false;
+        int sum = 0;
         List<Integer> indexes = findBehrouzIndex(subList, findMax(subList));
-        for (int j = 0; j < indexes.size(); j++) {
-            sum = 0;
-            int indexBehrouz = indexes.get(j);
-            for (int i = 0; i < subList.size(); i++) {
-                if (i == indexBehrouz) continue;
-                sum += subList.get(i);
-            }
-            b = b || (sum % devs == 0);
+        int indexBehrouz = indexes.get(0);
+        for (int i = 0; i < subList.size(); i++) {
+            if (i == indexBehrouz) continue;
+            sum += subList.get(i);
         }
-        return b;
+        return (sum % devs == 0);
     }
 
     private static List<Integer> findBehrouzIndex(List<Integer> integers, Integer max) {
@@ -90,6 +85,10 @@ public class SmartyBehrouz {
 //        for (int i = 0; i < n; i++) {
 //            integers.add(scanner.nextInt());
 //        }
+        integers.add(4);
+        integers.add(4);
+        integers.add(7);
+        integers.add(4);
         integers.add(1);
         integers.add(2);
         integers.add(3);
@@ -98,7 +97,7 @@ public class SmartyBehrouz {
         integers.add(4);
         integers.add(7);
         integers.add(4);
-        System.out.println("The list:"+integers);
+        System.out.println("The list:" + integers);
         System.out.println(goodSets(integers, 3));
 
     }
