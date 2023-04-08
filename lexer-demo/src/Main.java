@@ -10,7 +10,7 @@ public class Main {
 //        File file=new File("input.txt");
 //        System.out.println(file.createNewFile());
         FileInputStream fileInputStream = new FileInputStream("input.txt");
-        while (fileInputStream.available()!=0){
+        while (fileInputStream.available() != 0) {
             System.out.println(lexer(fileInputStream));
         }
 
@@ -21,7 +21,7 @@ public class Main {
     static int rowNo = 0, colNo = 0;
 
     public static Token lexer(FileInputStream fileInputStream) throws IOException {
-        Type type=null;
+        Type type = null;
         char nextChar;
         char[] nextWord = new char[80];
         int state, length;
@@ -43,7 +43,7 @@ public class Main {
             }
             switch (state) {
                 case 0:
-                    if (nextChar == '\n' || nextChar == '\t' || nextChar == ' ')
+                    if (nextChar == '\n' || nextChar == '\t' || nextChar == ' '||nextChar == ';')
                         length = 0;
                     else if (nextChar == 'i') state = 1;
                     else if (nextChar == 's') state = 5;
@@ -58,186 +58,273 @@ public class Main {
                     if (nextChar == 'f') state = 4;
                     else if (nextChar == 'n') state = 2;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 2:
-                    if (nextChar=='t') state=3;
+                    if (nextChar == 't') state = 3;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 3:
-                    type=Type.INT;
+                    type = Type.INT;
                     if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkel");
                     break;
                 case 4:
-                    type=Type.IF;
+                    type = Type.IF;
                     if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkel");
                     break;
                 case 5:
-                    if (nextChar=='w') state=6;
+                    if (nextChar == 'w') state = 6;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 6:
-                    if (nextChar=='i') state=7;
+                    if (nextChar == 'i') state = 7;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 7:
-                    if (nextChar=='t') state=8;
+                    if (nextChar == 't') state = 8;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 8:
-                    if (nextChar=='c') state=9;
+                    if (nextChar == 'c') state = 9;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 9:
-                    if (nextChar=='h') state=10;
+                    if (nextChar == 'h') state = 10;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 10:
-                    type=Type.SWITCH;
+                    type = Type.SWITCH;
                     if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkel");
                     break;
                 case 11:
-                    if (nextChar=='a') state=12;
+                    if (nextChar == 'a') state = 12;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 12:
-                    if (nextChar=='s') state=13;
+                    if (nextChar == 's') state = 13;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 13:
-                    if (nextChar=='e') state=14;
+                    if (nextChar == 'e') state = 14;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 14:
-                    type= Type.CASE;
+                    type = Type.CASE;
                     if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkel");
                     break;
                 case 15:
-                    if (nextChar=='h') state=16;
+                    if (nextChar == 'h') state = 16;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 16:
-                    if (nextChar=='i') state=17;
+                    if (nextChar == 'i') state = 17;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 17:
-                    if (nextChar=='l') state=18;
+                    if (nextChar == 'l') state = 18;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 18:
-                    if (nextChar=='e') state=19;
+                    if (nextChar == 'e') state = 19;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 19:
-                    type=Type.WHILE;
+                    type = Type.WHILE;
                     if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkel");
                     break;
                 case 20:
-                    if (nextChar=='l') state=21;
-                    else if (nextChar=='o') state=25;
+                    if (nextChar == 'l') state = 21;
+                    else if (nextChar == 'o') state = 25;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 21:
-                    if (nextChar=='o') state=22;
+                    if (nextChar == 'o') state = 22;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 22:
-                    if (nextChar=='a') state=23;
+                    if (nextChar == 'a') state = 23;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 23:
-                    if (nextChar=='t') state=24;
+                    if (nextChar == 't') state = 24;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 24:
-                    type=Type.FLOAT;
+                    type = Type.FLOAT;
                     if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkel");
                     break;
                 case 25:
-                    if (nextChar=='r') state=26;
+                    if (nextChar == 'r') state = 26;
                     else if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,Type.ID,nextWord);
-                    else throw new RuntimeException(state+"mooshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, Type.ID, nextWord);
+                    } else throw new RuntimeException(state + "mooshkel");
                     break;
                 case 26:
-                    type= Type.FOR;
+                    type = Type.FOR;
                     if (isAlpha(nextChar) || isDigit(nextChar)) state = 29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkel");
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkel");
                     break;
                 case 27:
-                    type=Type.INT_NUMBER;
-                    if (isDigit(nextChar)) state=27;
-                    else if (nextChar=='.') state=28;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkeeel");
+                    type = Type.INT_NUMBER;
+                    if (isDigit(nextChar)) state = 27;
+                    else if (nextChar == '.') state = 28;
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkeeel");
                     break;
                 case 28:
-                    type=Type.FLOAT_NUMBER;
-                    if (isDigit(nextChar)) state=28;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkeeel");
+                    type = Type.FLOAT_NUMBER;
+                    if (isDigit(nextChar)) state = 28;
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkeeel");
                     break;
                 case 29:
-                    type=Type.ID;
-                    if (isDigit(nextChar)||isAlpha(nextChar)) state=29;
-                    else if (isSeparator(nextChar)) return new Token(rowNo,colNo-length,0,type,nextWord);
-                    else throw new RuntimeException(state+"moshkeeel");
+                    type = Type.ID;
+                    if (isDigit(nextChar) || isAlpha(nextChar)) state = 29;
+                    else if (isSeparator(nextChar)) {
+                        lastChar = nextChar;
+                        nextWord[--length] = '\0';
+                        return new Token(rowNo, colNo - length, 0, type, nextWord);
+                    } else throw new RuntimeException(state + "moshkeeel");
                     break;
             }
         }
-        return new Token(rowNo,colNo-length,0,type,nextWord);
+        return new Token(rowNo, colNo - length, 0, type, nextWord);
     }
 
     public static boolean isSeparator(char nextChar) {
-        return nextChar == '\n' || nextChar == '\t' || nextChar == ' ' || nextChar == ';' || nextChar=='\0';
+        return nextChar == '\n' || nextChar == '\t' || nextChar == ' ' || nextChar == ';' || nextChar == '\0';
     }
 
     public static boolean isAlpha(char nextChar) {
@@ -255,7 +342,7 @@ public class Main {
         int blkNo;
         Type type;
         char[] name = new char[30];
-        String string="";
+        String string = "";
 
         public Token(int row, int col, int blkNo, Type type, char[] name) {
             this.row = row;
@@ -264,14 +351,12 @@ public class Main {
             this.type = type;
             this.name = name;
             for (int i = 0; i < this.name.length; i++) {
-                string+=this.name[i];
-                if (this.name[i]=='\0'){
-                    this.name[i-1]='\0';
-                    string=string.substring(0,i);
+                string += this.name[i];
+                if (this.name[i] == '\0') {
+                    string = string.substring(0, i);
                     break;
                 }
             }
-            string=string.substring(0,string.length()-1);
         }
 
         @Override
@@ -287,6 +372,6 @@ public class Main {
     }
 
     enum Type {
-        SWITCH, CASE, INT, FLOAT, IF, WHILE, FOR, FLOAT_NUMBER, INT_NUMBER,ID
+        SWITCH, CASE, INT, FLOAT, IF, WHILE, FOR, FLOAT_NUMBER, INT_NUMBER, ID
     }
 }
