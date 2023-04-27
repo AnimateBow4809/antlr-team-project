@@ -1,13 +1,16 @@
+import java.io.IOError;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.zip.DataFormatException;
 
 public class SmartyBehrouz {
 
     public static int goodSets(List<Integer> integers, int devs) {
         int indexBehrooz;
         int num = 0;
-        if (integers.size() == 1) {
+        if (integers.size() <= 1) {
             return 0;
         } else if (integers.size() == 2) {
             List<Integer> indexes = findBehrouzIndex(integers, findMax(integers));
@@ -79,26 +82,45 @@ public class SmartyBehrouz {
 
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
+        int n,devs;
         Scanner scanner = new Scanner(System.in);
-//        int n = scanner.nextInt();
-//        int devs = scanner.nextInt();
-//        for (int i = 0; i < n; i++) {
-//            integers.add(scanner.nextInt());
-//        }
-        integers.add(4);
-        integers.add(4);
-        integers.add(7);
-        integers.add(4);
-        integers.add(1);
-        integers.add(2);
-        integers.add(3);
-        integers.add(4);
-        integers.add(4);
-        integers.add(4);
-        integers.add(7);
-        integers.add(4);
-        System.out.println("The list:" + integers);
-        System.out.println(goodSets(integers, 3));
+        try {
+            n = scanner.nextInt();
+            devs = scanner.nextInt();
+            for (int i = 0; i < n; i++) {
+                integers.add(scanner.nextInt());
+            }
+        }catch (Exception e){
+            System.out.println("error while parsing your data please check your input");
+            return;
+        }
+//        integers.add(4);
+//        integers.add(4);
+////        integers.add(7);
+//        integers.add(4);
+//        integers.add(1);
+//        integers.add(2);
+//        integers.add(3);
+////        integers.add(4);
+//        integers.add(4);
+////        integers.add(4);
+//        integers.add(7);
+//        integers.add(9);
+////        integers.add(4);
+        try {
+            System.out.println("The list:" + integers);
+            System.out.println(goodSets(integers, devs));
+        }catch (ArithmeticException e){
+            if (devs==0) System.out.println("devs cant be zero check input");
+            else System.out.println("Arithmatic exception check input");
+            return;
+        }catch (NullPointerException nullPointerException) {
+            System.out.println("the array sholud not be null check your input");
+        }catch (StackOverflowError error){
+            System.out.println("stack overflow occured please try a smaller list");
+        }catch (Exception e){
+            System.out.println("check your input");
+        }
 
     }
 }
