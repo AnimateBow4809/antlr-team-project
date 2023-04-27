@@ -82,15 +82,24 @@ public class SmartyBehrouz {
 
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
-        int n,devs;
+        int n, devs;
         Scanner scanner = new Scanner(System.in);
         try {
             n = scanner.nextInt();
             devs = scanner.nextInt();
+            if (n < 0 || devs < 0) throw new NumberFormatException();
             for (int i = 0; i < n; i++) {
                 integers.add(scanner.nextInt());
+                if (integers.get(i) < 0) throw new NumberFormatException();
+                if (integers.get(i) == 0) throw new IllegalStateException();
             }
-        }catch (Exception e){
+        } catch (IllegalStateException stateException) {
+            System.out.println("tasks cant take 0 time");
+            return;
+        } catch (NumberFormatException formatException) {
+            System.out.println("arguments cant be below zero");
+            return;
+        } catch (Exception e) {
             System.out.println("error while parsing your data please check your input");
             return;
         }
@@ -110,15 +119,15 @@ public class SmartyBehrouz {
         try {
             System.out.println("The list:" + integers);
             System.out.println(goodSets(integers, devs));
-        }catch (ArithmeticException e){
-            if (devs==0) System.out.println("devs cant be zero check input");
+        } catch (ArithmeticException e) {
+            if (devs == 0) System.out.println("devs cant be zero check input");
             else System.out.println("Arithmatic exception check input");
             return;
-        }catch (NullPointerException nullPointerException) {
+        } catch (NullPointerException nullPointerException) {
             System.out.println("the array sholud not be null check your input");
-        }catch (StackOverflowError error){
+        } catch (StackOverflowError error) {
             System.out.println("stack overflow occured please try a smaller list");
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("check your input");
         }
 
