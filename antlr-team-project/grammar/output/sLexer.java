@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-05 17:21:03
+// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-05 18:14:33
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -8,18 +8,24 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class sLexer extends Lexer {
 	public static final int EOF=-1;
-	public static final int CHAR=4;
-	public static final int COMMENT=5;
-	public static final int ESC_SEQ=6;
-	public static final int EXPONENT=7;
-	public static final int FLOAT=8;
-	public static final int HEX_DIGIT=9;
-	public static final int ID=10;
-	public static final int INT=11;
-	public static final int OCTAL_ESC=12;
-	public static final int STRING=13;
-	public static final int UNICODE_ESC=14;
-	public static final int WS=15;
+	public static final int ASSIGN=4;
+	public static final int CHAR=5;
+	public static final int COMMENT=6;
+	public static final int DIVIDE=7;
+	public static final int ESC_SEQ=8;
+	public static final int EXPONENT=9;
+	public static final int FLOAT=10;
+	public static final int HEX_DIGIT=11;
+	public static final int ID=12;
+	public static final int INT=13;
+	public static final int MULTIPLY=14;
+	public static final int OCTAL_ESC=15;
+	public static final int PLUS=16;
+	public static final int STRING=17;
+	public static final int SUB=18;
+	public static final int SWITCH=19;
+	public static final int UNICODE_ESC=20;
+	public static final int WS=21;
 
 	// delegates
 	// delegators
@@ -36,13 +42,134 @@ public class sLexer extends Lexer {
 	}
 	@Override public String getGrammarFileName() { return "C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g"; }
 
+	// $ANTLR start "SWITCH"
+	public final void mSWITCH() throws RecognitionException {
+		try {
+			int _type = SWITCH;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:8:8: ( 'switch' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:8:10: 'switch'
+			{
+			match("switch"); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "SWITCH"
+
+	// $ANTLR start "PLUS"
+	public final void mPLUS() throws RecognitionException {
+		try {
+			int _type = PLUS;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:11:6: ( '+' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:11:8: '+'
+			{
+			match('+'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "PLUS"
+
+	// $ANTLR start "SUB"
+	public final void mSUB() throws RecognitionException {
+		try {
+			int _type = SUB;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:14:5: ( '-' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:14:7: '-'
+			{
+			match('-'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "SUB"
+
+	// $ANTLR start "MULTIPLY"
+	public final void mMULTIPLY() throws RecognitionException {
+		try {
+			int _type = MULTIPLY;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:17:9: ( '*' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:17:11: '*'
+			{
+			match('*'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "MULTIPLY"
+
+	// $ANTLR start "DIVIDE"
+	public final void mDIVIDE() throws RecognitionException {
+		try {
+			int _type = DIVIDE;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:20:8: ( '/' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:20:10: '/'
+			{
+			match('/'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "DIVIDE"
+
+	// $ANTLR start "ASSIGN"
+	public final void mASSIGN() throws RecognitionException {
+		try {
+			int _type = ASSIGN;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:23:8: ( '=' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:23:10: '='
+			{
+			match('='); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "ASSIGN"
+
 	// $ANTLR start "ID"
 	public final void mID() throws RecognitionException {
 		try {
 			int _type = ID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:5:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:5:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:26:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:26:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
 			{
 			if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 				input.consume();
@@ -52,7 +179,7 @@ public class sLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:5:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:26:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
 			loop1:
 			while (true) {
 				int alt1=2;
@@ -97,10 +224,10 @@ public class sLexer extends Lexer {
 		try {
 			int _type = INT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:8:5: ( ( '0' .. '9' )+ )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:8:7: ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:29:5: ( ( '0' .. '9' )+ )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:29:7: ( '0' .. '9' )+
 			{
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:8:7: ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:29:7: ( '0' .. '9' )+
 			int cnt2=0;
 			loop2:
 			while (true) {
@@ -149,14 +276,14 @@ public class sLexer extends Lexer {
 		try {
 			int _type = FLOAT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:12:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT )
 			int alt9=3;
 			alt9 = dfa9.predict(input);
 			switch (alt9) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:12:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )?
 					{
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:12:9: ( '0' .. '9' )+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:9: ( '0' .. '9' )+
 					int cnt3=0;
 					loop3:
 					while (true) {
@@ -190,7 +317,7 @@ public class sLexer extends Lexer {
 					}
 
 					match('.'); 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:12:25: ( '0' .. '9' )*
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:25: ( '0' .. '9' )*
 					loop4:
 					while (true) {
 						int alt4=2;
@@ -219,7 +346,7 @@ public class sLexer extends Lexer {
 						}
 					}
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:12:37: ( EXPONENT )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:37: ( EXPONENT )?
 					int alt5=2;
 					int LA5_0 = input.LA(1);
 					if ( (LA5_0=='E'||LA5_0=='e') ) {
@@ -227,7 +354,7 @@ public class sLexer extends Lexer {
 					}
 					switch (alt5) {
 						case 1 :
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:12:37: EXPONENT
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:37: EXPONENT
 							{
 							mEXPONENT(); 
 
@@ -239,10 +366,10 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:13:9: '.' ( '0' .. '9' )+ ( EXPONENT )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:34:9: '.' ( '0' .. '9' )+ ( EXPONENT )?
 					{
 					match('.'); 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:13:13: ( '0' .. '9' )+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:34:13: ( '0' .. '9' )+
 					int cnt6=0;
 					loop6:
 					while (true) {
@@ -275,7 +402,7 @@ public class sLexer extends Lexer {
 						cnt6++;
 					}
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:13:25: ( EXPONENT )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:34:25: ( EXPONENT )?
 					int alt7=2;
 					int LA7_0 = input.LA(1);
 					if ( (LA7_0=='E'||LA7_0=='e') ) {
@@ -283,7 +410,7 @@ public class sLexer extends Lexer {
 					}
 					switch (alt7) {
 						case 1 :
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:13:25: EXPONENT
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:34:25: EXPONENT
 							{
 							mEXPONENT(); 
 
@@ -295,9 +422,9 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:14:9: ( '0' .. '9' )+ EXPONENT
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:35:9: ( '0' .. '9' )+ EXPONENT
 					{
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:14:9: ( '0' .. '9' )+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:35:9: ( '0' .. '9' )+
 					int cnt8=0;
 					loop8:
 					while (true) {
@@ -350,7 +477,7 @@ public class sLexer extends Lexer {
 		try {
 			int _type = COMMENT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:18:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
 			int alt13=2;
 			int LA13_0 = input.LA(1);
 			if ( (LA13_0=='/') ) {
@@ -384,11 +511,11 @@ public class sLexer extends Lexer {
 
 			switch (alt13) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:18:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
 					{
 					match("//"); 
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:18:14: (~ ( '\\n' | '\\r' ) )*
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:14: (~ ( '\\n' | '\\r' ) )*
 					loop10:
 					while (true) {
 						int alt10=2;
@@ -417,7 +544,7 @@ public class sLexer extends Lexer {
 						}
 					}
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:18:28: ( '\\r' )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:28: ( '\\r' )?
 					int alt11=2;
 					int LA11_0 = input.LA(1);
 					if ( (LA11_0=='\r') ) {
@@ -425,7 +552,7 @@ public class sLexer extends Lexer {
 					}
 					switch (alt11) {
 						case 1 :
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:18:28: '\\r'
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:28: '\\r'
 							{
 							match('\r'); 
 							}
@@ -438,11 +565,11 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:19:9: '/*' ( options {greedy=false; } : . )* '*/'
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:40:9: '/*' ( options {greedy=false; } : . )* '*/'
 					{
 					match("/*"); 
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:19:14: ( options {greedy=false; } : . )*
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:40:14: ( options {greedy=false; } : . )*
 					loop12:
 					while (true) {
 						int alt12=2;
@@ -463,7 +590,7 @@ public class sLexer extends Lexer {
 
 						switch (alt12) {
 						case 1 :
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:19:42: .
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:40:42: .
 							{
 							matchAny(); 
 							}
@@ -495,8 +622,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:22:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:22:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:43:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:43:9: ( ' ' | '\\t' | '\\r' | '\\n' )
 			{
 			if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
 				input.consume();
@@ -523,11 +650,11 @@ public class sLexer extends Lexer {
 		try {
 			int _type = STRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:30:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:30:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:51:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:51:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
 			{
 			match('\"'); 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:30:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:51:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
 			loop14:
 			while (true) {
 				int alt14=3;
@@ -541,14 +668,14 @@ public class sLexer extends Lexer {
 
 				switch (alt14) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:30:14: ESC_SEQ
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:51:14: ESC_SEQ
 					{
 					mESC_SEQ(); 
 
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:30:24: ~ ( '\\\\' | '\"' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:51:24: ~ ( '\\\\' | '\"' )
 					{
 					if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
 						input.consume();
@@ -583,11 +710,11 @@ public class sLexer extends Lexer {
 		try {
 			int _type = CHAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:5: ( '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\'' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:8: '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\''
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:5: ( '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\'' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:8: '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\''
 			{
 			match('\''); 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:13: ( ESC_SEQ |~ ( '\\'' | '\\\\' ) )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:13: ( ESC_SEQ |~ ( '\\'' | '\\\\' ) )
 			int alt15=2;
 			int LA15_0 = input.LA(1);
 			if ( (LA15_0=='\\') ) {
@@ -605,14 +732,14 @@ public class sLexer extends Lexer {
 
 			switch (alt15) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:15: ESC_SEQ
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:15: ESC_SEQ
 					{
 					mESC_SEQ(); 
 
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:25: ~ ( '\\'' | '\\\\' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:25: ~ ( '\\'' | '\\\\' )
 					{
 					if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '&')||(input.LA(1) >= '(' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
 						input.consume();
@@ -642,8 +769,8 @@ public class sLexer extends Lexer {
 	// $ANTLR start "EXPONENT"
 	public final void mEXPONENT() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:38:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:38:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:59:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:59:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
 			{
 			if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
 				input.consume();
@@ -653,7 +780,7 @@ public class sLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:38:22: ( '+' | '-' )?
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:59:22: ( '+' | '-' )?
 			int alt16=2;
 			int LA16_0 = input.LA(1);
 			if ( (LA16_0=='+'||LA16_0=='-') ) {
@@ -676,7 +803,7 @@ public class sLexer extends Lexer {
 
 			}
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:38:33: ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:59:33: ( '0' .. '9' )+
 			int cnt17=0;
 			loop17:
 			while (true) {
@@ -721,7 +848,7 @@ public class sLexer extends Lexer {
 	// $ANTLR start "HEX_DIGIT"
 	public final void mHEX_DIGIT() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:41:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:62:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:
 			{
 			if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
@@ -744,7 +871,7 @@ public class sLexer extends Lexer {
 	// $ANTLR start "ESC_SEQ"
 	public final void mESC_SEQ() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:66:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
 			int alt18=3;
 			int LA18_0 = input.LA(1);
 			if ( (LA18_0=='\\') ) {
@@ -799,7 +926,7 @@ public class sLexer extends Lexer {
 
 			switch (alt18) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:66:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
 					{
 					match('\\'); 
 					if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -813,14 +940,14 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:9: UNICODE_ESC
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:67:9: UNICODE_ESC
 					{
 					mUNICODE_ESC(); 
 
 					}
 					break;
 				case 3 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:47:9: OCTAL_ESC
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:68:9: OCTAL_ESC
 					{
 					mOCTAL_ESC(); 
 
@@ -838,7 +965,7 @@ public class sLexer extends Lexer {
 	// $ANTLR start "OCTAL_ESC"
 	public final void mOCTAL_ESC() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:52:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:73:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
 			int alt19=3;
 			int LA19_0 = input.LA(1);
 			if ( (LA19_0=='\\') ) {
@@ -896,7 +1023,7 @@ public class sLexer extends Lexer {
 
 			switch (alt19) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:52:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:73:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
 					{
 					match('\\'); 
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '3') ) {
@@ -926,7 +1053,7 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:53:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
 					{
 					match('\\'); 
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '7') ) {
@@ -948,7 +1075,7 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:9: '\\\\' ( '0' .. '7' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:75:9: '\\\\' ( '0' .. '7' )
 					{
 					match('\\'); 
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '7') ) {
@@ -973,8 +1100,8 @@ public class sLexer extends Lexer {
 	// $ANTLR start "UNICODE_ESC"
 	public final void mUNICODE_ESC() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:59:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:59:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
 			{
 			match('\\'); 
 			match('u'); 
@@ -997,54 +1124,96 @@ public class sLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:8: ( ID | INT | FLOAT | COMMENT | WS | STRING | CHAR )
-		int alt20=7;
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:8: ( SWITCH | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | ID | INT | FLOAT | COMMENT | WS | STRING | CHAR )
+		int alt20=13;
 		alt20 = dfa20.predict(input);
 		switch (alt20) {
 			case 1 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:10: ID
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:10: SWITCH
+				{
+				mSWITCH(); 
+
+				}
+				break;
+			case 2 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:17: PLUS
+				{
+				mPLUS(); 
+
+				}
+				break;
+			case 3 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:22: SUB
+				{
+				mSUB(); 
+
+				}
+				break;
+			case 4 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:26: MULTIPLY
+				{
+				mMULTIPLY(); 
+
+				}
+				break;
+			case 5 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:35: DIVIDE
+				{
+				mDIVIDE(); 
+
+				}
+				break;
+			case 6 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:42: ASSIGN
+				{
+				mASSIGN(); 
+
+				}
+				break;
+			case 7 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:49: ID
 				{
 				mID(); 
 
 				}
 				break;
-			case 2 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:13: INT
+			case 8 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:52: INT
 				{
 				mINT(); 
 
 				}
 				break;
-			case 3 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:17: FLOAT
+			case 9 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:56: FLOAT
 				{
 				mFLOAT(); 
 
 				}
 				break;
-			case 4 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:23: COMMENT
+			case 10 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:62: COMMENT
 				{
 				mCOMMENT(); 
 
 				}
 				break;
-			case 5 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:31: WS
+			case 11 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:70: WS
 				{
 				mWS(); 
 
 				}
 				break;
-			case 6 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:34: STRING
+			case 12 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:73: STRING
 				{
 				mSTRING(); 
 
 				}
 				break;
-			case 7 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:41: CHAR
+			case 13 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:80: CHAR
 				{
 				mCHAR(); 
 
@@ -1108,32 +1277,50 @@ public class sLexer extends Lexer {
 		}
 		@Override
 		public String getDescription() {
-			return "11:1: FLOAT : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT );";
+			return "32:1: FLOAT : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT );";
 		}
 	}
 
 	static final String DFA20_eotS =
-		"\2\uffff\1\10\6\uffff";
+		"\1\uffff\1\7\3\uffff\1\17\2\uffff\1\20\4\uffff\1\7\3\uffff\3\7\1\25\1"+
+		"\uffff";
 	static final String DFA20_eofS =
-		"\11\uffff";
+		"\26\uffff";
 	static final String DFA20_minS =
-		"\1\11\1\uffff\1\56\6\uffff";
+		"\1\11\1\167\3\uffff\1\52\2\uffff\1\56\4\uffff\1\151\3\uffff\1\164\1\143"+
+		"\1\150\1\60\1\uffff";
 	static final String DFA20_maxS =
-		"\1\172\1\uffff\1\145\6\uffff";
+		"\1\172\1\167\3\uffff\1\57\2\uffff\1\145\4\uffff\1\151\3\uffff\1\164\1"+
+		"\143\1\150\1\172\1\uffff";
 	static final String DFA20_acceptS =
-		"\1\uffff\1\1\1\uffff\1\3\1\4\1\5\1\6\1\7\1\2";
+		"\2\uffff\1\2\1\3\1\4\1\uffff\1\6\1\7\1\uffff\1\11\1\13\1\14\1\15\1\uffff"+
+		"\1\12\1\5\1\10\4\uffff\1\1";
 	static final String DFA20_specialS =
-		"\11\uffff}>";
+		"\26\uffff}>";
 	static final String[] DFA20_transitionS = {
-			"\2\5\2\uffff\1\5\22\uffff\1\5\1\uffff\1\6\4\uffff\1\7\6\uffff\1\3\1\4"+
-			"\12\2\7\uffff\32\1\4\uffff\1\1\1\uffff\32\1",
-			"",
-			"\1\3\1\uffff\12\2\13\uffff\1\3\37\uffff\1\3",
-			"",
-			"",
+			"\2\12\2\uffff\1\12\22\uffff\1\12\1\uffff\1\13\4\uffff\1\14\2\uffff\1"+
+			"\4\1\2\1\uffff\1\3\1\11\1\5\12\10\3\uffff\1\6\3\uffff\32\7\4\uffff\1"+
+			"\7\1\uffff\22\7\1\1\7\7",
+			"\1\15",
 			"",
 			"",
 			"",
+			"\1\16\4\uffff\1\16",
+			"",
+			"",
+			"\1\11\1\uffff\12\10\13\uffff\1\11\37\uffff\1\11",
+			"",
+			"",
+			"",
+			"",
+			"\1\21",
+			"",
+			"",
+			"",
+			"\1\22",
+			"\1\23",
+			"\1\24",
+			"\12\7\7\uffff\32\7\4\uffff\1\7\1\uffff\32\7",
 			""
 	};
 
@@ -1168,7 +1355,7 @@ public class sLexer extends Lexer {
 		}
 		@Override
 		public String getDescription() {
-			return "1:1: Tokens : ( ID | INT | FLOAT | COMMENT | WS | STRING | CHAR );";
+			return "1:1: Tokens : ( SWITCH | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | ID | INT | FLOAT | COMMENT | WS | STRING | CHAR );";
 		}
 	}
 

@@ -1,6 +1,27 @@
 grammar s;
 
-start	:	EOF;
+start	:	s* EOF;
+
+s	:	ID|SWITCH|INT|FLOAT|STRING|CHAR|PLUS|SUB|MULTIPLY|DIVIDE|ASSIGN
+	 ;
+
+SWITCH	:	'switch' 
+	;
+	
+PLUS	:	'+'
+	;
+	
+SUB	:	'-'
+	;
+
+MULTIPLY:	'*'
+	;
+	
+DIVIDE	:	'/'
+	;
+
+ASSIGN	:	'='
+	;
 
 ID  :	('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
     ;
