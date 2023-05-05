@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-05 18:14:33
+// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-05 19:19:34
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -10,29 +10,60 @@ import java.io.IOException;
 @SuppressWarnings("all")
 public class sParser extends DebugParser {
 	public static final String[] tokenNames = new String[] {
-		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "ASSIGN", "CHAR", "COMMENT", "DIVIDE", 
-		"ESC_SEQ", "EXPONENT", "FLOAT", "HEX_DIGIT", "ID", "INT", "MULTIPLY", 
-		"OCTAL_ESC", "PLUS", "STRING", "SUB", "SWITCH", "UNICODE_ESC", "WS"
+		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "AND", "ASSIGN", "BCLOSE", "BOPEN", 
+		"B_AND", "B_OR", "CASE", "CHAR", "COMMENT", "DIVIDE", "DO", "ELIF", "ELSE", 
+		"ESC_SEQ", "EXPONENT", "FLOAT", "FOR", "FUNCTION", "HEX_DIGIT", "ID", 
+		"IF", "INT", "LCLOSE", "LOPEN", "MULTIPLY", "OCTAL_ESC", "OR", "PLUS", 
+		"POWER", "REM", "RETURN", "SEMI", "SLL", "SRL", "STRING", "SUB", "SWITCH", 
+		"T_CHAR", "T_FLOAT", "T_INT", "T_STRING", "UNICODE_ESC", "WHILE", "WS", 
+		"XOR"
 	};
 	public static final int EOF=-1;
-	public static final int ASSIGN=4;
-	public static final int CHAR=5;
-	public static final int COMMENT=6;
-	public static final int DIVIDE=7;
-	public static final int ESC_SEQ=8;
-	public static final int EXPONENT=9;
-	public static final int FLOAT=10;
-	public static final int HEX_DIGIT=11;
-	public static final int ID=12;
-	public static final int INT=13;
-	public static final int MULTIPLY=14;
-	public static final int OCTAL_ESC=15;
-	public static final int PLUS=16;
-	public static final int STRING=17;
-	public static final int SUB=18;
-	public static final int SWITCH=19;
-	public static final int UNICODE_ESC=20;
-	public static final int WS=21;
+	public static final int AND=4;
+	public static final int ASSIGN=5;
+	public static final int BCLOSE=6;
+	public static final int BOPEN=7;
+	public static final int B_AND=8;
+	public static final int B_OR=9;
+	public static final int CASE=10;
+	public static final int CHAR=11;
+	public static final int COMMENT=12;
+	public static final int DIVIDE=13;
+	public static final int DO=14;
+	public static final int ELIF=15;
+	public static final int ELSE=16;
+	public static final int ESC_SEQ=17;
+	public static final int EXPONENT=18;
+	public static final int FLOAT=19;
+	public static final int FOR=20;
+	public static final int FUNCTION=21;
+	public static final int HEX_DIGIT=22;
+	public static final int ID=23;
+	public static final int IF=24;
+	public static final int INT=25;
+	public static final int LCLOSE=26;
+	public static final int LOPEN=27;
+	public static final int MULTIPLY=28;
+	public static final int OCTAL_ESC=29;
+	public static final int OR=30;
+	public static final int PLUS=31;
+	public static final int POWER=32;
+	public static final int REM=33;
+	public static final int RETURN=34;
+	public static final int SEMI=35;
+	public static final int SLL=36;
+	public static final int SRL=37;
+	public static final int STRING=38;
+	public static final int SUB=39;
+	public static final int SWITCH=40;
+	public static final int T_CHAR=41;
+	public static final int T_FLOAT=42;
+	public static final int T_INT=43;
+	public static final int T_STRING=44;
+	public static final int UNICODE_ESC=45;
+	public static final int WHILE=46;
+	public static final int WS=47;
+	public static final int XOR=48;
 
 	// delegates
 	public Parser[] getDelegates() {
@@ -111,7 +142,7 @@ public class sParser extends DebugParser {
 				try { dbg.enterDecision(1, decisionCanBacktrack[1]);
 
 				int LA1_0 = input.LA(1);
-				if ( ((LA1_0 >= ASSIGN && LA1_0 <= CHAR)||LA1_0==DIVIDE||LA1_0==FLOAT||(LA1_0 >= ID && LA1_0 <= MULTIPLY)||(LA1_0 >= PLUS && LA1_0 <= SWITCH)) ) {
+				if ( ((LA1_0 >= AND && LA1_0 <= CHAR)||(LA1_0 >= DIVIDE && LA1_0 <= ELSE)||(LA1_0 >= FLOAT && LA1_0 <= FUNCTION)||(LA1_0 >= ID && LA1_0 <= MULTIPLY)||(LA1_0 >= OR && LA1_0 <= T_STRING)||LA1_0==WHILE||LA1_0==XOR) ) {
 					alt1=1;
 				}
 
@@ -163,7 +194,7 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "s"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:5:1: s : ( ID | SWITCH | INT | FLOAT | STRING | CHAR | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:5:1: s : ( ID | INT | FLOAT | STRING | CHAR | SWITCH | CASE | IF | ELIF | ELSE | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE );
 	public final void s() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "s");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
@@ -171,13 +202,13 @@ public class sParser extends DebugParser {
 		dbg.location(5, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:5:3: ( ID | SWITCH | INT | FLOAT | STRING | CHAR | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:5:3: ( ID | INT | FLOAT | STRING | CHAR | SWITCH | CASE | IF | ELIF | ELSE | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE )
 			dbg.enterAlt(1);
 
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:
 			{
 			dbg.location(5,3);
-			if ( (input.LA(1) >= ASSIGN && input.LA(1) <= CHAR)||input.LA(1)==DIVIDE||input.LA(1)==FLOAT||(input.LA(1) >= ID && input.LA(1) <= MULTIPLY)||(input.LA(1) >= PLUS && input.LA(1) <= SWITCH) ) {
+			if ( (input.LA(1) >= AND && input.LA(1) <= CHAR)||(input.LA(1) >= DIVIDE && input.LA(1) <= ELSE)||(input.LA(1) >= FLOAT && input.LA(1) <= FUNCTION)||(input.LA(1) >= ID && input.LA(1) <= MULTIPLY)||(input.LA(1) >= OR && input.LA(1) <= T_STRING)||input.LA(1)==WHILE||input.LA(1)==XOR ) {
 				input.consume();
 				state.errorRecovery=false;
 			}
@@ -196,7 +227,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(6, 2);
+		dbg.location(8, 2);
 
 		}
 		finally {
@@ -212,6 +243,6 @@ public class sParser extends DebugParser {
 
 
 
-	public static final BitSet FOLLOW_s_in_start10 = new BitSet(new long[]{0x00000000000F74B0L});
+	public static final BitSet FOLLOW_s_in_start10 = new BitSet(new long[]{0x00015FFFDFB9EFF0L});
 	public static final BitSet FOLLOW_EOF_in_start13 = new BitSet(new long[]{0x0000000000000002L});
 }

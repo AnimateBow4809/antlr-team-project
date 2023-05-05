@@ -2,11 +2,73 @@ grammar s;
 
 start	:	s* EOF;
 
-s	:	ID|SWITCH|INT|FLOAT|STRING|CHAR|PLUS|SUB|MULTIPLY|DIVIDE|ASSIGN
+s	:	ID|INT|FLOAT|STRING|CHAR|SWITCH|CASE|IF|ELIF|ELSE|WHILE|DO|FOR|FUNCTION|RETURN|T_INT|
+		T_FLOAT|T_CHAR|T_STRING|SEMI|POWER|REM|PLUS|SUB|MULTIPLY|DIVIDE|ASSIGN|SLL|SRL|AND|OR|XOR|
+		B_AND|B_OR|LOPEN|LCLOSE|BOPEN|BCLOSE
 	 ;
+	 
+//KeyWords
 
+
+//conditions
 SWITCH	:	'switch' 
 	;
+	
+CASE	:	'case'
+	;
+	
+IF	:	'if'
+	;
+ELIF	:	'elif'
+	;
+ELSE	:	'else'
+	;
+//loops
+
+WHILE	:	'while'
+	;
+	
+DO	:	'do'
+	;
+	
+FOR	:	'for'
+	;
+
+//functions
+
+FUNCTION:	'function'
+	;
+	
+RETURN	:	'return'
+	;
+	
+//Types
+
+T_INT	:	'int'
+	;
+	
+T_FLOAT	:	'float'
+	;
+	
+T_CHAR	:	'char'
+	;
+	
+T_STRING:	'string'
+	;
+	
+// statement END
+
+SEMI	:	';'
+	;
+	
+// Arithmatic operand
+
+
+POWER	:	'^^'
+	;
+
+REM	:	'%'
+	;	
 	
 PLUS	:	'+'
 	;
@@ -22,6 +84,45 @@ DIVIDE	:	'/'
 
 ASSIGN	:	'='
 	;
+	
+//Bitwise operand
+	
+SLL	:	'<<'
+	;
+
+SRL	:	'>>'
+	;
+
+AND	:	'&'
+	;
+
+OR	:	'|'
+	;
+
+XOR	:	'^'
+	;
+
+//Bolean operand
+
+B_AND	:	'&&'
+	;
+B_OR	:	'||'
+	;
+
+
+//ELSE
+
+LOPEN	:	'('
+	;
+	
+LCLOSE	:	')'
+	;
+BOPEN	:	'{'
+	;
+	
+BCLOSE	:	'}'
+	;
+	
 
 ID  :	('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
     ;

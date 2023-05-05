@@ -1,5 +1,3 @@
-hi + hi@ azi@n +@ sae@ed * ALI / DANIAL= DALIR
-
-
-
-
+int a=4
+(a==4){
+}
