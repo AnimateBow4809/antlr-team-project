@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-05 19:19:34
+// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-15 20:37:53
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -15,44 +15,52 @@ public class sLexer extends Lexer {
 	public static final int B_AND=8;
 	public static final int B_OR=9;
 	public static final int CASE=10;
-	public static final int CHAR=11;
-	public static final int COMMENT=12;
-	public static final int DIVIDE=13;
-	public static final int DO=14;
-	public static final int ELIF=15;
-	public static final int ELSE=16;
-	public static final int ESC_SEQ=17;
-	public static final int EXPONENT=18;
-	public static final int FLOAT=19;
-	public static final int FOR=20;
-	public static final int FUNCTION=21;
-	public static final int HEX_DIGIT=22;
-	public static final int ID=23;
-	public static final int IF=24;
-	public static final int INT=25;
-	public static final int LCLOSE=26;
-	public static final int LOPEN=27;
-	public static final int MULTIPLY=28;
-	public static final int OCTAL_ESC=29;
-	public static final int OR=30;
-	public static final int PLUS=31;
-	public static final int POWER=32;
-	public static final int REM=33;
-	public static final int RETURN=34;
-	public static final int SEMI=35;
-	public static final int SLL=36;
-	public static final int SRL=37;
-	public static final int STRING=38;
-	public static final int SUB=39;
-	public static final int SWITCH=40;
-	public static final int T_CHAR=41;
-	public static final int T_FLOAT=42;
-	public static final int T_INT=43;
-	public static final int T_STRING=44;
-	public static final int UNICODE_ESC=45;
-	public static final int WHILE=46;
-	public static final int WS=47;
-	public static final int XOR=48;
+	public static final int CCLOSE=11;
+	public static final int CHAR=12;
+	public static final int COMMENT=13;
+	public static final int COPEN=14;
+	public static final int DIVIDE=15;
+	public static final int DO=16;
+	public static final int ELIF=17;
+	public static final int ELSE=18;
+	public static final int EQ=19;
+	public static final int ESC_SEQ=20;
+	public static final int EXPONENT=21;
+	public static final int FLOAT=22;
+	public static final int FOR=23;
+	public static final int FUNCTION=24;
+	public static final int GEQ=25;
+	public static final int GT=26;
+	public static final int HEX_DIGIT=27;
+	public static final int ID=28;
+	public static final int IF=29;
+	public static final int INT=30;
+	public static final int LCLOSE=31;
+	public static final int LEQ=32;
+	public static final int LOPEN=33;
+	public static final int LT=34;
+	public static final int MULTIPLY=35;
+	public static final int NEQ=36;
+	public static final int OCTAL_ESC=37;
+	public static final int OR=38;
+	public static final int PLUS=39;
+	public static final int POWER=40;
+	public static final int REM=41;
+	public static final int RETURN=42;
+	public static final int SEMI=43;
+	public static final int SLL=44;
+	public static final int SRL=45;
+	public static final int STRING=46;
+	public static final int SUB=47;
+	public static final int SWITCH=48;
+	public static final int T_CHAR=49;
+	public static final int T_FLOAT=50;
+	public static final int T_INT=51;
+	public static final int T_STRING=52;
+	public static final int UNICODE_ESC=53;
+	public static final int WHILE=54;
+	public static final int WS=55;
+	public static final int XOR=56;
 
 	// delegates
 	// delegators
@@ -74,8 +82,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = SWITCH;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:14:8: ( 'switch' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:14:10: 'switch'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:26:8: ( 'switch' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:26:10: 'switch'
 			{
 			match("switch"); 
 
@@ -95,8 +103,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = CASE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:17:6: ( 'case' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:17:8: 'case'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:29:6: ( 'case' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:29:8: 'case'
 			{
 			match("case"); 
 
@@ -116,8 +124,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = IF;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:20:4: ( 'if' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:20:6: 'if'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:32:4: ( 'if' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:32:6: 'if'
 			{
 			match("if"); 
 
@@ -137,8 +145,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = ELIF;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:22:6: ( 'elif' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:22:8: 'elif'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:34:6: ( 'elif' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:34:8: 'elif'
 			{
 			match("elif"); 
 
@@ -158,8 +166,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = ELSE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:24:6: ( 'else' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:24:8: 'else'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:36:6: ( 'else' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:36:8: 'else'
 			{
 			match("else"); 
 
@@ -174,13 +182,137 @@ public class sLexer extends Lexer {
 	}
 	// $ANTLR end "ELSE"
 
+	// $ANTLR start "EQ"
+	public final void mEQ() throws RecognitionException {
+		try {
+			int _type = EQ;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:40:4: ( '==' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:40:6: '=='
+			{
+			match("=="); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "EQ"
+
+	// $ANTLR start "GT"
+	public final void mGT() throws RecognitionException {
+		try {
+			int _type = GT;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:42:4: ( '>' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:42:6: '>'
+			{
+			match('>'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "GT"
+
+	// $ANTLR start "GEQ"
+	public final void mGEQ() throws RecognitionException {
+		try {
+			int _type = GEQ;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:44:5: ( '>=' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:44:7: '>='
+			{
+			match(">="); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "GEQ"
+
+	// $ANTLR start "LT"
+	public final void mLT() throws RecognitionException {
+		try {
+			int _type = LT;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:47:4: ( '<' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:47:6: '<'
+			{
+			match('<'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "LT"
+
+	// $ANTLR start "LEQ"
+	public final void mLEQ() throws RecognitionException {
+		try {
+			int _type = LEQ;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:5: ( '<=' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:7: '<='
+			{
+			match("<="); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "LEQ"
+
+	// $ANTLR start "NEQ"
+	public final void mNEQ() throws RecognitionException {
+		try {
+			int _type = NEQ;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:53:5: ( '!=' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:53:7: '!='
+			{
+			match("!="); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "NEQ"
+
 	// $ANTLR start "WHILE"
 	public final void mWHILE() throws RecognitionException {
 		try {
 			int _type = WHILE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:28:7: ( 'while' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:28:9: 'while'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:60:7: ( 'while' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:60:9: 'while'
 			{
 			match("while"); 
 
@@ -200,8 +332,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = DO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:31:4: ( 'do' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:31:6: 'do'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:63:4: ( 'do' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:63:6: 'do'
 			{
 			match("do"); 
 
@@ -221,8 +353,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = FOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:34:5: ( 'for' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:34:7: 'for'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:66:5: ( 'for' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:66:7: 'for'
 			{
 			match("for"); 
 
@@ -242,8 +374,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = FUNCTION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:9: ( 'function' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:11: 'function'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:71:9: ( 'function' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:71:11: 'function'
 			{
 			match("function"); 
 
@@ -263,8 +395,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = RETURN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:42:8: ( 'return' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:42:10: 'return'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:8: ( 'return' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:10: 'return'
 			{
 			match("return"); 
 
@@ -284,8 +416,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = T_INT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:47:7: ( 'int' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:47:9: 'int'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:79:7: ( 'int' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:79:9: 'int'
 			{
 			match("int"); 
 
@@ -305,8 +437,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = T_FLOAT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:9: ( 'float' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:11: 'float'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:82:9: ( 'float' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:82:11: 'float'
 			{
 			match("float"); 
 
@@ -326,8 +458,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = T_CHAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:53:8: ( 'char' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:53:10: 'char'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:85:8: ( 'char' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:85:10: 'char'
 			{
 			match("char"); 
 
@@ -347,8 +479,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = T_STRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:56:9: ( 'string' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:56:11: 'string'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:88:9: ( 'string' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:88:11: 'string'
 			{
 			match("string"); 
 
@@ -368,8 +500,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = SEMI;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:6: ( ';' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:8: ';'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:93:6: ( ';' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:93:8: ';'
 			{
 			match(';'); 
 			}
@@ -388,8 +520,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = POWER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:67:7: ( '^^' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:67:9: '^^'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:7: ( '^^' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:9: '^^'
 			{
 			match("^^"); 
 
@@ -409,8 +541,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = REM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:5: ( '%' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:7: '%'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:102:5: ( '%' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:102:7: '%'
 			{
 			match('%'); 
 			}
@@ -429,8 +561,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = PLUS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:73:6: ( '+' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:73:8: '+'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:105:6: ( '+' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:105:8: '+'
 			{
 			match('+'); 
 			}
@@ -449,8 +581,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = SUB;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:76:5: ( '-' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:76:7: '-'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:108:5: ( '-' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:108:7: '-'
 			{
 			match('-'); 
 			}
@@ -469,8 +601,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = MULTIPLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:79:9: ( '*' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:79:11: '*'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:111:9: ( '*' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:111:11: '*'
 			{
 			match('*'); 
 			}
@@ -489,8 +621,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = DIVIDE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:82:8: ( '/' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:82:10: '/'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:114:8: ( '/' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:114:10: '/'
 			{
 			match('/'); 
 			}
@@ -509,8 +641,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = ASSIGN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:85:8: ( '=' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:85:10: '='
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:117:8: ( '=' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:117:10: '='
 			{
 			match('='); 
 			}
@@ -529,8 +661,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = SLL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:90:5: ( '<<' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:90:7: '<<'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:122:5: ( '<<' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:122:7: '<<'
 			{
 			match("<<"); 
 
@@ -550,8 +682,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = SRL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:93:5: ( '>>' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:93:7: '>>'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:125:5: ( '>>' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:125:7: '>>'
 			{
 			match(">>"); 
 
@@ -571,8 +703,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = AND;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:96:5: ( '&' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:96:7: '&'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:128:5: ( '&' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:128:7: '&'
 			{
 			match('&'); 
 			}
@@ -591,8 +723,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = OR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:4: ( '|' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:6: '|'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:131:4: ( '|' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:131:6: '|'
 			{
 			match('|'); 
 			}
@@ -611,8 +743,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = XOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:102:5: ( '^' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:102:7: '^'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:134:5: ( '^' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:134:7: '^'
 			{
 			match('^'); 
 			}
@@ -631,8 +763,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = B_AND;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:107:7: ( '&&' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:107:9: '&&'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:139:7: ( '&&' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:139:9: '&&'
 			{
 			match("&&"); 
 
@@ -652,8 +784,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = B_OR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:109:6: ( '||' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:109:8: '||'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:141:6: ( '||' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:141:8: '||'
 			{
 			match("||"); 
 
@@ -673,8 +805,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = LOPEN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:115:7: ( '(' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:115:9: '('
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:147:7: ( '(' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:147:9: '('
 			{
 			match('('); 
 			}
@@ -693,8 +825,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = LCLOSE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:118:8: ( ')' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:118:10: ')'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:150:8: ( ')' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:150:10: ')'
 			{
 			match(')'); 
 			}
@@ -713,8 +845,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = BOPEN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:120:7: ( '{' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:120:9: '{'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:152:7: ( '{' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:152:9: '{'
 			{
 			match('{'); 
 			}
@@ -733,8 +865,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = BCLOSE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:123:8: ( '}' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:123:10: '}'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:155:8: ( '}' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:155:10: '}'
 			{
 			match('}'); 
 			}
@@ -748,13 +880,53 @@ public class sLexer extends Lexer {
 	}
 	// $ANTLR end "BCLOSE"
 
+	// $ANTLR start "COPEN"
+	public final void mCOPEN() throws RecognitionException {
+		try {
+			int _type = COPEN;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:158:7: ( '[' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:158:9: '['
+			{
+			match('['); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "COPEN"
+
+	// $ANTLR start "CCLOSE"
+	public final void mCCLOSE() throws RecognitionException {
+		try {
+			int _type = CCLOSE;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:161:8: ( ']' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:161:10: ']'
+			{
+			match(']'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "CCLOSE"
+
 	// $ANTLR start "ID"
 	public final void mID() throws RecognitionException {
 		try {
 			int _type = ID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:127:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:127:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:165:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:165:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
 			{
 			if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 				input.consume();
@@ -764,7 +936,7 @@ public class sLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:127:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:165:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
 			loop1:
 			while (true) {
 				int alt1=2;
@@ -809,10 +981,10 @@ public class sLexer extends Lexer {
 		try {
 			int _type = INT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:130:5: ( ( '0' .. '9' )+ )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:130:7: ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:168:5: ( ( '0' .. '9' )+ )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:168:7: ( '0' .. '9' )+
 			{
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:130:7: ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:168:7: ( '0' .. '9' )+
 			int cnt2=0;
 			loop2:
 			while (true) {
@@ -861,14 +1033,14 @@ public class sLexer extends Lexer {
 		try {
 			int _type = FLOAT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:134:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:172:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT )
 			int alt9=3;
 			alt9 = dfa9.predict(input);
 			switch (alt9) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:134:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:172:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )?
 					{
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:134:9: ( '0' .. '9' )+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:172:9: ( '0' .. '9' )+
 					int cnt3=0;
 					loop3:
 					while (true) {
@@ -902,7 +1074,7 @@ public class sLexer extends Lexer {
 					}
 
 					match('.'); 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:134:25: ( '0' .. '9' )*
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:172:25: ( '0' .. '9' )*
 					loop4:
 					while (true) {
 						int alt4=2;
@@ -931,7 +1103,7 @@ public class sLexer extends Lexer {
 						}
 					}
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:134:37: ( EXPONENT )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:172:37: ( EXPONENT )?
 					int alt5=2;
 					int LA5_0 = input.LA(1);
 					if ( (LA5_0=='E'||LA5_0=='e') ) {
@@ -939,7 +1111,7 @@ public class sLexer extends Lexer {
 					}
 					switch (alt5) {
 						case 1 :
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:134:37: EXPONENT
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:172:37: EXPONENT
 							{
 							mEXPONENT(); 
 
@@ -951,10 +1123,10 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:135:9: '.' ( '0' .. '9' )+ ( EXPONENT )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:173:9: '.' ( '0' .. '9' )+ ( EXPONENT )?
 					{
 					match('.'); 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:135:13: ( '0' .. '9' )+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:173:13: ( '0' .. '9' )+
 					int cnt6=0;
 					loop6:
 					while (true) {
@@ -987,7 +1159,7 @@ public class sLexer extends Lexer {
 						cnt6++;
 					}
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:135:25: ( EXPONENT )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:173:25: ( EXPONENT )?
 					int alt7=2;
 					int LA7_0 = input.LA(1);
 					if ( (LA7_0=='E'||LA7_0=='e') ) {
@@ -995,7 +1167,7 @@ public class sLexer extends Lexer {
 					}
 					switch (alt7) {
 						case 1 :
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:135:25: EXPONENT
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:173:25: EXPONENT
 							{
 							mEXPONENT(); 
 
@@ -1007,9 +1179,9 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:136:9: ( '0' .. '9' )+ EXPONENT
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:174:9: ( '0' .. '9' )+ EXPONENT
 					{
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:136:9: ( '0' .. '9' )+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:174:9: ( '0' .. '9' )+
 					int cnt8=0;
 					loop8:
 					while (true) {
@@ -1062,7 +1234,7 @@ public class sLexer extends Lexer {
 		try {
 			int _type = COMMENT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:140:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:178:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
 			int alt13=2;
 			int LA13_0 = input.LA(1);
 			if ( (LA13_0=='/') ) {
@@ -1096,11 +1268,11 @@ public class sLexer extends Lexer {
 
 			switch (alt13) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:140:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:178:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
 					{
 					match("//"); 
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:140:14: (~ ( '\\n' | '\\r' ) )*
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:178:14: (~ ( '\\n' | '\\r' ) )*
 					loop10:
 					while (true) {
 						int alt10=2;
@@ -1129,7 +1301,7 @@ public class sLexer extends Lexer {
 						}
 					}
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:140:28: ( '\\r' )?
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:178:28: ( '\\r' )?
 					int alt11=2;
 					int LA11_0 = input.LA(1);
 					if ( (LA11_0=='\r') ) {
@@ -1137,7 +1309,7 @@ public class sLexer extends Lexer {
 					}
 					switch (alt11) {
 						case 1 :
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:140:28: '\\r'
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:178:28: '\\r'
 							{
 							match('\r'); 
 							}
@@ -1150,11 +1322,11 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:141:9: '/*' ( options {greedy=false; } : . )* '*/'
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:179:9: '/*' ( options {greedy=false; } : . )* '*/'
 					{
 					match("/*"); 
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:141:14: ( options {greedy=false; } : . )*
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:179:14: ( options {greedy=false; } : . )*
 					loop12:
 					while (true) {
 						int alt12=2;
@@ -1175,7 +1347,7 @@ public class sLexer extends Lexer {
 
 						switch (alt12) {
 						case 1 :
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:141:42: .
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:179:42: .
 							{
 							matchAny(); 
 							}
@@ -1207,8 +1379,8 @@ public class sLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:144:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:144:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:182:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:182:9: ( ' ' | '\\t' | '\\r' | '\\n' )
 			{
 			if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
 				input.consume();
@@ -1235,11 +1407,11 @@ public class sLexer extends Lexer {
 		try {
 			int _type = STRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:152:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:152:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:190:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:190:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
 			{
 			match('\"'); 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:152:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:190:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
 			loop14:
 			while (true) {
 				int alt14=3;
@@ -1253,14 +1425,14 @@ public class sLexer extends Lexer {
 
 				switch (alt14) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:152:14: ESC_SEQ
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:190:14: ESC_SEQ
 					{
 					mESC_SEQ(); 
 
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:152:24: ~ ( '\\\\' | '\"' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:190:24: ~ ( '\\\\' | '\"' )
 					{
 					if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
 						input.consume();
@@ -1295,11 +1467,11 @@ public class sLexer extends Lexer {
 		try {
 			int _type = CHAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:155:5: ( '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\'' )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:155:8: '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\''
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:193:5: ( '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\'' )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:193:8: '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\''
 			{
 			match('\''); 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:155:13: ( ESC_SEQ |~ ( '\\'' | '\\\\' ) )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:193:13: ( ESC_SEQ |~ ( '\\'' | '\\\\' ) )
 			int alt15=2;
 			int LA15_0 = input.LA(1);
 			if ( (LA15_0=='\\') ) {
@@ -1317,14 +1489,14 @@ public class sLexer extends Lexer {
 
 			switch (alt15) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:155:15: ESC_SEQ
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:193:15: ESC_SEQ
 					{
 					mESC_SEQ(); 
 
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:155:25: ~ ( '\\'' | '\\\\' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:193:25: ~ ( '\\'' | '\\\\' )
 					{
 					if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '&')||(input.LA(1) >= '(' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
 						input.consume();
@@ -1354,8 +1526,8 @@ public class sLexer extends Lexer {
 	// $ANTLR start "EXPONENT"
 	public final void mEXPONENT() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:160:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:160:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:198:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:198:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
 			{
 			if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
 				input.consume();
@@ -1365,7 +1537,7 @@ public class sLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:160:22: ( '+' | '-' )?
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:198:22: ( '+' | '-' )?
 			int alt16=2;
 			int LA16_0 = input.LA(1);
 			if ( (LA16_0=='+'||LA16_0=='-') ) {
@@ -1388,7 +1560,7 @@ public class sLexer extends Lexer {
 
 			}
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:160:33: ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:198:33: ( '0' .. '9' )+
 			int cnt17=0;
 			loop17:
 			while (true) {
@@ -1433,7 +1605,7 @@ public class sLexer extends Lexer {
 	// $ANTLR start "HEX_DIGIT"
 	public final void mHEX_DIGIT() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:163:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:201:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:
 			{
 			if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
@@ -1456,7 +1628,7 @@ public class sLexer extends Lexer {
 	// $ANTLR start "ESC_SEQ"
 	public final void mESC_SEQ() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:167:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:205:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
 			int alt18=3;
 			int LA18_0 = input.LA(1);
 			if ( (LA18_0=='\\') ) {
@@ -1511,7 +1683,7 @@ public class sLexer extends Lexer {
 
 			switch (alt18) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:167:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:205:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
 					{
 					match('\\'); 
 					if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -1525,14 +1697,14 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:168:9: UNICODE_ESC
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:206:9: UNICODE_ESC
 					{
 					mUNICODE_ESC(); 
 
 					}
 					break;
 				case 3 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:169:9: OCTAL_ESC
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:207:9: OCTAL_ESC
 					{
 					mOCTAL_ESC(); 
 
@@ -1550,7 +1722,7 @@ public class sLexer extends Lexer {
 	// $ANTLR start "OCTAL_ESC"
 	public final void mOCTAL_ESC() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:174:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:212:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
 			int alt19=3;
 			int LA19_0 = input.LA(1);
 			if ( (LA19_0=='\\') ) {
@@ -1608,7 +1780,7 @@ public class sLexer extends Lexer {
 
 			switch (alt19) {
 				case 1 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:174:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:212:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
 					{
 					match('\\'); 
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '3') ) {
@@ -1638,7 +1810,7 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:175:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:213:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
 					{
 					match('\\'); 
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '7') ) {
@@ -1660,7 +1832,7 @@ public class sLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:176:9: '\\\\' ( '0' .. '7' )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:214:9: '\\\\' ( '0' .. '7' )
 					{
 					match('\\'); 
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '7') ) {
@@ -1685,8 +1857,8 @@ public class sLexer extends Lexer {
 	// $ANTLR start "UNICODE_ESC"
 	public final void mUNICODE_ESC() throws RecognitionException {
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:181:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:181:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:219:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:219:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
 			{
 			match('\\'); 
 			match('u'); 
@@ -1709,8 +1881,8 @@ public class sLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:8: ( SWITCH | CASE | IF | ELIF | ELSE | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE | ID | INT | FLOAT | COMMENT | WS | STRING | CHAR )
-		int alt20=40;
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:8: ( SWITCH | CASE | IF | ELIF | ELSE | EQ | GT | GEQ | LT | LEQ | NEQ | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE | COPEN | CCLOSE | ID | INT | FLOAT | COMMENT | WS | STRING | CHAR )
+		int alt20=48;
 		alt20 = dfa20.predict(input);
 		switch (alt20) {
 			case 1 :
@@ -1749,245 +1921,301 @@ public class sLexer extends Lexer {
 				}
 				break;
 			case 6 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:35: WHILE
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:35: EQ
+				{
+				mEQ(); 
+
+				}
+				break;
+			case 7 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:38: GT
+				{
+				mGT(); 
+
+				}
+				break;
+			case 8 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:41: GEQ
+				{
+				mGEQ(); 
+
+				}
+				break;
+			case 9 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:45: LT
+				{
+				mLT(); 
+
+				}
+				break;
+			case 10 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:48: LEQ
+				{
+				mLEQ(); 
+
+				}
+				break;
+			case 11 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:52: NEQ
+				{
+				mNEQ(); 
+
+				}
+				break;
+			case 12 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:56: WHILE
 				{
 				mWHILE(); 
 
 				}
 				break;
-			case 7 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:41: DO
+			case 13 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:62: DO
 				{
 				mDO(); 
 
 				}
 				break;
-			case 8 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:44: FOR
+			case 14 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:65: FOR
 				{
 				mFOR(); 
 
 				}
 				break;
-			case 9 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:48: FUNCTION
+			case 15 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:69: FUNCTION
 				{
 				mFUNCTION(); 
 
 				}
 				break;
-			case 10 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:57: RETURN
+			case 16 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:78: RETURN
 				{
 				mRETURN(); 
 
 				}
 				break;
-			case 11 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:64: T_INT
+			case 17 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:85: T_INT
 				{
 				mT_INT(); 
 
 				}
 				break;
-			case 12 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:70: T_FLOAT
+			case 18 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:91: T_FLOAT
 				{
 				mT_FLOAT(); 
 
 				}
 				break;
-			case 13 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:78: T_CHAR
+			case 19 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:99: T_CHAR
 				{
 				mT_CHAR(); 
 
 				}
 				break;
-			case 14 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:85: T_STRING
+			case 20 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:106: T_STRING
 				{
 				mT_STRING(); 
 
 				}
 				break;
-			case 15 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:94: SEMI
+			case 21 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:115: SEMI
 				{
 				mSEMI(); 
 
 				}
 				break;
-			case 16 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:99: POWER
+			case 22 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:120: POWER
 				{
 				mPOWER(); 
 
 				}
 				break;
-			case 17 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:105: REM
+			case 23 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:126: REM
 				{
 				mREM(); 
 
 				}
 				break;
-			case 18 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:109: PLUS
+			case 24 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:130: PLUS
 				{
 				mPLUS(); 
 
 				}
 				break;
-			case 19 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:114: SUB
+			case 25 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:135: SUB
 				{
 				mSUB(); 
 
 				}
 				break;
-			case 20 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:118: MULTIPLY
+			case 26 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:139: MULTIPLY
 				{
 				mMULTIPLY(); 
 
 				}
 				break;
-			case 21 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:127: DIVIDE
+			case 27 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:148: DIVIDE
 				{
 				mDIVIDE(); 
 
 				}
 				break;
-			case 22 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:134: ASSIGN
+			case 28 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:155: ASSIGN
 				{
 				mASSIGN(); 
 
 				}
 				break;
-			case 23 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:141: SLL
+			case 29 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:162: SLL
 				{
 				mSLL(); 
 
 				}
 				break;
-			case 24 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:145: SRL
+			case 30 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:166: SRL
 				{
 				mSRL(); 
 
 				}
 				break;
-			case 25 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:149: AND
+			case 31 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:170: AND
 				{
 				mAND(); 
 
 				}
 				break;
-			case 26 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:153: OR
+			case 32 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:174: OR
 				{
 				mOR(); 
 
 				}
 				break;
-			case 27 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:156: XOR
+			case 33 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:177: XOR
 				{
 				mXOR(); 
 
 				}
 				break;
-			case 28 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:160: B_AND
+			case 34 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:181: B_AND
 				{
 				mB_AND(); 
 
 				}
 				break;
-			case 29 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:166: B_OR
+			case 35 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:187: B_OR
 				{
 				mB_OR(); 
 
 				}
 				break;
-			case 30 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:171: LOPEN
+			case 36 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:192: LOPEN
 				{
 				mLOPEN(); 
 
 				}
 				break;
-			case 31 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:177: LCLOSE
+			case 37 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:198: LCLOSE
 				{
 				mLCLOSE(); 
 
 				}
 				break;
-			case 32 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:184: BOPEN
+			case 38 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:205: BOPEN
 				{
 				mBOPEN(); 
 
 				}
 				break;
-			case 33 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:190: BCLOSE
+			case 39 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:211: BCLOSE
 				{
 				mBCLOSE(); 
 
 				}
 				break;
-			case 34 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:197: ID
+			case 40 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:218: COPEN
+				{
+				mCOPEN(); 
+
+				}
+				break;
+			case 41 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:224: CCLOSE
+				{
+				mCCLOSE(); 
+
+				}
+				break;
+			case 42 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:231: ID
 				{
 				mID(); 
 
 				}
 				break;
-			case 35 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:200: INT
+			case 43 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:234: INT
 				{
 				mINT(); 
 
 				}
 				break;
-			case 36 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:204: FLOAT
+			case 44 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:238: FLOAT
 				{
 				mFLOAT(); 
 
 				}
 				break;
-			case 37 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:210: COMMENT
+			case 45 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:244: COMMENT
 				{
 				mCOMMENT(); 
 
 				}
 				break;
-			case 38 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:218: WS
+			case 46 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:252: WS
 				{
 				mWS(); 
 
 				}
 				break;
-			case 39 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:221: STRING
+			case 47 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:255: STRING
 				{
 				mSTRING(); 
 
 				}
 				break;
-			case 40 :
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:228: CHAR
+			case 48 :
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:1:262: CHAR
 				{
 				mCHAR(); 
 
@@ -2051,146 +2279,158 @@ public class sLexer extends Lexer {
 		}
 		@Override
 		public String getDescription() {
-			return "133:1: FLOAT : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT );";
+			return "171:1: FLOAT : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT );";
 		}
 	}
 
 	static final String DFA20_eotS =
-		"\1\uffff\10\31\1\uffff\1\55\4\uffff\1\57\3\uffff\1\61\1\63\5\uffff\1\64"+
-		"\4\uffff\4\31\1\71\3\31\1\76\4\31\11\uffff\4\31\1\uffff\1\107\3\31\1\uffff"+
-		"\1\113\5\31\1\121\1\122\1\uffff\1\123\1\124\1\31\1\uffff\5\31\4\uffff"+
-		"\1\133\1\31\1\135\1\31\1\137\1\140\1\uffff\1\31\1\uffff\1\142\2\uffff"+
-		"\1\31\1\uffff\1\144\1\uffff";
+		"\1\uffff\4\34\1\52\1\55\1\60\1\uffff\4\34\1\uffff\1\70\4\uffff\1\72\1"+
+		"\74\1\76\7\uffff\1\77\4\uffff\4\34\1\104\2\34\10\uffff\1\34\1\111\4\34"+
+		"\11\uffff\4\34\1\uffff\1\122\3\34\1\uffff\1\126\5\34\1\134\1\135\1\uffff"+
+		"\1\136\1\137\1\34\1\uffff\5\34\4\uffff\1\146\1\34\1\150\1\34\1\152\1\153"+
+		"\1\uffff\1\34\1\uffff\1\155\2\uffff\1\34\1\uffff\1\157\1\uffff";
 	static final String DFA20_eofS =
-		"\145\uffff";
+		"\160\uffff";
 	static final String DFA20_minS =
-		"\1\11\1\164\1\141\1\146\1\154\1\150\1\157\1\154\1\145\1\uffff\1\136\4"+
-		"\uffff\1\52\3\uffff\1\46\1\174\5\uffff\1\56\4\uffff\1\151\1\162\1\163"+
-		"\1\141\1\60\1\164\2\151\1\60\1\162\1\156\1\157\1\164\11\uffff\1\164\1"+
-		"\151\1\145\1\162\1\uffff\1\60\1\146\1\145\1\154\1\uffff\1\60\1\143\1\141"+
-		"\1\165\1\143\1\156\2\60\1\uffff\2\60\1\145\1\uffff\2\164\1\162\1\150\1"+
-		"\147\4\uffff\1\60\1\151\1\60\1\156\2\60\1\uffff\1\157\1\uffff\1\60\2\uffff"+
-		"\1\156\1\uffff\1\60\1\uffff";
+		"\1\11\1\164\1\141\1\146\1\154\2\75\1\74\1\uffff\1\150\1\157\1\154\1\145"+
+		"\1\uffff\1\136\4\uffff\1\52\1\46\1\174\7\uffff\1\56\4\uffff\1\151\1\162"+
+		"\1\163\1\141\1\60\1\164\1\151\10\uffff\1\151\1\60\1\162\1\156\1\157\1"+
+		"\164\11\uffff\1\164\1\151\1\145\1\162\1\uffff\1\60\1\146\1\145\1\154\1"+
+		"\uffff\1\60\1\143\1\141\1\165\1\143\1\156\2\60\1\uffff\2\60\1\145\1\uffff"+
+		"\2\164\1\162\1\150\1\147\4\uffff\1\60\1\151\1\60\1\156\2\60\1\uffff\1"+
+		"\157\1\uffff\1\60\2\uffff\1\156\1\uffff\1\60\1\uffff";
 	static final String DFA20_maxS =
-		"\1\175\1\167\1\150\1\156\1\154\1\150\1\157\1\165\1\145\1\uffff\1\136\4"+
-		"\uffff\1\57\3\uffff\1\46\1\174\5\uffff\1\145\4\uffff\1\151\1\162\1\163"+
-		"\1\141\1\172\1\164\1\163\1\151\1\172\1\162\1\156\1\157\1\164\11\uffff"+
-		"\1\164\1\151\1\145\1\162\1\uffff\1\172\1\146\1\145\1\154\1\uffff\1\172"+
-		"\1\143\1\141\1\165\1\143\1\156\2\172\1\uffff\2\172\1\145\1\uffff\2\164"+
-		"\1\162\1\150\1\147\4\uffff\1\172\1\151\1\172\1\156\2\172\1\uffff\1\157"+
-		"\1\uffff\1\172\2\uffff\1\156\1\uffff\1\172\1\uffff";
+		"\1\175\1\167\1\150\1\156\1\154\1\75\1\76\1\75\1\uffff\1\150\1\157\1\165"+
+		"\1\145\1\uffff\1\136\4\uffff\1\57\1\46\1\174\7\uffff\1\145\4\uffff\1\151"+
+		"\1\162\1\163\1\141\1\172\1\164\1\163\10\uffff\1\151\1\172\1\162\1\156"+
+		"\1\157\1\164\11\uffff\1\164\1\151\1\145\1\162\1\uffff\1\172\1\146\1\145"+
+		"\1\154\1\uffff\1\172\1\143\1\141\1\165\1\143\1\156\2\172\1\uffff\2\172"+
+		"\1\145\1\uffff\2\164\1\162\1\150\1\147\4\uffff\1\172\1\151\1\172\1\156"+
+		"\2\172\1\uffff\1\157\1\uffff\1\172\2\uffff\1\156\1\uffff\1\172\1\uffff";
 	static final String DFA20_acceptS =
-		"\11\uffff\1\17\1\uffff\1\21\1\22\1\23\1\24\1\uffff\1\26\1\27\1\30\2\uffff"+
-		"\1\36\1\37\1\40\1\41\1\42\1\uffff\1\44\1\46\1\47\1\50\15\uffff\1\20\1"+
-		"\33\1\45\1\25\1\34\1\31\1\35\1\32\1\43\4\uffff\1\3\4\uffff\1\7\10\uffff"+
-		"\1\13\3\uffff\1\10\5\uffff\1\2\1\15\1\4\1\5\6\uffff\1\6\1\uffff\1\14\1"+
-		"\uffff\1\1\1\16\1\uffff\1\12\1\uffff\1\11";
+		"\10\uffff\1\13\4\uffff\1\25\1\uffff\1\27\1\30\1\31\1\32\3\uffff\1\44\1"+
+		"\45\1\46\1\47\1\50\1\51\1\52\1\uffff\1\54\1\56\1\57\1\60\7\uffff\1\6\1"+
+		"\34\1\10\1\36\1\7\1\12\1\35\1\11\6\uffff\1\26\1\41\1\55\1\33\1\42\1\37"+
+		"\1\43\1\40\1\53\4\uffff\1\3\4\uffff\1\15\10\uffff\1\21\3\uffff\1\16\5"+
+		"\uffff\1\2\1\23\1\4\1\5\6\uffff\1\14\1\uffff\1\22\1\uffff\1\1\1\24\1\uffff"+
+		"\1\20\1\uffff\1\17";
 	static final String DFA20_specialS =
-		"\145\uffff}>";
+		"\160\uffff}>";
 	static final String[] DFA20_transitionS = {
-			"\2\34\2\uffff\1\34\22\uffff\1\34\1\uffff\1\35\2\uffff\1\13\1\23\1\36"+
-			"\1\25\1\26\1\16\1\14\1\uffff\1\15\1\33\1\17\12\32\1\uffff\1\11\1\21\1"+
-			"\20\1\22\2\uffff\32\31\3\uffff\1\12\1\31\1\uffff\2\31\1\2\1\6\1\4\1\7"+
-			"\2\31\1\3\10\31\1\10\1\1\3\31\1\5\3\31\1\27\1\24\1\30",
-			"\1\40\2\uffff\1\37",
-			"\1\41\6\uffff\1\42",
-			"\1\43\7\uffff\1\44",
-			"\1\45",
-			"\1\46",
-			"\1\47",
-			"\1\52\2\uffff\1\50\5\uffff\1\51",
-			"\1\53",
+			"\2\37\2\uffff\1\37\22\uffff\1\37\1\10\1\40\2\uffff\1\17\1\24\1\41\1\26"+
+			"\1\27\1\22\1\20\1\uffff\1\21\1\36\1\23\12\35\1\uffff\1\15\1\7\1\5\1\6"+
+			"\2\uffff\32\34\1\32\1\uffff\1\33\1\16\1\34\1\uffff\2\34\1\2\1\12\1\4"+
+			"\1\13\2\34\1\3\10\34\1\14\1\1\3\34\1\11\3\34\1\30\1\25\1\31",
+			"\1\43\2\uffff\1\42",
+			"\1\44\6\uffff\1\45",
+			"\1\46\7\uffff\1\47",
+			"\1\50",
+			"\1\51",
+			"\1\53\1\54",
+			"\1\57\1\56",
 			"",
-			"\1\54",
-			"",
-			"",
-			"",
-			"",
-			"\1\56\4\uffff\1\56",
-			"",
-			"",
-			"",
-			"\1\60",
+			"\1\61",
 			"\1\62",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"\1\33\1\uffff\12\32\13\uffff\1\33\37\uffff\1\33",
-			"",
-			"",
-			"",
-			"",
-			"\1\65",
+			"\1\65\2\uffff\1\63\5\uffff\1\64",
 			"\1\66",
+			"",
 			"\1\67",
-			"\1\70",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-			"\1\72",
-			"\1\73\11\uffff\1\74",
+			"",
+			"",
+			"",
+			"",
+			"\1\71\4\uffff\1\71",
+			"\1\73",
 			"\1\75",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-			"\1\77",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"\1\36\1\uffff\12\35\13\uffff\1\36\37\uffff\1\36",
+			"",
+			"",
+			"",
+			"",
 			"\1\100",
 			"\1\101",
 			"\1\102",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
 			"\1\103",
-			"\1\104",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
 			"\1\105",
-			"\1\106",
+			"\1\106\11\uffff\1\107",
 			"",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
 			"\1\110",
-			"\1\111",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
 			"\1\112",
-			"",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+			"\1\113",
 			"\1\114",
 			"\1\115",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
 			"\1\116",
 			"\1\117",
 			"\1\120",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+			"\1\121",
 			"",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+			"\1\123",
+			"\1\124",
 			"\1\125",
 			"",
-			"\1\126",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
 			"\1\127",
 			"\1\130",
 			"\1\131",
 			"\1\132",
+			"\1\133",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
 			"",
-			"",
-			"",
-			"",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-			"\1\134",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-			"\1\136",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+			"\1\140",
 			"",
 			"\1\141",
-			"",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-			"",
-			"",
+			"\1\142",
 			"\1\143",
+			"\1\144",
+			"\1\145",
 			"",
-			"\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+			"",
+			"",
+			"",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+			"\1\147",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+			"\1\151",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+			"",
+			"\1\154",
+			"",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+			"",
+			"",
+			"\1\156",
+			"",
+			"\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
 			""
 	};
 
@@ -2225,7 +2465,7 @@ public class sLexer extends Lexer {
 		}
 		@Override
 		public String getDescription() {
-			return "1:1: Tokens : ( SWITCH | CASE | IF | ELIF | ELSE | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE | ID | INT | FLOAT | COMMENT | WS | STRING | CHAR );";
+			return "1:1: Tokens : ( SWITCH | CASE | IF | ELIF | ELSE | EQ | GT | GEQ | LT | LEQ | NEQ | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE | COPEN | CCLOSE | ID | INT | FLOAT | COMMENT | WS | STRING | CHAR );";
 		}
 	}
 

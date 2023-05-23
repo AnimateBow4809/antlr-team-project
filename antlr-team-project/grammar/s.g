@@ -1,16 +1,66 @@
 grammar s;
 
-start	:	s* EOF;
+// parser
 
-s	:	ID|INT|FLOAT|STRING|CHAR|SWITCH|CASE|IF|ELIF|ELSE|WHILE|DO|FOR|FUNCTION|RETURN|T_INT|
+start	:	block* EOF//s* EOF 
+	;
+
+if_st	:	IF LOPEN condition LCLOSE block elsepart
+	;
+	
+elsepart:	ELSE block |
+	;
+	
+	
+block	:	BOPEN statements BCLOSE | statement SEMI
+	;
+	
+
+condition
+	:	(e relope e)
+	;	
+	
+relope	:	B_AND|B_OR|EQ|GT|GEQ|LT|LEQ|NEQ|COPEN|CCLOSE
+	;
+	
+statements
+	:	(statement SEMI)*
+	;
+statement
+	:	 if_st | assignmentStatement
+			
+	;
+assignmentStatement
+	:	ID ASSIGN e | type ID ASSIGN e
+	;
+	
+type	:	T_INT|T_FLOAT|T_CHAR|T_STRING	
+	;
+
+e	:	(f) (((op)e)*)*
+	;
+	
+f	:	ID|no|LOPEN e LCLOSE
+	;
+	
+no	:	INT|FLOAT
+	;
+op	:	POWER|REM|PLUS|SUB|MULTIPLY|DIVIDE
+	;
+
+
+s	:	ID|INT|FLOAT|STRING|CHAR|SWITCH|CASE|if_st|ELIF|ELSE|WHILE|DO|FOR|FUNCTION|RETURN|T_INT|
 		T_FLOAT|T_CHAR|T_STRING|SEMI|POWER|REM|PLUS|SUB|MULTIPLY|DIVIDE|ASSIGN|SLL|SRL|AND|OR|XOR|
-		B_AND|B_OR|LOPEN|LCLOSE|BOPEN|BCLOSE
+		B_AND|B_OR|LOPEN|LCLOSE|BOPEN|BCLOSE|EQ|GT|GEQ|LT|LEQ|NEQ|COPEN|CCLOSE
 	 ;
 	 
+//lexer
+
+
 //KeyWords
 
 
-//conditions
+//branches
 SWITCH	:	'switch' 
 	;
 	
@@ -23,6 +73,26 @@ ELIF	:	'elif'
 	;
 ELSE	:	'else'
 	;
+//conditions
+
+EQ	:	'=='
+	;
+GT	:	'>'
+	;
+GEQ	:	'>='
+	;
+
+LT	:	'<'
+	;
+	
+LEQ	:	'<='
+	;
+
+NEQ	:	'!='
+	;
+
+
+
 //loops
 
 WHILE	:	'while'
@@ -110,7 +180,7 @@ B_OR	:	'||'
 	;
 
 
-//ELSE
+//Seperator
 
 LOPEN	:	'('
 	;
@@ -121,6 +191,12 @@ BOPEN	:	'{'
 	;
 	
 BCLOSE	:	'}'
+	;
+	
+COPEN	:	'['
+	;
+	
+CCLOSE	:	']'
 	;
 	
 

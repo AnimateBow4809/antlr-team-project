@@ -1,3 +1,11 @@
-int a=4
-(a==4){
+{
+  char m[20]=RED;
+  char z[20]=ANSI_COLOR_RESET;
+  if (l==c)
+  {
+    
+    strcat(m,l[0]);
+    
+    strcpy(l[0],m);
+  }
 }
