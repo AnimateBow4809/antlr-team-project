@@ -22,11 +22,16 @@ statements
 	;
 	
 statement
-	:	assign_st | if_st | function_st
+	:	assign_st | if_st | function_st | while_st |do_st
 	;
 	
+while_st:	WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE 
+	;
+
+do_st	:	DO LOPEN condition LCLOSE BOPEN statements BCLOSE
+	;
 function_def
-	:	type ID LOPEN def_params LCLOSE BOPEN block BCLOSE
+	:	type ID LOPEN def_params LCLOSE BOPEN block (RETURN(no|STRING|ID) SEMI)?  BCLOSE
 	;
 def_params
 	:	(type ID) m|
@@ -53,7 +58,7 @@ else_st	:	ELSE BOPEN statements BCLOSE
 	;
 	
 condition
-	:	e (NEQ|EQ) e	
+	:	e conOp e	
 	;
 
 e	:	((ID|no) (op (ID|no))*)
@@ -77,6 +82,9 @@ type1	:	T_INT|T_FLOAT|T_CHAR|T_STRING
 no	:	INT|FLOAT
 	;
 op	:	POWER|REM|PLUS|SUB|MULTIPLY|DIVIDE
+	;
+	
+conOp	:	NEQ|EQ|GT|GEQ|LT|LEQ
 	;
 
 

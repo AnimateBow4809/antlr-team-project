@@ -1,12 +1,13 @@
 int main(int[][] a,int b){
-if(a+b+m==c+d)
+if(a+b+m<=c+d)
 {
 print("hello",ali);
 a=d-75+23;
-}elif (a-c+74!=32){
+}elif (a-c+74>=32){
 a=m;
 }
 else{
 a=m;
 }
+return 4;
 }
