@@ -30,7 +30,11 @@ switch_st
 	;
 case_st	:	CASE LOPEN no LCLOSE BOPEN statements BCLOSE 
 	;
-for_st	:	FOR LOPEN(assign_st? SEMI condition? SEMI assign_st?)LCLOSE BOPEN statements BCLOSE
+for_st	:	FOR LOPEN(init? SEMI condition? SEMI assign_st?)LCLOSE BOPEN statements BCLOSE
+	;
+init	:	 assign_st w	
+	;
+w	:	(','assign_st)*
 	;
 while_st:	WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE 
 	;
@@ -77,7 +81,10 @@ condition2
 	:	e conOp e	
 	;
 
-e	:	((ID|no) (op (ID|no))*)
+e	:	(g (op g)*) 
+	;
+	
+g	:	(ID|no)|LOPEN g (op g)* LCLOSE 
 	;
 
 assign_st
@@ -100,7 +107,7 @@ no	:	INT|FLOAT
 op	:	POWER|REM|PLUS|SUB|MULTIPLY|DIVIDE|SLL|SRL|AND|OR|XOR
 	;
 	
-conOp	:	NEQ|EQ|GT|GEQ|LT|LEQ
+conOp	:	NEQ|EQ|GT|GEQ|LT|LEQ|B_AND|B_OR
 	;
 
 

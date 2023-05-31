@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-31 21:14:03
+// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-31 22:05:39
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -85,38 +85,39 @@ public class sParser extends DebugParser {
 
 
 	public static final String[] ruleNames = new String[] {
-		"invalidRule", "synpred95_s", "synpred81_s", "synpred25_s", "do_st", "synpred21_s", 
-		"condition2", "synpred72_s", "synpred4_s", "synpred8_s", "synpred9_s", 
-		"synpred22_s", "synpred60_s", "synpred52_s", "synpred85_s", "synpred15_s", 
-		"else_st", "s", "type1", "synpred10_s", "synpred53_s", "synpred78_s", 
-		"synpred12_s", "synpred62_s", "synpred6_s", "synpred70_s", "synpred18_s", 
-		"synpred46_s", "c", "synpred40_s", "synpred50_s", "synpred90_s", "synpred17_s", 
-		"r", "assign_st", "synpred93_s", "params", "synpred34_s", "synpred48_s", 
-		"synpred63_s", "block", "e", "m", "synpred39_s", "synpred16_s", "synpred24_s", 
-		"condition", "synpred33_s", "synpred77_s", "synpred11_s", "synpred64_s", 
-		"synpred69_s", "synpred59_s", "function_def", "function_st", "synpred35_s", 
-		"synpred30_s", "synpred75_s", "synpred76_s", "synpred67_s", "synpred100_s", 
-		"switch_st", "synpred97_s", "synpred37_s", "synpred55_s", "synpred91_s", 
-		"synpred88_s", "synpred92_s", "else_if_st", "synpred71_s", "synpred36_s", 
-		"synpred84_s", "f", "synpred19_s", "start", "b_op", "no", "synpred7_s", 
-		"synpred1_s", "synpred96_s", "synpred43_s", "synpred79_s", "synpred87_s", 
-		"for_st", "conOp", "synpred99_s", "def_params", "synpred73_s", "synpred94_s", 
-		"blocks", "case_st", "synpred20_s", "synpred82_s", "synpred2_s", "synpred44_s", 
-		"synpred57_s", "synpred66_s", "synpred31_s", "op", "synpred89_s", "synpred23_s", 
-		"synpred61_s", "synpred49_s", "synpred26_s", "synpred56_s", "synpred68_s", 
-		"synpred29_s", "type", "synpred80_s", "synpred54_s", "while_st", "synpred58_s", 
-		"synpred47_s", "synpred38_s", "synpred13_s", "synpred51_s", "synpred3_s", 
-		"synpred86_s", "synpred65_s", "statements", "synpred27_s", "synpred42_s", 
-		"synpred28_s", "if_st", "synpred32_s", "synpred74_s", "synpred83_s", "synpred45_s", 
-		"synpred98_s", "synpred5_s", "statement", "synpred14_s", "synpred41_s"
+		"invalidRule", "synpred13_s", "type", "synpred20_s", "synpred67_s", "synpred49_s", 
+		"start", "synpred91_s", "statements", "synpred80_s", "synpred69_s", "condition2", 
+		"synpred86_s", "synpred74_s", "while_st", "for_st", "function_st", "synpred97_s", 
+		"synpred72_s", "synpred16_s", "synpred23_s", "synpred57_s", "synpred11_s", 
+		"synpred3_s", "synpred63_s", "synpred37_s", "synpred84_s", "synpred78_s", 
+		"synpred104_s", "synpred83_s", "synpred34_s", "synpred35_s", "synpred18_s", 
+		"synpred68_s", "synpred100_s", "statement", "synpred101_s", "synpred27_s", 
+		"synpred6_s", "synpred58_s", "synpred82_s", "synpred29_s", "synpred103_s", 
+		"type1", "switch_st", "assign_st", "params", "synpred5_s", "else_st", 
+		"r", "synpred60_s", "blocks", "synpred32_s", "def_params", "b_op", "synpred10_s", 
+		"synpred93_s", "synpred99_s", "synpred4_s", "synpred56_s", "synpred17_s", 
+		"synpred77_s", "synpred95_s", "synpred75_s", "synpred98_s", "synpred52_s", 
+		"condition", "synpred12_s", "synpred43_s", "synpred64_s", "m", "synpred15_s", 
+		"synpred70_s", "synpred45_s", "synpred51_s", "synpred94_s", "synpred55_s", 
+		"synpred87_s", "case_st", "synpred53_s", "synpred90_s", "synpred88_s", 
+		"synpred44_s", "synpred38_s", "synpred61_s", "synpred2_s", "synpred85_s", 
+		"synpred7_s", "do_st", "synpred102_s", "synpred8_s", "synpred66_s", "block", 
+		"synpred28_s", "synpred39_s", "synpred46_s", "synpred33_s", "synpred24_s", 
+		"synpred96_s", "w", "synpred14_s", "synpred40_s", "synpred42_s", "synpred19_s", 
+		"synpred59_s", "synpred71_s", "synpred22_s", "synpred26_s", "conOp", "synpred48_s", 
+		"synpred36_s", "c", "synpred47_s", "op", "synpred62_s", "synpred65_s", 
+		"if_st", "synpred54_s", "synpred1_s", "init", "synpred79_s", "synpred81_s", 
+		"synpred50_s", "synpred73_s", "synpred25_s", "synpred92_s", "e", "synpred21_s", 
+		"no", "synpred31_s", "synpred76_s", "synpred89_s", "s", "synpred41_s", 
+		"f", "else_if_st", "synpred30_s", "function_def", "g", "synpred9_s"
 	};
 
 	public static final boolean[] decisionCanBacktrack = new boolean[] {
 		false, // invalid decision
 		false, false, true, false, false, false, false, false, false, false, false, 
-		    false, true, false, false, false, false, false, false, false, false, 
 		    false, false, true, false, false, false, false, false, false, false, 
-		    false, false, false, false
+		    true, false, false, true, false, false, false, false, false, false, 
+		    false, false, false, false, false, false
 	};
 
  
@@ -849,7 +850,7 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "for_st"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:1: for_st : FOR LOPEN ( ( assign_st )? SEMI ( condition )? SEMI ( assign_st )? ) LCLOSE BOPEN statements BCLOSE ;
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:1: for_st : FOR LOPEN ( ( init )? SEMI ( condition )? SEMI ( assign_st )? ) LCLOSE BOPEN statements BCLOSE ;
 	public final void for_st() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "for_st");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
@@ -857,21 +858,21 @@ public class sParser extends DebugParser {
 		dbg.location(33, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:8: ( FOR LOPEN ( ( assign_st )? SEMI ( condition )? SEMI ( assign_st )? ) LCLOSE BOPEN statements BCLOSE )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:8: ( FOR LOPEN ( ( init )? SEMI ( condition )? SEMI ( assign_st )? ) LCLOSE BOPEN statements BCLOSE )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:10: FOR LOPEN ( ( assign_st )? SEMI ( condition )? SEMI ( assign_st )? ) LCLOSE BOPEN statements BCLOSE
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:10: FOR LOPEN ( ( init )? SEMI ( condition )? SEMI ( assign_st )? ) LCLOSE BOPEN statements BCLOSE
 			{
 			dbg.location(33,10);
 			match(input,FOR,FOLLOW_FOR_in_for_st180); if (state.failed) return;dbg.location(33,14);
 			match(input,LOPEN,FOLLOW_LOPEN_in_for_st182); if (state.failed) return;dbg.location(33,19);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:19: ( ( assign_st )? SEMI ( condition )? SEMI ( assign_st )? )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:19: ( ( init )? SEMI ( condition )? SEMI ( assign_st )? )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:20: ( assign_st )? SEMI ( condition )? SEMI ( assign_st )?
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:20: ( init )? SEMI ( condition )? SEMI ( assign_st )?
 			{
 			dbg.location(33,20);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:20: ( assign_st )?
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:20: ( init )?
 			int alt6=2;
 			try { dbg.enterSubRule(6);
 			try { dbg.enterDecision(6, decisionCanBacktrack[6]);
@@ -886,11 +887,11 @@ public class sParser extends DebugParser {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:20: assign_st
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:20: init
 					{
 					dbg.location(33,20);
-					pushFollow(FOLLOW_assign_st_in_for_st184);
-					assign_st();
+					pushFollow(FOLLOW_init_in_for_st184);
+					init();
 					state._fsp--;
 					if (state.failed) return;
 					}
@@ -898,9 +899,9 @@ public class sParser extends DebugParser {
 
 			}
 			} finally {dbg.exitSubRule(6);}
-			dbg.location(33,31);
-			match(input,SEMI,FOLLOW_SEMI_in_for_st187); if (state.failed) return;dbg.location(33,36);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:36: ( condition )?
+			dbg.location(33,26);
+			match(input,SEMI,FOLLOW_SEMI_in_for_st187); if (state.failed) return;dbg.location(33,31);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:31: ( condition )?
 			int alt7=2;
 			try { dbg.enterSubRule(7);
 			try { dbg.enterDecision(7, decisionCanBacktrack[7]);
@@ -915,9 +916,9 @@ public class sParser extends DebugParser {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:36: condition
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:31: condition
 					{
-					dbg.location(33,36);
+					dbg.location(33,31);
 					pushFollow(FOLLOW_condition_in_for_st189);
 					condition();
 					state._fsp--;
@@ -927,9 +928,9 @@ public class sParser extends DebugParser {
 
 			}
 			} finally {dbg.exitSubRule(7);}
-			dbg.location(33,47);
-			match(input,SEMI,FOLLOW_SEMI_in_for_st192); if (state.failed) return;dbg.location(33,52);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:52: ( assign_st )?
+			dbg.location(33,42);
+			match(input,SEMI,FOLLOW_SEMI_in_for_st192); if (state.failed) return;dbg.location(33,47);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:47: ( assign_st )?
 			int alt8=2;
 			try { dbg.enterSubRule(8);
 			try { dbg.enterDecision(8, decisionCanBacktrack[8]);
@@ -944,9 +945,9 @@ public class sParser extends DebugParser {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:52: assign_st
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:33:47: assign_st
 					{
-					dbg.location(33,52);
+					dbg.location(33,47);
 					pushFollow(FOLLOW_assign_st_in_for_st194);
 					assign_st();
 					state._fsp--;
@@ -958,13 +959,13 @@ public class sParser extends DebugParser {
 			} finally {dbg.exitSubRule(8);}
 
 			}
-			dbg.location(33,63);
-			match(input,LCLOSE,FOLLOW_LCLOSE_in_for_st197); if (state.failed) return;dbg.location(33,70);
-			match(input,BOPEN,FOLLOW_BOPEN_in_for_st199); if (state.failed) return;dbg.location(33,76);
+			dbg.location(33,58);
+			match(input,LCLOSE,FOLLOW_LCLOSE_in_for_st197); if (state.failed) return;dbg.location(33,65);
+			match(input,BOPEN,FOLLOW_BOPEN_in_for_st199); if (state.failed) return;dbg.location(33,71);
 			pushFollow(FOLLOW_statements_in_for_st201);
 			statements();
 			state._fsp--;
-			if (state.failed) return;dbg.location(33,87);
+			if (state.failed) return;dbg.location(33,82);
 			match(input,BCLOSE,FOLLOW_BCLOSE_in_for_st203); if (state.failed) return;
 			}
 
@@ -990,34 +991,29 @@ public class sParser extends DebugParser {
 
 
 
-	// $ANTLR start "while_st"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:35:1: while_st : WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE ;
-	public final void while_st() throws RecognitionException {
-		try { dbg.enterRule(getGrammarFileName(), "while_st");
+	// $ANTLR start "init"
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:35:1: init : assign_st w ;
+	public final void init() throws RecognitionException {
+		try { dbg.enterRule(getGrammarFileName(), "init");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
 		dbg.location(35, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:35:9: ( WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:35:6: ( assign_st w )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:35:11: WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:35:9: assign_st w
 			{
-			dbg.location(35,11);
-			match(input,WHILE,FOLLOW_WHILE_in_while_st211); if (state.failed) return;dbg.location(35,17);
-			match(input,LOPEN,FOLLOW_LOPEN_in_while_st213); if (state.failed) return;dbg.location(35,23);
-			pushFollow(FOLLOW_condition_in_while_st215);
-			condition();
+			dbg.location(35,9);
+			pushFollow(FOLLOW_assign_st_in_init213);
+			assign_st();
 			state._fsp--;
-			if (state.failed) return;dbg.location(35,33);
-			match(input,LCLOSE,FOLLOW_LCLOSE_in_while_st217); if (state.failed) return;dbg.location(35,40);
-			match(input,BOPEN,FOLLOW_BOPEN_in_while_st219); if (state.failed) return;dbg.location(35,46);
-			pushFollow(FOLLOW_statements_in_while_st221);
-			statements();
+			if (state.failed) return;dbg.location(35,19);
+			pushFollow(FOLLOW_w_in_init215);
+			w();
 			state._fsp--;
-			if (state.failed) return;dbg.location(35,57);
-			match(input,BCLOSE,FOLLOW_BCLOSE_in_while_st223); if (state.failed) return;
+			if (state.failed) return;
 			}
 
 		}
@@ -1032,6 +1028,133 @@ public class sParser extends DebugParser {
 
 		}
 		finally {
+			dbg.exitRule(getGrammarFileName(), "init");
+			decRuleLevel();
+			if ( getRuleLevel()==0 ) {dbg.terminate();}
+		}
+
+	}
+	// $ANTLR end "init"
+
+
+
+	// $ANTLR start "w"
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:37:1: w : ( ',' assign_st )* ;
+	public final void w() throws RecognitionException {
+		try { dbg.enterRule(getGrammarFileName(), "w");
+		if ( getRuleLevel()==0 ) {dbg.commence();}
+		incRuleLevel();
+		dbg.location(37, 0);
+
+		try {
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:37:3: ( ( ',' assign_st )* )
+			dbg.enterAlt(1);
+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:37:5: ( ',' assign_st )*
+			{
+			dbg.location(37,5);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:37:5: ( ',' assign_st )*
+			try { dbg.enterSubRule(9);
+
+			loop9:
+			while (true) {
+				int alt9=2;
+				try { dbg.enterDecision(9, decisionCanBacktrack[9]);
+
+				int LA9_0 = input.LA(1);
+				if ( (LA9_0==57) ) {
+					alt9=1;
+				}
+
+				} finally {dbg.exitDecision(9);}
+
+				switch (alt9) {
+				case 1 :
+					dbg.enterAlt(1);
+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:37:6: ',' assign_st
+					{
+					dbg.location(37,6);
+					match(input,57,FOLLOW_57_in_w226); if (state.failed) return;dbg.location(37,9);
+					pushFollow(FOLLOW_assign_st_in_w227);
+					assign_st();
+					state._fsp--;
+					if (state.failed) return;
+					}
+					break;
+
+				default :
+					break loop9;
+				}
+			}
+			} finally {dbg.exitSubRule(9);}
+
+			}
+
+		}
+		catch (RecognitionException re) {
+			reportError(re);
+			recover(input,re);
+		}
+		finally {
+			// do for sure before leaving
+		}
+		dbg.location(38, 1);
+
+		}
+		finally {
+			dbg.exitRule(getGrammarFileName(), "w");
+			decRuleLevel();
+			if ( getRuleLevel()==0 ) {dbg.terminate();}
+		}
+
+	}
+	// $ANTLR end "w"
+
+
+
+	// $ANTLR start "while_st"
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:1: while_st : WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE ;
+	public final void while_st() throws RecognitionException {
+		try { dbg.enterRule(getGrammarFileName(), "while_st");
+		if ( getRuleLevel()==0 ) {dbg.commence();}
+		incRuleLevel();
+		dbg.location(39, 0);
+
+		try {
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:9: ( WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE )
+			dbg.enterAlt(1);
+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:39:11: WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE
+			{
+			dbg.location(39,11);
+			match(input,WHILE,FOLLOW_WHILE_in_while_st237); if (state.failed) return;dbg.location(39,17);
+			match(input,LOPEN,FOLLOW_LOPEN_in_while_st239); if (state.failed) return;dbg.location(39,23);
+			pushFollow(FOLLOW_condition_in_while_st241);
+			condition();
+			state._fsp--;
+			if (state.failed) return;dbg.location(39,33);
+			match(input,LCLOSE,FOLLOW_LCLOSE_in_while_st243); if (state.failed) return;dbg.location(39,40);
+			match(input,BOPEN,FOLLOW_BOPEN_in_while_st245); if (state.failed) return;dbg.location(39,46);
+			pushFollow(FOLLOW_statements_in_while_st247);
+			statements();
+			state._fsp--;
+			if (state.failed) return;dbg.location(39,57);
+			match(input,BCLOSE,FOLLOW_BCLOSE_in_while_st249); if (state.failed) return;
+			}
+
+		}
+		catch (RecognitionException re) {
+			reportError(re);
+			recover(input,re);
+		}
+		finally {
+			// do for sure before leaving
+		}
+		dbg.location(40, 1);
+
+		}
+		finally {
 			dbg.exitRule(getGrammarFileName(), "while_st");
 			decRuleLevel();
 			if ( getRuleLevel()==0 ) {dbg.terminate();}
@@ -1043,33 +1166,33 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "do_st"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:38:1: do_st : DO LOPEN condition LCLOSE BOPEN statements BCLOSE ;
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:42:1: do_st : DO LOPEN condition LCLOSE BOPEN statements BCLOSE ;
 	public final void do_st() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "do_st");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(38, 0);
+		dbg.location(42, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:38:7: ( DO LOPEN condition LCLOSE BOPEN statements BCLOSE )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:42:7: ( DO LOPEN condition LCLOSE BOPEN statements BCLOSE )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:38:9: DO LOPEN condition LCLOSE BOPEN statements BCLOSE
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:42:9: DO LOPEN condition LCLOSE BOPEN statements BCLOSE
 			{
-			dbg.location(38,9);
-			match(input,DO,FOLLOW_DO_in_do_st234); if (state.failed) return;dbg.location(38,12);
-			match(input,LOPEN,FOLLOW_LOPEN_in_do_st236); if (state.failed) return;dbg.location(38,18);
-			pushFollow(FOLLOW_condition_in_do_st238);
+			dbg.location(42,9);
+			match(input,DO,FOLLOW_DO_in_do_st260); if (state.failed) return;dbg.location(42,12);
+			match(input,LOPEN,FOLLOW_LOPEN_in_do_st262); if (state.failed) return;dbg.location(42,18);
+			pushFollow(FOLLOW_condition_in_do_st264);
 			condition();
 			state._fsp--;
-			if (state.failed) return;dbg.location(38,28);
-			match(input,LCLOSE,FOLLOW_LCLOSE_in_do_st240); if (state.failed) return;dbg.location(38,35);
-			match(input,BOPEN,FOLLOW_BOPEN_in_do_st242); if (state.failed) return;dbg.location(38,41);
-			pushFollow(FOLLOW_statements_in_do_st244);
+			if (state.failed) return;dbg.location(42,28);
+			match(input,LCLOSE,FOLLOW_LCLOSE_in_do_st266); if (state.failed) return;dbg.location(42,35);
+			match(input,BOPEN,FOLLOW_BOPEN_in_do_st268); if (state.failed) return;dbg.location(42,41);
+			pushFollow(FOLLOW_statements_in_do_st270);
 			statements();
 			state._fsp--;
-			if (state.failed) return;dbg.location(38,52);
-			match(input,BCLOSE,FOLLOW_BCLOSE_in_do_st246); if (state.failed) return;
+			if (state.failed) return;dbg.location(42,52);
+			match(input,BCLOSE,FOLLOW_BCLOSE_in_do_st272); if (state.failed) return;
 			}
 
 		}
@@ -1080,7 +1203,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(39, 1);
+		dbg.location(43, 1);
 
 		}
 		finally {
@@ -1095,95 +1218,95 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "function_def"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:40:1: function_def : FUNCTION type ID LOPEN def_params LCLOSE BOPEN block ( RETURN ( no | STRING | ID ) SEMI )? BCLOSE ;
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:44:1: function_def : FUNCTION type ID LOPEN def_params LCLOSE BOPEN block ( RETURN ( no | STRING | ID ) SEMI )? BCLOSE ;
 	public final void function_def() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "function_def");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(40, 0);
+		dbg.location(44, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:41:2: ( FUNCTION type ID LOPEN def_params LCLOSE BOPEN block ( RETURN ( no | STRING | ID ) SEMI )? BCLOSE )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:2: ( FUNCTION type ID LOPEN def_params LCLOSE BOPEN block ( RETURN ( no | STRING | ID ) SEMI )? BCLOSE )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:41:4: FUNCTION type ID LOPEN def_params LCLOSE BOPEN block ( RETURN ( no | STRING | ID ) SEMI )? BCLOSE
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:4: FUNCTION type ID LOPEN def_params LCLOSE BOPEN block ( RETURN ( no | STRING | ID ) SEMI )? BCLOSE
 			{
-			dbg.location(41,4);
-			match(input,FUNCTION,FOLLOW_FUNCTION_in_function_def256); if (state.failed) return;dbg.location(41,13);
-			pushFollow(FOLLOW_type_in_function_def258);
+			dbg.location(45,4);
+			match(input,FUNCTION,FOLLOW_FUNCTION_in_function_def282); if (state.failed) return;dbg.location(45,13);
+			pushFollow(FOLLOW_type_in_function_def284);
 			type();
 			state._fsp--;
-			if (state.failed) return;dbg.location(41,18);
-			match(input,ID,FOLLOW_ID_in_function_def260); if (state.failed) return;dbg.location(41,21);
-			match(input,LOPEN,FOLLOW_LOPEN_in_function_def262); if (state.failed) return;dbg.location(41,27);
-			pushFollow(FOLLOW_def_params_in_function_def264);
+			if (state.failed) return;dbg.location(45,18);
+			match(input,ID,FOLLOW_ID_in_function_def286); if (state.failed) return;dbg.location(45,21);
+			match(input,LOPEN,FOLLOW_LOPEN_in_function_def288); if (state.failed) return;dbg.location(45,27);
+			pushFollow(FOLLOW_def_params_in_function_def290);
 			def_params();
 			state._fsp--;
-			if (state.failed) return;dbg.location(41,38);
-			match(input,LCLOSE,FOLLOW_LCLOSE_in_function_def266); if (state.failed) return;dbg.location(41,45);
-			match(input,BOPEN,FOLLOW_BOPEN_in_function_def268); if (state.failed) return;dbg.location(41,51);
-			pushFollow(FOLLOW_block_in_function_def270);
+			if (state.failed) return;dbg.location(45,38);
+			match(input,LCLOSE,FOLLOW_LCLOSE_in_function_def292); if (state.failed) return;dbg.location(45,45);
+			match(input,BOPEN,FOLLOW_BOPEN_in_function_def294); if (state.failed) return;dbg.location(45,51);
+			pushFollow(FOLLOW_block_in_function_def296);
 			block();
 			state._fsp--;
-			if (state.failed) return;dbg.location(41,57);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:41:57: ( RETURN ( no | STRING | ID ) SEMI )?
-			int alt10=2;
-			try { dbg.enterSubRule(10);
-			try { dbg.enterDecision(10, decisionCanBacktrack[10]);
+			if (state.failed) return;dbg.location(45,57);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:57: ( RETURN ( no | STRING | ID ) SEMI )?
+			int alt11=2;
+			try { dbg.enterSubRule(11);
+			try { dbg.enterDecision(11, decisionCanBacktrack[11]);
 
-			int LA10_0 = input.LA(1);
-			if ( (LA10_0==RETURN) ) {
-				alt10=1;
+			int LA11_0 = input.LA(1);
+			if ( (LA11_0==RETURN) ) {
+				alt11=1;
 			}
-			} finally {dbg.exitDecision(10);}
+			} finally {dbg.exitDecision(11);}
 
-			switch (alt10) {
+			switch (alt11) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:41:58: RETURN ( no | STRING | ID ) SEMI
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:58: RETURN ( no | STRING | ID ) SEMI
 					{
-					dbg.location(41,58);
-					match(input,RETURN,FOLLOW_RETURN_in_function_def273); if (state.failed) return;dbg.location(41,64);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:41:64: ( no | STRING | ID )
-					int alt9=3;
-					try { dbg.enterSubRule(9);
-					try { dbg.enterDecision(9, decisionCanBacktrack[9]);
+					dbg.location(45,58);
+					match(input,RETURN,FOLLOW_RETURN_in_function_def299); if (state.failed) return;dbg.location(45,64);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:64: ( no | STRING | ID )
+					int alt10=3;
+					try { dbg.enterSubRule(10);
+					try { dbg.enterDecision(10, decisionCanBacktrack[10]);
 
 					switch ( input.LA(1) ) {
 					case FLOAT:
 					case INT:
 						{
-						alt9=1;
+						alt10=1;
 						}
 						break;
 					case STRING:
 						{
-						alt9=2;
+						alt10=2;
 						}
 						break;
 					case ID:
 						{
-						alt9=3;
+						alt10=3;
 						}
 						break;
 					default:
 						if (state.backtracking>0) {state.failed=true; return;}
 						NoViableAltException nvae =
-							new NoViableAltException("", 9, 0, input);
+							new NoViableAltException("", 10, 0, input);
 						dbg.recognitionException(nvae);
 						throw nvae;
 					}
-					} finally {dbg.exitDecision(9);}
+					} finally {dbg.exitDecision(10);}
 
-					switch (alt9) {
+					switch (alt10) {
 						case 1 :
 							dbg.enterAlt(1);
 
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:41:65: no
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:65: no
 							{
-							dbg.location(41,65);
-							pushFollow(FOLLOW_no_in_function_def275);
+							dbg.location(45,65);
+							pushFollow(FOLLOW_no_in_function_def301);
 							no();
 							state._fsp--;
 							if (state.failed) return;
@@ -1192,33 +1315,33 @@ public class sParser extends DebugParser {
 						case 2 :
 							dbg.enterAlt(2);
 
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:41:68: STRING
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:68: STRING
 							{
-							dbg.location(41,68);
-							match(input,STRING,FOLLOW_STRING_in_function_def277); if (state.failed) return;
+							dbg.location(45,68);
+							match(input,STRING,FOLLOW_STRING_in_function_def303); if (state.failed) return;
 							}
 							break;
 						case 3 :
 							dbg.enterAlt(3);
 
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:41:75: ID
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:75: ID
 							{
-							dbg.location(41,75);
-							match(input,ID,FOLLOW_ID_in_function_def279); if (state.failed) return;
+							dbg.location(45,75);
+							match(input,ID,FOLLOW_ID_in_function_def305); if (state.failed) return;
 							}
 							break;
 
 					}
-					} finally {dbg.exitSubRule(9);}
-					dbg.location(41,79);
-					match(input,SEMI,FOLLOW_SEMI_in_function_def282); if (state.failed) return;
+					} finally {dbg.exitSubRule(10);}
+					dbg.location(45,79);
+					match(input,SEMI,FOLLOW_SEMI_in_function_def308); if (state.failed) return;
 					}
 					break;
 
 			}
-			} finally {dbg.exitSubRule(10);}
-			dbg.location(41,87);
-			match(input,BCLOSE,FOLLOW_BCLOSE_in_function_def287); if (state.failed) return;
+			} finally {dbg.exitSubRule(11);}
+			dbg.location(45,87);
+			match(input,BCLOSE,FOLLOW_BCLOSE_in_function_def313); if (state.failed) return;
 			}
 
 		}
@@ -1229,7 +1352,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(42, 1);
+		dbg.location(46, 1);
 
 		}
 		finally {
@@ -1244,57 +1367,57 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "def_params"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:43:1: def_params : ( ( type ID ) m |);
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:47:1: def_params : ( ( type ID ) m |);
 	public final void def_params() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "def_params");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(43, 0);
+		dbg.location(47, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:44:2: ( ( type ID ) m |)
-			int alt11=2;
-			try { dbg.enterDecision(11, decisionCanBacktrack[11]);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:48:2: ( ( type ID ) m |)
+			int alt12=2;
+			try { dbg.enterDecision(12, decisionCanBacktrack[12]);
 
-			int LA11_0 = input.LA(1);
-			if ( ((LA11_0 >= T_CHAR && LA11_0 <= T_STRING)) ) {
-				alt11=1;
+			int LA12_0 = input.LA(1);
+			if ( ((LA12_0 >= T_CHAR && LA12_0 <= T_STRING)) ) {
+				alt12=1;
 			}
-			else if ( (LA11_0==LCLOSE) ) {
-				alt11=2;
+			else if ( (LA12_0==LCLOSE) ) {
+				alt12=2;
 			}
 
 			else {
 				if (state.backtracking>0) {state.failed=true; return;}
 				NoViableAltException nvae =
-					new NoViableAltException("", 11, 0, input);
+					new NoViableAltException("", 12, 0, input);
 				dbg.recognitionException(nvae);
 				throw nvae;
 			}
 
-			} finally {dbg.exitDecision(11);}
+			} finally {dbg.exitDecision(12);}
 
-			switch (alt11) {
+			switch (alt12) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:44:4: ( type ID ) m
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:48:4: ( type ID ) m
 					{
-					dbg.location(44,4);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:44:4: ( type ID )
+					dbg.location(48,4);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:48:4: ( type ID )
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:44:5: type ID
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:48:5: type ID
 					{
-					dbg.location(44,5);
-					pushFollow(FOLLOW_type_in_def_params298);
+					dbg.location(48,5);
+					pushFollow(FOLLOW_type_in_def_params324);
 					type();
 					state._fsp--;
-					if (state.failed) return;dbg.location(44,10);
-					match(input,ID,FOLLOW_ID_in_def_params300); if (state.failed) return;
+					if (state.failed) return;dbg.location(48,10);
+					match(input,ID,FOLLOW_ID_in_def_params326); if (state.failed) return;
 					}
-					dbg.location(44,14);
-					pushFollow(FOLLOW_m_in_def_params303);
+					dbg.location(48,14);
+					pushFollow(FOLLOW_m_in_def_params329);
 					m();
 					state._fsp--;
 					if (state.failed) return;
@@ -1303,7 +1426,7 @@ public class sParser extends DebugParser {
 				case 2 :
 					dbg.enterAlt(2);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:45:2: 
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:49:2: 
 					{
 					}
 					break;
@@ -1317,7 +1440,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(45, 1);
+		dbg.location(49, 1);
 
 		}
 		finally {
@@ -1332,44 +1455,44 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "m"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:1: m : ( ( ',' ( type ID ) )* |);
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:1: m : ( ( ',' ( type ID ) )* |);
 	public final void m() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "m");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(46, 0);
+		dbg.location(50, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:3: ( ( ',' ( type ID ) )* |)
-			int alt13=2;
-			try { dbg.enterDecision(13, decisionCanBacktrack[13]);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:3: ( ( ',' ( type ID ) )* |)
+			int alt14=2;
+			try { dbg.enterDecision(14, decisionCanBacktrack[14]);
 
 			switch ( input.LA(1) ) {
 			case 57:
 				{
-				alt13=1;
+				alt14=1;
 				}
 				break;
 			case LCLOSE:
 				{
-				int LA13_2 = input.LA(2);
-				if ( (synpred20_s()) ) {
-					alt13=1;
+				int LA14_2 = input.LA(2);
+				if ( (synpred21_s()) ) {
+					alt14=1;
 				}
 				else if ( (true) ) {
-					alt13=2;
+					alt14=2;
 				}
 
 				}
 				break;
 			case EOF:
 				{
-				int LA13_3 = input.LA(2);
-				if ( (synpred20_s()) ) {
-					alt13=1;
+				int LA14_3 = input.LA(2);
+				if ( (synpred21_s()) ) {
+					alt14=1;
 				}
 				else if ( (true) ) {
-					alt13=2;
+					alt14=2;
 				}
 
 				}
@@ -1377,70 +1500,70 @@ public class sParser extends DebugParser {
 			default:
 				if (state.backtracking>0) {state.failed=true; return;}
 				NoViableAltException nvae =
-					new NoViableAltException("", 13, 0, input);
+					new NoViableAltException("", 14, 0, input);
 				dbg.recognitionException(nvae);
 				throw nvae;
 			}
-			} finally {dbg.exitDecision(13);}
+			} finally {dbg.exitDecision(14);}
 
-			switch (alt13) {
+			switch (alt14) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:5: ( ',' ( type ID ) )*
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:5: ( ',' ( type ID ) )*
 					{
-					dbg.location(46,5);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:5: ( ',' ( type ID ) )*
-					try { dbg.enterSubRule(12);
+					dbg.location(50,5);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:5: ( ',' ( type ID ) )*
+					try { dbg.enterSubRule(13);
 
-					loop12:
+					loop13:
 					while (true) {
-						int alt12=2;
-						try { dbg.enterDecision(12, decisionCanBacktrack[12]);
+						int alt13=2;
+						try { dbg.enterDecision(13, decisionCanBacktrack[13]);
 
-						int LA12_0 = input.LA(1);
-						if ( (LA12_0==57) ) {
-							alt12=1;
+						int LA13_0 = input.LA(1);
+						if ( (LA13_0==57) ) {
+							alt13=1;
 						}
 
-						} finally {dbg.exitDecision(12);}
+						} finally {dbg.exitDecision(13);}
 
-						switch (alt12) {
+						switch (alt13) {
 						case 1 :
 							dbg.enterAlt(1);
 
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:6: ',' ( type ID )
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:6: ',' ( type ID )
 							{
-							dbg.location(46,6);
-							match(input,57,FOLLOW_57_in_m314); if (state.failed) return;dbg.location(46,9);
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:9: ( type ID )
+							dbg.location(50,6);
+							match(input,57,FOLLOW_57_in_m340); if (state.failed) return;dbg.location(50,9);
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:9: ( type ID )
 							dbg.enterAlt(1);
 
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:10: type ID
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:10: type ID
 							{
-							dbg.location(46,10);
-							pushFollow(FOLLOW_type_in_m316);
+							dbg.location(50,10);
+							pushFollow(FOLLOW_type_in_m342);
 							type();
 							state._fsp--;
-							if (state.failed) return;dbg.location(46,15);
-							match(input,ID,FOLLOW_ID_in_m318); if (state.failed) return;
+							if (state.failed) return;dbg.location(50,15);
+							match(input,ID,FOLLOW_ID_in_m344); if (state.failed) return;
 							}
 
 							}
 							break;
 
 						default :
-							break loop12;
+							break loop13;
 						}
 					}
-					} finally {dbg.exitSubRule(12);}
+					} finally {dbg.exitSubRule(13);}
 
 					}
 					break;
 				case 2 :
 					dbg.enterAlt(2);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:47:2: 
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:51:2: 
 					{
 					}
 					break;
@@ -1454,7 +1577,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(47, 1);
+		dbg.location(51, 1);
 
 		}
 		finally {
@@ -1469,295 +1592,51 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "function_st"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:49:1: function_st : ID LOPEN params LCLOSE ( SEMI )? ;
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:53:1: function_st : ID LOPEN params LCLOSE ( SEMI )? ;
 	public final void function_st() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "function_st");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(49, 0);
+		dbg.location(53, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:2: ( ID LOPEN params LCLOSE ( SEMI )? )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:2: ( ID LOPEN params LCLOSE ( SEMI )? )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:4: ID LOPEN params LCLOSE ( SEMI )?
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:4: ID LOPEN params LCLOSE ( SEMI )?
 			{
-			dbg.location(50,4);
-			match(input,ID,FOLLOW_ID_in_function_st335); if (state.failed) return;dbg.location(50,7);
-			match(input,LOPEN,FOLLOW_LOPEN_in_function_st337); if (state.failed) return;dbg.location(50,13);
-			pushFollow(FOLLOW_params_in_function_st339);
+			dbg.location(54,4);
+			match(input,ID,FOLLOW_ID_in_function_st361); if (state.failed) return;dbg.location(54,7);
+			match(input,LOPEN,FOLLOW_LOPEN_in_function_st363); if (state.failed) return;dbg.location(54,13);
+			pushFollow(FOLLOW_params_in_function_st365);
 			params();
 			state._fsp--;
-			if (state.failed) return;dbg.location(50,20);
-			match(input,LCLOSE,FOLLOW_LCLOSE_in_function_st341); if (state.failed) return;dbg.location(50,27);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:27: ( SEMI )?
-			int alt14=2;
-			try { dbg.enterSubRule(14);
-			try { dbg.enterDecision(14, decisionCanBacktrack[14]);
+			if (state.failed) return;dbg.location(54,20);
+			match(input,LCLOSE,FOLLOW_LCLOSE_in_function_st367); if (state.failed) return;dbg.location(54,27);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:27: ( SEMI )?
+			int alt15=2;
+			try { dbg.enterSubRule(15);
+			try { dbg.enterDecision(15, decisionCanBacktrack[15]);
 
-			int LA14_0 = input.LA(1);
-			if ( (LA14_0==SEMI) ) {
-				alt14=1;
+			int LA15_0 = input.LA(1);
+			if ( (LA15_0==SEMI) ) {
+				alt15=1;
 			}
-			} finally {dbg.exitDecision(14);}
+			} finally {dbg.exitDecision(15);}
 
-			switch (alt14) {
+			switch (alt15) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:27: SEMI
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:27: SEMI
 					{
-					dbg.location(50,27);
-					match(input,SEMI,FOLLOW_SEMI_in_function_st343); if (state.failed) return;
+					dbg.location(54,27);
+					match(input,SEMI,FOLLOW_SEMI_in_function_st369); if (state.failed) return;
 					}
 					break;
 
 			}
-			} finally {dbg.exitSubRule(14);}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-		}
-		dbg.location(51, 1);
-
-		}
-		finally {
-			dbg.exitRule(getGrammarFileName(), "function_st");
-			decRuleLevel();
-			if ( getRuleLevel()==0 ) {dbg.terminate();}
-		}
-
-	}
-	// $ANTLR end "function_st"
-
-
-
-	// $ANTLR start "params"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:52:1: params : ( ( e | STRING ) f |);
-	public final void params() throws RecognitionException {
-		try { dbg.enterRule(getGrammarFileName(), "params");
-		if ( getRuleLevel()==0 ) {dbg.commence();}
-		incRuleLevel();
-		dbg.location(52, 0);
-
-		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:52:8: ( ( e | STRING ) f |)
-			int alt16=2;
-			try { dbg.enterDecision(16, decisionCanBacktrack[16]);
-
-			int LA16_0 = input.LA(1);
-			if ( (LA16_0==FLOAT||LA16_0==ID||LA16_0==INT||LA16_0==STRING) ) {
-				alt16=1;
-			}
-			else if ( (LA16_0==LCLOSE) ) {
-				alt16=2;
-			}
-
-			else {
-				if (state.backtracking>0) {state.failed=true; return;}
-				NoViableAltException nvae =
-					new NoViableAltException("", 16, 0, input);
-				dbg.recognitionException(nvae);
-				throw nvae;
-			}
-
-			} finally {dbg.exitDecision(16);}
-
-			switch (alt16) {
-				case 1 :
-					dbg.enterAlt(1);
-
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:52:10: ( e | STRING ) f
-					{
-					dbg.location(52,10);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:52:10: ( e | STRING )
-					int alt15=2;
-					try { dbg.enterSubRule(15);
-					try { dbg.enterDecision(15, decisionCanBacktrack[15]);
-
-					int LA15_0 = input.LA(1);
-					if ( (LA15_0==FLOAT||LA15_0==ID||LA15_0==INT) ) {
-						alt15=1;
-					}
-					else if ( (LA15_0==STRING) ) {
-						alt15=2;
-					}
-
-					else {
-						if (state.backtracking>0) {state.failed=true; return;}
-						NoViableAltException nvae =
-							new NoViableAltException("", 15, 0, input);
-						dbg.recognitionException(nvae);
-						throw nvae;
-					}
-
-					} finally {dbg.exitDecision(15);}
-
-					switch (alt15) {
-						case 1 :
-							dbg.enterAlt(1);
-
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:52:11: e
-							{
-							dbg.location(52,11);
-							pushFollow(FOLLOW_e_in_params354);
-							e();
-							state._fsp--;
-							if (state.failed) return;
-							}
-							break;
-						case 2 :
-							dbg.enterAlt(2);
-
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:52:13: STRING
-							{
-							dbg.location(52,13);
-							match(input,STRING,FOLLOW_STRING_in_params356); if (state.failed) return;
-							}
-							break;
-
-					}
-					} finally {dbg.exitSubRule(15);}
-					dbg.location(52,21);
-					pushFollow(FOLLOW_f_in_params359);
-					f();
-					state._fsp--;
-					if (state.failed) return;
-					}
-					break;
-				case 2 :
-					dbg.enterAlt(2);
-
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:53:2: 
-					{
-					}
-					break;
-
-			}
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-		}
-		dbg.location(53, 1);
-
-		}
-		finally {
-			dbg.exitRule(getGrammarFileName(), "params");
-			decRuleLevel();
-			if ( getRuleLevel()==0 ) {dbg.terminate();}
-		}
-
-	}
-	// $ANTLR end "params"
-
-
-
-	// $ANTLR start "f"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:1: f : ( ',' ( e | STRING ) )* ;
-	public final void f() throws RecognitionException {
-		try { dbg.enterRule(getGrammarFileName(), "f");
-		if ( getRuleLevel()==0 ) {dbg.commence();}
-		incRuleLevel();
-		dbg.location(54, 0);
-
-		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:3: ( ( ',' ( e | STRING ) )* )
-			dbg.enterAlt(1);
-
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:5: ( ',' ( e | STRING ) )*
-			{
-			dbg.location(54,5);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:5: ( ',' ( e | STRING ) )*
-			try { dbg.enterSubRule(18);
-
-			loop18:
-			while (true) {
-				int alt18=2;
-				try { dbg.enterDecision(18, decisionCanBacktrack[18]);
-
-				int LA18_0 = input.LA(1);
-				if ( (LA18_0==57) ) {
-					alt18=1;
-				}
-
-				} finally {dbg.exitDecision(18);}
-
-				switch (alt18) {
-				case 1 :
-					dbg.enterAlt(1);
-
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:6: ',' ( e | STRING )
-					{
-					dbg.location(54,6);
-					match(input,57,FOLLOW_57_in_f370); if (state.failed) return;dbg.location(54,9);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:9: ( e | STRING )
-					int alt17=2;
-					try { dbg.enterSubRule(17);
-					try { dbg.enterDecision(17, decisionCanBacktrack[17]);
-
-					int LA17_0 = input.LA(1);
-					if ( (LA17_0==FLOAT||LA17_0==ID||LA17_0==INT) ) {
-						alt17=1;
-					}
-					else if ( (LA17_0==STRING) ) {
-						alt17=2;
-					}
-
-					else {
-						if (state.backtracking>0) {state.failed=true; return;}
-						NoViableAltException nvae =
-							new NoViableAltException("", 17, 0, input);
-						dbg.recognitionException(nvae);
-						throw nvae;
-					}
-
-					} finally {dbg.exitDecision(17);}
-
-					switch (alt17) {
-						case 1 :
-							dbg.enterAlt(1);
-
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:10: e
-							{
-							dbg.location(54,10);
-							pushFollow(FOLLOW_e_in_f372);
-							e();
-							state._fsp--;
-							if (state.failed) return;
-							}
-							break;
-						case 2 :
-							dbg.enterAlt(2);
-
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:54:12: STRING
-							{
-							dbg.location(54,12);
-							match(input,STRING,FOLLOW_STRING_in_f374); if (state.failed) return;
-							}
-							break;
-
-					}
-					} finally {dbg.exitSubRule(17);}
-
-					}
-					break;
-
-				default :
-					break loop18;
-				}
-			}
-			} finally {dbg.exitSubRule(18);}
+			} finally {dbg.exitSubRule(15);}
 
 			}
 
@@ -1773,45 +1652,156 @@ public class sParser extends DebugParser {
 
 		}
 		finally {
-			dbg.exitRule(getGrammarFileName(), "f");
+			dbg.exitRule(getGrammarFileName(), "function_st");
 			decRuleLevel();
 			if ( getRuleLevel()==0 ) {dbg.terminate();}
 		}
 
 	}
-	// $ANTLR end "f"
+	// $ANTLR end "function_st"
 
 
 
-	// $ANTLR start "if_st"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:57:1: if_st : IF LOPEN condition LCLOSE BOPEN statements BCLOSE ( else_if_st )* ( else_st )? ;
-	public final void if_st() throws RecognitionException {
-		try { dbg.enterRule(getGrammarFileName(), "if_st");
+	// $ANTLR start "params"
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:56:1: params : ( ( e | STRING ) f |);
+	public final void params() throws RecognitionException {
+		try { dbg.enterRule(getGrammarFileName(), "params");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(57, 0);
+		dbg.location(56, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:57:6: ( IF LOPEN condition LCLOSE BOPEN statements BCLOSE ( else_if_st )* ( else_st )? )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:56:8: ( ( e | STRING ) f |)
+			int alt17=2;
+			try { dbg.enterDecision(17, decisionCanBacktrack[17]);
+
+			int LA17_0 = input.LA(1);
+			if ( (LA17_0==FLOAT||LA17_0==ID||LA17_0==INT||LA17_0==LOPEN||LA17_0==STRING) ) {
+				alt17=1;
+			}
+			else if ( (LA17_0==LCLOSE) ) {
+				alt17=2;
+			}
+
+			else {
+				if (state.backtracking>0) {state.failed=true; return;}
+				NoViableAltException nvae =
+					new NoViableAltException("", 17, 0, input);
+				dbg.recognitionException(nvae);
+				throw nvae;
+			}
+
+			} finally {dbg.exitDecision(17);}
+
+			switch (alt17) {
+				case 1 :
+					dbg.enterAlt(1);
+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:56:10: ( e | STRING ) f
+					{
+					dbg.location(56,10);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:56:10: ( e | STRING )
+					int alt16=2;
+					try { dbg.enterSubRule(16);
+					try { dbg.enterDecision(16, decisionCanBacktrack[16]);
+
+					int LA16_0 = input.LA(1);
+					if ( (LA16_0==FLOAT||LA16_0==ID||LA16_0==INT||LA16_0==LOPEN) ) {
+						alt16=1;
+					}
+					else if ( (LA16_0==STRING) ) {
+						alt16=2;
+					}
+
+					else {
+						if (state.backtracking>0) {state.failed=true; return;}
+						NoViableAltException nvae =
+							new NoViableAltException("", 16, 0, input);
+						dbg.recognitionException(nvae);
+						throw nvae;
+					}
+
+					} finally {dbg.exitDecision(16);}
+
+					switch (alt16) {
+						case 1 :
+							dbg.enterAlt(1);
+
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:56:11: e
+							{
+							dbg.location(56,11);
+							pushFollow(FOLLOW_e_in_params380);
+							e();
+							state._fsp--;
+							if (state.failed) return;
+							}
+							break;
+						case 2 :
+							dbg.enterAlt(2);
+
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:56:13: STRING
+							{
+							dbg.location(56,13);
+							match(input,STRING,FOLLOW_STRING_in_params382); if (state.failed) return;
+							}
+							break;
+
+					}
+					} finally {dbg.exitSubRule(16);}
+					dbg.location(56,21);
+					pushFollow(FOLLOW_f_in_params385);
+					f();
+					state._fsp--;
+					if (state.failed) return;
+					}
+					break;
+				case 2 :
+					dbg.enterAlt(2);
+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:57:2: 
+					{
+					}
+					break;
+
+			}
+		}
+		catch (RecognitionException re) {
+			reportError(re);
+			recover(input,re);
+		}
+		finally {
+			// do for sure before leaving
+		}
+		dbg.location(57, 1);
+
+		}
+		finally {
+			dbg.exitRule(getGrammarFileName(), "params");
+			decRuleLevel();
+			if ( getRuleLevel()==0 ) {dbg.terminate();}
+		}
+
+	}
+	// $ANTLR end "params"
+
+
+
+	// $ANTLR start "f"
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:58:1: f : ( ',' ( e | STRING ) )* ;
+	public final void f() throws RecognitionException {
+		try { dbg.enterRule(getGrammarFileName(), "f");
+		if ( getRuleLevel()==0 ) {dbg.commence();}
+		incRuleLevel();
+		dbg.location(58, 0);
+
+		try {
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:58:3: ( ( ',' ( e | STRING ) )* )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:57:9: IF LOPEN condition LCLOSE BOPEN statements BCLOSE ( else_if_st )* ( else_st )?
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:58:5: ( ',' ( e | STRING ) )*
 			{
-			dbg.location(57,9);
-			match(input,IF,FOLLOW_IF_in_if_st389); if (state.failed) return;dbg.location(57,12);
-			match(input,LOPEN,FOLLOW_LOPEN_in_if_st391); if (state.failed) return;dbg.location(57,18);
-			pushFollow(FOLLOW_condition_in_if_st393);
-			condition();
-			state._fsp--;
-			if (state.failed) return;dbg.location(57,28);
-			match(input,LCLOSE,FOLLOW_LCLOSE_in_if_st395); if (state.failed) return;dbg.location(57,35);
-			match(input,BOPEN,FOLLOW_BOPEN_in_if_st397); if (state.failed) return;dbg.location(57,41);
-			pushFollow(FOLLOW_statements_in_if_st399);
-			statements();
-			state._fsp--;
-			if (state.failed) return;dbg.location(57,52);
-			match(input,BCLOSE,FOLLOW_BCLOSE_in_if_st401); if (state.failed) return;dbg.location(57,59);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:57:59: ( else_if_st )*
+			dbg.location(58,5);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:58:5: ( ',' ( e | STRING ) )*
 			try { dbg.enterSubRule(19);
 
 			loop19:
@@ -1820,7 +1810,7 @@ public class sParser extends DebugParser {
 				try { dbg.enterDecision(19, decisionCanBacktrack[19]);
 
 				int LA19_0 = input.LA(1);
-				if ( (LA19_0==ELIF) ) {
+				if ( (LA19_0==57) ) {
 					alt19=1;
 				}
 
@@ -1830,13 +1820,59 @@ public class sParser extends DebugParser {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:57:60: else_if_st
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:58:6: ',' ( e | STRING )
 					{
-					dbg.location(57,60);
-					pushFollow(FOLLOW_else_if_st_in_if_st404);
-					else_if_st();
-					state._fsp--;
-					if (state.failed) return;
+					dbg.location(58,6);
+					match(input,57,FOLLOW_57_in_f396); if (state.failed) return;dbg.location(58,9);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:58:9: ( e | STRING )
+					int alt18=2;
+					try { dbg.enterSubRule(18);
+					try { dbg.enterDecision(18, decisionCanBacktrack[18]);
+
+					int LA18_0 = input.LA(1);
+					if ( (LA18_0==FLOAT||LA18_0==ID||LA18_0==INT||LA18_0==LOPEN) ) {
+						alt18=1;
+					}
+					else if ( (LA18_0==STRING) ) {
+						alt18=2;
+					}
+
+					else {
+						if (state.backtracking>0) {state.failed=true; return;}
+						NoViableAltException nvae =
+							new NoViableAltException("", 18, 0, input);
+						dbg.recognitionException(nvae);
+						throw nvae;
+					}
+
+					} finally {dbg.exitDecision(18);}
+
+					switch (alt18) {
+						case 1 :
+							dbg.enterAlt(1);
+
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:58:10: e
+							{
+							dbg.location(58,10);
+							pushFollow(FOLLOW_e_in_f398);
+							e();
+							state._fsp--;
+							if (state.failed) return;
+							}
+							break;
+						case 2 :
+							dbg.enterAlt(2);
+
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:58:12: STRING
+							{
+							dbg.location(58,12);
+							match(input,STRING,FOLLOW_STRING_in_f400); if (state.failed) return;
+							}
+							break;
+
+					}
+					} finally {dbg.exitSubRule(18);}
+
 					}
 					break;
 
@@ -1845,34 +1881,6 @@ public class sParser extends DebugParser {
 				}
 			}
 			} finally {dbg.exitSubRule(19);}
-			dbg.location(57,73);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:57:73: ( else_st )?
-			int alt20=2;
-			try { dbg.enterSubRule(20);
-			try { dbg.enterDecision(20, decisionCanBacktrack[20]);
-
-			int LA20_0 = input.LA(1);
-			if ( (LA20_0==ELSE) ) {
-				alt20=1;
-			}
-			} finally {dbg.exitDecision(20);}
-
-			switch (alt20) {
-				case 1 :
-					dbg.enterAlt(1);
-
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:57:74: else_st
-					{
-					dbg.location(57,74);
-					pushFollow(FOLLOW_else_st_in_if_st409);
-					else_st();
-					state._fsp--;
-					if (state.failed) return;
-					}
-					break;
-
-			}
-			} finally {dbg.exitSubRule(20);}
 
 			}
 
@@ -1884,48 +1892,111 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(58, 1);
+		dbg.location(59, 1);
 
 		}
 		finally {
-			dbg.exitRule(getGrammarFileName(), "if_st");
+			dbg.exitRule(getGrammarFileName(), "f");
 			decRuleLevel();
 			if ( getRuleLevel()==0 ) {dbg.terminate();}
 		}
 
 	}
-	// $ANTLR end "if_st"
+	// $ANTLR end "f"
 
 
 
-	// $ANTLR start "else_if_st"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:60:1: else_if_st : ELIF LOPEN condition LCLOSE BOPEN statements BCLOSE ;
-	public final void else_if_st() throws RecognitionException {
-		try { dbg.enterRule(getGrammarFileName(), "else_if_st");
+	// $ANTLR start "if_st"
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:1: if_st : IF LOPEN condition LCLOSE BOPEN statements BCLOSE ( else_if_st )* ( else_st )? ;
+	public final void if_st() throws RecognitionException {
+		try { dbg.enterRule(getGrammarFileName(), "if_st");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(60, 0);
+		dbg.location(61, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:2: ( ELIF LOPEN condition LCLOSE BOPEN statements BCLOSE )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:6: ( IF LOPEN condition LCLOSE BOPEN statements BCLOSE ( else_if_st )* ( else_st )? )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:4: ELIF LOPEN condition LCLOSE BOPEN statements BCLOSE
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:9: IF LOPEN condition LCLOSE BOPEN statements BCLOSE ( else_if_st )* ( else_st )?
 			{
-			dbg.location(61,4);
-			match(input,ELIF,FOLLOW_ELIF_in_else_if_st422); if (state.failed) return;dbg.location(61,9);
-			match(input,LOPEN,FOLLOW_LOPEN_in_else_if_st424); if (state.failed) return;dbg.location(61,15);
-			pushFollow(FOLLOW_condition_in_else_if_st426);
+			dbg.location(61,9);
+			match(input,IF,FOLLOW_IF_in_if_st415); if (state.failed) return;dbg.location(61,12);
+			match(input,LOPEN,FOLLOW_LOPEN_in_if_st417); if (state.failed) return;dbg.location(61,18);
+			pushFollow(FOLLOW_condition_in_if_st419);
 			condition();
 			state._fsp--;
-			if (state.failed) return;dbg.location(61,25);
-			match(input,LCLOSE,FOLLOW_LCLOSE_in_else_if_st428); if (state.failed) return;dbg.location(61,32);
-			match(input,BOPEN,FOLLOW_BOPEN_in_else_if_st430); if (state.failed) return;dbg.location(61,38);
-			pushFollow(FOLLOW_statements_in_else_if_st432);
+			if (state.failed) return;dbg.location(61,28);
+			match(input,LCLOSE,FOLLOW_LCLOSE_in_if_st421); if (state.failed) return;dbg.location(61,35);
+			match(input,BOPEN,FOLLOW_BOPEN_in_if_st423); if (state.failed) return;dbg.location(61,41);
+			pushFollow(FOLLOW_statements_in_if_st425);
 			statements();
 			state._fsp--;
-			if (state.failed) return;dbg.location(61,49);
-			match(input,BCLOSE,FOLLOW_BCLOSE_in_else_if_st434); if (state.failed) return;
+			if (state.failed) return;dbg.location(61,52);
+			match(input,BCLOSE,FOLLOW_BCLOSE_in_if_st427); if (state.failed) return;dbg.location(61,59);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:59: ( else_if_st )*
+			try { dbg.enterSubRule(20);
+
+			loop20:
+			while (true) {
+				int alt20=2;
+				try { dbg.enterDecision(20, decisionCanBacktrack[20]);
+
+				int LA20_0 = input.LA(1);
+				if ( (LA20_0==ELIF) ) {
+					alt20=1;
+				}
+
+				} finally {dbg.exitDecision(20);}
+
+				switch (alt20) {
+				case 1 :
+					dbg.enterAlt(1);
+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:60: else_if_st
+					{
+					dbg.location(61,60);
+					pushFollow(FOLLOW_else_if_st_in_if_st430);
+					else_if_st();
+					state._fsp--;
+					if (state.failed) return;
+					}
+					break;
+
+				default :
+					break loop20;
+				}
+			}
+			} finally {dbg.exitSubRule(20);}
+			dbg.location(61,73);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:73: ( else_st )?
+			int alt21=2;
+			try { dbg.enterSubRule(21);
+			try { dbg.enterDecision(21, decisionCanBacktrack[21]);
+
+			int LA21_0 = input.LA(1);
+			if ( (LA21_0==ELSE) ) {
+				alt21=1;
+			}
+			} finally {dbg.exitDecision(21);}
+
+			switch (alt21) {
+				case 1 :
+					dbg.enterAlt(1);
+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:61:74: else_st
+					{
+					dbg.location(61,74);
+					pushFollow(FOLLOW_else_st_in_if_st435);
+					else_st();
+					state._fsp--;
+					if (state.failed) return;
+					}
+					break;
+
+			}
+			} finally {dbg.exitSubRule(21);}
+
 			}
 
 		}
@@ -1940,6 +2011,58 @@ public class sParser extends DebugParser {
 
 		}
 		finally {
+			dbg.exitRule(getGrammarFileName(), "if_st");
+			decRuleLevel();
+			if ( getRuleLevel()==0 ) {dbg.terminate();}
+		}
+
+	}
+	// $ANTLR end "if_st"
+
+
+
+	// $ANTLR start "else_if_st"
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:64:1: else_if_st : ELIF LOPEN condition LCLOSE BOPEN statements BCLOSE ;
+	public final void else_if_st() throws RecognitionException {
+		try { dbg.enterRule(getGrammarFileName(), "else_if_st");
+		if ( getRuleLevel()==0 ) {dbg.commence();}
+		incRuleLevel();
+		dbg.location(64, 0);
+
+		try {
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:65:2: ( ELIF LOPEN condition LCLOSE BOPEN statements BCLOSE )
+			dbg.enterAlt(1);
+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:65:4: ELIF LOPEN condition LCLOSE BOPEN statements BCLOSE
+			{
+			dbg.location(65,4);
+			match(input,ELIF,FOLLOW_ELIF_in_else_if_st448); if (state.failed) return;dbg.location(65,9);
+			match(input,LOPEN,FOLLOW_LOPEN_in_else_if_st450); if (state.failed) return;dbg.location(65,15);
+			pushFollow(FOLLOW_condition_in_else_if_st452);
+			condition();
+			state._fsp--;
+			if (state.failed) return;dbg.location(65,25);
+			match(input,LCLOSE,FOLLOW_LCLOSE_in_else_if_st454); if (state.failed) return;dbg.location(65,32);
+			match(input,BOPEN,FOLLOW_BOPEN_in_else_if_st456); if (state.failed) return;dbg.location(65,38);
+			pushFollow(FOLLOW_statements_in_else_if_st458);
+			statements();
+			state._fsp--;
+			if (state.failed) return;dbg.location(65,49);
+			match(input,BCLOSE,FOLLOW_BCLOSE_in_else_if_st460); if (state.failed) return;
+			}
+
+		}
+		catch (RecognitionException re) {
+			reportError(re);
+			recover(input,re);
+		}
+		finally {
+			// do for sure before leaving
+		}
+		dbg.location(66, 1);
+
+		}
+		finally {
 			dbg.exitRule(getGrammarFileName(), "else_if_st");
 			decRuleLevel();
 			if ( getRuleLevel()==0 ) {dbg.terminate();}
@@ -1951,27 +2074,27 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "else_st"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:64:1: else_st : ELSE BOPEN statements BCLOSE ;
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:68:1: else_st : ELSE BOPEN statements BCLOSE ;
 	public final void else_st() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "else_st");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(64, 0);
+		dbg.location(68, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:64:9: ( ELSE BOPEN statements BCLOSE )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:68:9: ( ELSE BOPEN statements BCLOSE )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:64:11: ELSE BOPEN statements BCLOSE
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:68:11: ELSE BOPEN statements BCLOSE
 			{
-			dbg.location(64,11);
-			match(input,ELSE,FOLLOW_ELSE_in_else_st446); if (state.failed) return;dbg.location(64,16);
-			match(input,BOPEN,FOLLOW_BOPEN_in_else_st448); if (state.failed) return;dbg.location(64,22);
-			pushFollow(FOLLOW_statements_in_else_st450);
+			dbg.location(68,11);
+			match(input,ELSE,FOLLOW_ELSE_in_else_st472); if (state.failed) return;dbg.location(68,16);
+			match(input,BOPEN,FOLLOW_BOPEN_in_else_st474); if (state.failed) return;dbg.location(68,22);
+			pushFollow(FOLLOW_statements_in_else_st476);
 			statements();
 			state._fsp--;
-			if (state.failed) return;dbg.location(64,33);
-			match(input,BCLOSE,FOLLOW_BCLOSE_in_else_st452); if (state.failed) return;
+			if (state.failed) return;dbg.location(68,33);
+			match(input,BCLOSE,FOLLOW_BCLOSE_in_else_st478); if (state.failed) return;
 			}
 
 		}
@@ -1982,7 +2105,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(65, 1);
+		dbg.location(69, 1);
 
 		}
 		finally {
@@ -1997,48 +2120,55 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "condition"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:67:1: condition : ( condition2 c | LOPEN condition2 LCLOSE c );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:71:1: condition : ( condition2 c | LOPEN condition2 LCLOSE c );
 	public final void condition() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "condition");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(67, 0);
+		dbg.location(71, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:68:2: ( condition2 c | LOPEN condition2 LCLOSE c )
-			int alt21=2;
-			try { dbg.enterDecision(21, decisionCanBacktrack[21]);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:72:2: ( condition2 c | LOPEN condition2 LCLOSE c )
+			int alt22=2;
+			try { dbg.enterDecision(22, decisionCanBacktrack[22]);
 
-			int LA21_0 = input.LA(1);
-			if ( (LA21_0==FLOAT||LA21_0==ID||LA21_0==INT) ) {
-				alt21=1;
+			int LA22_0 = input.LA(1);
+			if ( (LA22_0==FLOAT||LA22_0==ID||LA22_0==INT) ) {
+				alt22=1;
 			}
-			else if ( (LA21_0==LOPEN) ) {
-				alt21=2;
+			else if ( (LA22_0==LOPEN) ) {
+				int LA22_3 = input.LA(2);
+				if ( (synpred29_s()) ) {
+					alt22=1;
+				}
+				else if ( (true) ) {
+					alt22=2;
+				}
+
 			}
 
 			else {
 				if (state.backtracking>0) {state.failed=true; return;}
 				NoViableAltException nvae =
-					new NoViableAltException("", 21, 0, input);
+					new NoViableAltException("", 22, 0, input);
 				dbg.recognitionException(nvae);
 				throw nvae;
 			}
 
-			} finally {dbg.exitDecision(21);}
+			} finally {dbg.exitDecision(22);}
 
-			switch (alt21) {
+			switch (alt22) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:68:4: condition2 c
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:72:4: condition2 c
 					{
-					dbg.location(68,4);
-					pushFollow(FOLLOW_condition2_in_condition464);
+					dbg.location(72,4);
+					pushFollow(FOLLOW_condition2_in_condition490);
 					condition2();
 					state._fsp--;
-					if (state.failed) return;dbg.location(68,15);
-					pushFollow(FOLLOW_c_in_condition466);
+					if (state.failed) return;dbg.location(72,15);
+					pushFollow(FOLLOW_c_in_condition492);
 					c();
 					state._fsp--;
 					if (state.failed) return;
@@ -2047,16 +2177,16 @@ public class sParser extends DebugParser {
 				case 2 :
 					dbg.enterAlt(2);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:68:19: LOPEN condition2 LCLOSE c
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:72:19: LOPEN condition2 LCLOSE c
 					{
-					dbg.location(68,19);
-					match(input,LOPEN,FOLLOW_LOPEN_in_condition470); if (state.failed) return;dbg.location(68,25);
-					pushFollow(FOLLOW_condition2_in_condition472);
+					dbg.location(72,19);
+					match(input,LOPEN,FOLLOW_LOPEN_in_condition496); if (state.failed) return;dbg.location(72,25);
+					pushFollow(FOLLOW_condition2_in_condition498);
 					condition2();
 					state._fsp--;
-					if (state.failed) return;dbg.location(68,36);
-					match(input,LCLOSE,FOLLOW_LCLOSE_in_condition474); if (state.failed) return;dbg.location(68,43);
-					pushFollow(FOLLOW_c_in_condition476);
+					if (state.failed) return;dbg.location(72,36);
+					match(input,LCLOSE,FOLLOW_LCLOSE_in_condition500); if (state.failed) return;dbg.location(72,43);
+					pushFollow(FOLLOW_c_in_condition502);
 					c();
 					state._fsp--;
 					if (state.failed) return;
@@ -2072,7 +2202,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(69, 1);
+		dbg.location(73, 1);
 
 		}
 		finally {
@@ -2087,78 +2217,64 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "c"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:1: c : ( ( b_op condition2 )* | ( b_op LOPEN condition2 LCLOSE )* );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:1: c : ( ( b_op condition2 )* | ( b_op LOPEN condition2 LCLOSE )* );
 	public final void c() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "c");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(70, 0);
+		dbg.location(74, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:3: ( ( b_op condition2 )* | ( b_op LOPEN condition2 LCLOSE )* )
-			int alt24=2;
-			try { dbg.enterDecision(24, decisionCanBacktrack[24]);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:3: ( ( b_op condition2 )* | ( b_op LOPEN condition2 LCLOSE )* )
+			int alt25=2;
+			try { dbg.enterDecision(25, decisionCanBacktrack[25]);
 
 			switch ( input.LA(1) ) {
 			case B_AND:
 			case B_OR:
 				{
-				int LA24_1 = input.LA(2);
-				if ( (LA24_1==FLOAT||LA24_1==ID||LA24_1==INT) ) {
-					alt24=1;
+				int LA25_1 = input.LA(2);
+				if ( (synpred31_s()) ) {
+					alt25=1;
 				}
-				else if ( (LA24_1==LOPEN) ) {
-					alt24=2;
-				}
-
-				else {
-					if (state.backtracking>0) {state.failed=true; return;}
-					int nvaeMark = input.mark();
-					try {
-						input.consume();
-						NoViableAltException nvae =
-							new NoViableAltException("", 24, 1, input);
-						dbg.recognitionException(nvae);
-						throw nvae;
-					} finally {
-						input.rewind(nvaeMark);
-					}
+				else if ( (true) ) {
+					alt25=2;
 				}
 
 				}
 				break;
 			case SEMI:
 				{
-				int LA24_2 = input.LA(2);
-				if ( (synpred30_s()) ) {
-					alt24=1;
+				int LA25_2 = input.LA(2);
+				if ( (synpred31_s()) ) {
+					alt25=1;
 				}
 				else if ( (true) ) {
-					alt24=2;
+					alt25=2;
 				}
 
 				}
 				break;
 			case LCLOSE:
 				{
-				int LA24_3 = input.LA(2);
-				if ( (synpred30_s()) ) {
-					alt24=1;
+				int LA25_3 = input.LA(2);
+				if ( (synpred31_s()) ) {
+					alt25=1;
 				}
 				else if ( (true) ) {
-					alt24=2;
+					alt25=2;
 				}
 
 				}
 				break;
 			case EOF:
 				{
-				int LA24_4 = input.LA(2);
-				if ( (synpred30_s()) ) {
-					alt24=1;
+				int LA25_4 = input.LA(2);
+				if ( (synpred31_s()) ) {
+					alt25=1;
 				}
 				else if ( (true) ) {
-					alt24=2;
+					alt25=2;
 				}
 
 				}
@@ -2166,67 +2282,20 @@ public class sParser extends DebugParser {
 			default:
 				if (state.backtracking>0) {state.failed=true; return;}
 				NoViableAltException nvae =
-					new NoViableAltException("", 24, 0, input);
+					new NoViableAltException("", 25, 0, input);
 				dbg.recognitionException(nvae);
 				throw nvae;
 			}
-			} finally {dbg.exitDecision(24);}
+			} finally {dbg.exitDecision(25);}
 
-			switch (alt24) {
+			switch (alt25) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:5: ( b_op condition2 )*
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:5: ( b_op condition2 )*
 					{
-					dbg.location(70,5);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:5: ( b_op condition2 )*
-					try { dbg.enterSubRule(22);
-
-					loop22:
-					while (true) {
-						int alt22=2;
-						try { dbg.enterDecision(22, decisionCanBacktrack[22]);
-
-						int LA22_0 = input.LA(1);
-						if ( ((LA22_0 >= B_AND && LA22_0 <= B_OR)) ) {
-							alt22=1;
-						}
-
-						} finally {dbg.exitDecision(22);}
-
-						switch (alt22) {
-						case 1 :
-							dbg.enterAlt(1);
-
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:6: b_op condition2
-							{
-							dbg.location(70,6);
-							pushFollow(FOLLOW_b_op_in_c486);
-							b_op();
-							state._fsp--;
-							if (state.failed) return;dbg.location(70,11);
-							pushFollow(FOLLOW_condition2_in_c488);
-							condition2();
-							state._fsp--;
-							if (state.failed) return;
-							}
-							break;
-
-						default :
-							break loop22;
-						}
-					}
-					} finally {dbg.exitSubRule(22);}
-
-					}
-					break;
-				case 2 :
-					dbg.enterAlt(2);
-
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:26: ( b_op LOPEN condition2 LCLOSE )*
-					{
-					dbg.location(70,26);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:26: ( b_op LOPEN condition2 LCLOSE )*
+					dbg.location(74,5);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:5: ( b_op condition2 )*
 					try { dbg.enterSubRule(23);
 
 					loop23:
@@ -2245,19 +2314,17 @@ public class sParser extends DebugParser {
 						case 1 :
 							dbg.enterAlt(1);
 
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:27: b_op LOPEN condition2 LCLOSE
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:6: b_op condition2
 							{
-							dbg.location(70,27);
-							pushFollow(FOLLOW_b_op_in_c495);
+							dbg.location(74,6);
+							pushFollow(FOLLOW_b_op_in_c512);
 							b_op();
 							state._fsp--;
-							if (state.failed) return;dbg.location(70,32);
-							match(input,LOPEN,FOLLOW_LOPEN_in_c497); if (state.failed) return;dbg.location(70,38);
-							pushFollow(FOLLOW_condition2_in_c499);
+							if (state.failed) return;dbg.location(74,11);
+							pushFollow(FOLLOW_condition2_in_c514);
 							condition2();
 							state._fsp--;
-							if (state.failed) return;dbg.location(70,49);
-							match(input,LCLOSE,FOLLOW_LCLOSE_in_c501); if (state.failed) return;
+							if (state.failed) return;
 							}
 							break;
 
@@ -2266,6 +2333,55 @@ public class sParser extends DebugParser {
 						}
 					}
 					} finally {dbg.exitSubRule(23);}
+
+					}
+					break;
+				case 2 :
+					dbg.enterAlt(2);
+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:26: ( b_op LOPEN condition2 LCLOSE )*
+					{
+					dbg.location(74,26);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:26: ( b_op LOPEN condition2 LCLOSE )*
+					try { dbg.enterSubRule(24);
+
+					loop24:
+					while (true) {
+						int alt24=2;
+						try { dbg.enterDecision(24, decisionCanBacktrack[24]);
+
+						int LA24_0 = input.LA(1);
+						if ( ((LA24_0 >= B_AND && LA24_0 <= B_OR)) ) {
+							alt24=1;
+						}
+
+						} finally {dbg.exitDecision(24);}
+
+						switch (alt24) {
+						case 1 :
+							dbg.enterAlt(1);
+
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:27: b_op LOPEN condition2 LCLOSE
+							{
+							dbg.location(74,27);
+							pushFollow(FOLLOW_b_op_in_c521);
+							b_op();
+							state._fsp--;
+							if (state.failed) return;dbg.location(74,32);
+							match(input,LOPEN,FOLLOW_LOPEN_in_c523); if (state.failed) return;dbg.location(74,38);
+							pushFollow(FOLLOW_condition2_in_c525);
+							condition2();
+							state._fsp--;
+							if (state.failed) return;dbg.location(74,49);
+							match(input,LCLOSE,FOLLOW_LCLOSE_in_c527); if (state.failed) return;
+							}
+							break;
+
+						default :
+							break loop24;
+						}
+					}
+					} finally {dbg.exitSubRule(24);}
 
 					}
 					break;
@@ -2279,7 +2395,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(71, 1);
+		dbg.location(75, 1);
 
 		}
 		finally {
@@ -2294,20 +2410,20 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "b_op"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:73:1: b_op : ( B_AND | B_OR );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:77:1: b_op : ( B_AND | B_OR );
 	public final void b_op() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "b_op");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(73, 0);
+		dbg.location(77, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:73:6: ( B_AND | B_OR )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:77:6: ( B_AND | B_OR )
 			dbg.enterAlt(1);
 
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:
 			{
-			dbg.location(73,6);
+			dbg.location(77,6);
 			if ( (input.LA(1) >= B_AND && input.LA(1) <= B_OR) ) {
 				input.consume();
 				state.errorRecovery=false;
@@ -2329,7 +2445,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(74, 1);
+		dbg.location(78, 1);
 
 		}
 		finally {
@@ -2344,29 +2460,29 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "condition2"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:76:1: condition2 : e conOp e ;
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:1: condition2 : e conOp e ;
 	public final void condition2() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "condition2");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(76, 0);
+		dbg.location(80, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:77:2: ( e conOp e )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:81:2: ( e conOp e )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:77:4: e conOp e
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:81:4: e conOp e
 			{
-			dbg.location(77,4);
-			pushFollow(FOLLOW_e_in_condition2528);
+			dbg.location(81,4);
+			pushFollow(FOLLOW_e_in_condition2554);
 			e();
 			state._fsp--;
-			if (state.failed) return;dbg.location(77,6);
-			pushFollow(FOLLOW_conOp_in_condition2530);
+			if (state.failed) return;dbg.location(81,6);
+			pushFollow(FOLLOW_conOp_in_condition2556);
 			conOp();
 			state._fsp--;
-			if (state.failed) return;dbg.location(77,12);
-			pushFollow(FOLLOW_e_in_condition2532);
+			if (state.failed) return;dbg.location(81,12);
+			pushFollow(FOLLOW_e_in_condition2558);
 			e();
 			state._fsp--;
 			if (state.failed) return;
@@ -2380,7 +2496,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(78, 1);
+		dbg.location(82, 1);
 
 		}
 		finally {
@@ -2395,158 +2511,68 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "e"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:1: e : ( ( ID | no ) ( op ( ID | no ) )* ) ;
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:1: e : ( g ( op g )* ) ;
 	public final void e() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "e");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(80, 0);
+		dbg.location(84, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:3: ( ( ( ID | no ) ( op ( ID | no ) )* ) )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:3: ( ( g ( op g )* ) )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:5: ( ( ID | no ) ( op ( ID | no ) )* )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:5: ( g ( op g )* )
 			{
-			dbg.location(80,5);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:5: ( ( ID | no ) ( op ( ID | no ) )* )
+			dbg.location(84,5);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:5: ( g ( op g )* )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:6: ( ID | no ) ( op ( ID | no ) )*
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:6: g ( op g )*
 			{
-			dbg.location(80,6);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:6: ( ID | no )
-			int alt25=2;
-			try { dbg.enterSubRule(25);
-			try { dbg.enterDecision(25, decisionCanBacktrack[25]);
+			dbg.location(84,6);
+			pushFollow(FOLLOW_g_in_e570);
+			g();
+			state._fsp--;
+			if (state.failed) return;dbg.location(84,8);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:8: ( op g )*
+			try { dbg.enterSubRule(26);
 
-			int LA25_0 = input.LA(1);
-			if ( (LA25_0==ID) ) {
-				alt25=1;
-			}
-			else if ( (LA25_0==FLOAT||LA25_0==INT) ) {
-				alt25=2;
-			}
+			loop26:
+			while (true) {
+				int alt26=2;
+				try { dbg.enterDecision(26, decisionCanBacktrack[26]);
 
-			else {
-				if (state.backtracking>0) {state.failed=true; return;}
-				NoViableAltException nvae =
-					new NoViableAltException("", 25, 0, input);
-				dbg.recognitionException(nvae);
-				throw nvae;
-			}
+				int LA26_0 = input.LA(1);
+				if ( (LA26_0==AND||LA26_0==DIVIDE||LA26_0==MULTIPLY||(LA26_0 >= OR && LA26_0 <= REM)||(LA26_0 >= SLL && LA26_0 <= SRL)||LA26_0==SUB||LA26_0==XOR) ) {
+					alt26=1;
+				}
 
-			} finally {dbg.exitDecision(25);}
+				} finally {dbg.exitDecision(26);}
 
-			switch (alt25) {
+				switch (alt26) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:7: ID
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:9: op g
 					{
-					dbg.location(80,7);
-					match(input,ID,FOLLOW_ID_in_e545); if (state.failed) return;
-					}
-					break;
-				case 2 :
-					dbg.enterAlt(2);
-
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:10: no
-					{
-					dbg.location(80,10);
-					pushFollow(FOLLOW_no_in_e547);
-					no();
+					dbg.location(84,9);
+					pushFollow(FOLLOW_op_in_e573);
+					op();
+					state._fsp--;
+					if (state.failed) return;dbg.location(84,12);
+					pushFollow(FOLLOW_g_in_e575);
+					g();
 					state._fsp--;
 					if (state.failed) return;
 					}
 					break;
 
-			}
-			} finally {dbg.exitSubRule(25);}
-			dbg.location(80,14);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:14: ( op ( ID | no ) )*
-			try { dbg.enterSubRule(27);
-
-			loop27:
-			while (true) {
-				int alt27=2;
-				try { dbg.enterDecision(27, decisionCanBacktrack[27]);
-
-				int LA27_0 = input.LA(1);
-				if ( (LA27_0==AND||LA27_0==DIVIDE||LA27_0==MULTIPLY||(LA27_0 >= OR && LA27_0 <= REM)||(LA27_0 >= SLL && LA27_0 <= SRL)||LA27_0==SUB||LA27_0==XOR) ) {
-					alt27=1;
-				}
-
-				} finally {dbg.exitDecision(27);}
-
-				switch (alt27) {
-				case 1 :
-					dbg.enterAlt(1);
-
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:15: op ( ID | no )
-					{
-					dbg.location(80,15);
-					pushFollow(FOLLOW_op_in_e551);
-					op();
-					state._fsp--;
-					if (state.failed) return;dbg.location(80,18);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:18: ( ID | no )
-					int alt26=2;
-					try { dbg.enterSubRule(26);
-					try { dbg.enterDecision(26, decisionCanBacktrack[26]);
-
-					int LA26_0 = input.LA(1);
-					if ( (LA26_0==ID) ) {
-						alt26=1;
-					}
-					else if ( (LA26_0==FLOAT||LA26_0==INT) ) {
-						alt26=2;
-					}
-
-					else {
-						if (state.backtracking>0) {state.failed=true; return;}
-						NoViableAltException nvae =
-							new NoViableAltException("", 26, 0, input);
-						dbg.recognitionException(nvae);
-						throw nvae;
-					}
-
-					} finally {dbg.exitDecision(26);}
-
-					switch (alt26) {
-						case 1 :
-							dbg.enterAlt(1);
-
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:19: ID
-							{
-							dbg.location(80,19);
-							match(input,ID,FOLLOW_ID_in_e554); if (state.failed) return;
-							}
-							break;
-						case 2 :
-							dbg.enterAlt(2);
-
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:80:22: no
-							{
-							dbg.location(80,22);
-							pushFollow(FOLLOW_no_in_e556);
-							no();
-							state._fsp--;
-							if (state.failed) return;
-							}
-							break;
-
-					}
-					} finally {dbg.exitSubRule(26);}
-
-					}
-					break;
-
 				default :
-					break loop27;
+					break loop26;
 				}
 			}
-			} finally {dbg.exitSubRule(27);}
+			} finally {dbg.exitSubRule(26);}
 
 			}
 
@@ -2560,7 +2586,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(81, 1);
+		dbg.location(85, 1);
 
 		}
 		finally {
@@ -2574,50 +2600,216 @@ public class sParser extends DebugParser {
 
 
 
-	// $ANTLR start "assign_st"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:83:1: assign_st : ( type ID r | ID r );
-	public final void assign_st() throws RecognitionException {
-		try { dbg.enterRule(getGrammarFileName(), "assign_st");
+	// $ANTLR start "g"
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:1: g : ( ( ID | no ) | LOPEN g ( op g )* LCLOSE );
+	public final void g() throws RecognitionException {
+		try { dbg.enterRule(getGrammarFileName(), "g");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(83, 0);
+		dbg.location(87, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:2: ( type ID r | ID r )
-			int alt28=2;
-			try { dbg.enterDecision(28, decisionCanBacktrack[28]);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:3: ( ( ID | no ) | LOPEN g ( op g )* LCLOSE )
+			int alt29=2;
+			try { dbg.enterDecision(29, decisionCanBacktrack[29]);
 
-			int LA28_0 = input.LA(1);
-			if ( ((LA28_0 >= T_CHAR && LA28_0 <= T_STRING)) ) {
-				alt28=1;
+			int LA29_0 = input.LA(1);
+			if ( (LA29_0==FLOAT||LA29_0==ID||LA29_0==INT) ) {
+				alt29=1;
 			}
-			else if ( (LA28_0==ID) ) {
-				alt28=2;
+			else if ( (LA29_0==LOPEN) ) {
+				alt29=2;
 			}
 
 			else {
 				if (state.backtracking>0) {state.failed=true; return;}
 				NoViableAltException nvae =
-					new NoViableAltException("", 28, 0, input);
+					new NoViableAltException("", 29, 0, input);
 				dbg.recognitionException(nvae);
 				throw nvae;
 			}
 
-			} finally {dbg.exitDecision(28);}
+			} finally {dbg.exitDecision(29);}
 
-			switch (alt28) {
+			switch (alt29) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:4: type ID r
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:5: ( ID | no )
 					{
-					dbg.location(84,4);
-					pushFollow(FOLLOW_type_in_assign_st571);
+					dbg.location(87,5);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:5: ( ID | no )
+					int alt27=2;
+					try { dbg.enterSubRule(27);
+					try { dbg.enterDecision(27, decisionCanBacktrack[27]);
+
+					int LA27_0 = input.LA(1);
+					if ( (LA27_0==ID) ) {
+						alt27=1;
+					}
+					else if ( (LA27_0==FLOAT||LA27_0==INT) ) {
+						alt27=2;
+					}
+
+					else {
+						if (state.backtracking>0) {state.failed=true; return;}
+						NoViableAltException nvae =
+							new NoViableAltException("", 27, 0, input);
+						dbg.recognitionException(nvae);
+						throw nvae;
+					}
+
+					} finally {dbg.exitDecision(27);}
+
+					switch (alt27) {
+						case 1 :
+							dbg.enterAlt(1);
+
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:6: ID
+							{
+							dbg.location(87,6);
+							match(input,ID,FOLLOW_ID_in_g591); if (state.failed) return;
+							}
+							break;
+						case 2 :
+							dbg.enterAlt(2);
+
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:9: no
+							{
+							dbg.location(87,9);
+							pushFollow(FOLLOW_no_in_g593);
+							no();
+							state._fsp--;
+							if (state.failed) return;
+							}
+							break;
+
+					}
+					} finally {dbg.exitSubRule(27);}
+
+					}
+					break;
+				case 2 :
+					dbg.enterAlt(2);
+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:13: LOPEN g ( op g )* LCLOSE
+					{
+					dbg.location(87,13);
+					match(input,LOPEN,FOLLOW_LOPEN_in_g596); if (state.failed) return;dbg.location(87,19);
+					pushFollow(FOLLOW_g_in_g598);
+					g();
+					state._fsp--;
+					if (state.failed) return;dbg.location(87,21);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:21: ( op g )*
+					try { dbg.enterSubRule(28);
+
+					loop28:
+					while (true) {
+						int alt28=2;
+						try { dbg.enterDecision(28, decisionCanBacktrack[28]);
+
+						int LA28_0 = input.LA(1);
+						if ( (LA28_0==AND||LA28_0==DIVIDE||LA28_0==MULTIPLY||(LA28_0 >= OR && LA28_0 <= REM)||(LA28_0 >= SLL && LA28_0 <= SRL)||LA28_0==SUB||LA28_0==XOR) ) {
+							alt28=1;
+						}
+
+						} finally {dbg.exitDecision(28);}
+
+						switch (alt28) {
+						case 1 :
+							dbg.enterAlt(1);
+
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:22: op g
+							{
+							dbg.location(87,22);
+							pushFollow(FOLLOW_op_in_g601);
+							op();
+							state._fsp--;
+							if (state.failed) return;dbg.location(87,25);
+							pushFollow(FOLLOW_g_in_g603);
+							g();
+							state._fsp--;
+							if (state.failed) return;
+							}
+							break;
+
+						default :
+							break loop28;
+						}
+					}
+					} finally {dbg.exitSubRule(28);}
+					dbg.location(87,29);
+					match(input,LCLOSE,FOLLOW_LCLOSE_in_g607); if (state.failed) return;
+					}
+					break;
+
+			}
+		}
+		catch (RecognitionException re) {
+			reportError(re);
+			recover(input,re);
+		}
+		finally {
+			// do for sure before leaving
+		}
+		dbg.location(88, 1);
+
+		}
+		finally {
+			dbg.exitRule(getGrammarFileName(), "g");
+			decRuleLevel();
+			if ( getRuleLevel()==0 ) {dbg.terminate();}
+		}
+
+	}
+	// $ANTLR end "g"
+
+
+
+	// $ANTLR start "assign_st"
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:90:1: assign_st : ( type ID r | ID r );
+	public final void assign_st() throws RecognitionException {
+		try { dbg.enterRule(getGrammarFileName(), "assign_st");
+		if ( getRuleLevel()==0 ) {dbg.commence();}
+		incRuleLevel();
+		dbg.location(90, 0);
+
+		try {
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:91:2: ( type ID r | ID r )
+			int alt30=2;
+			try { dbg.enterDecision(30, decisionCanBacktrack[30]);
+
+			int LA30_0 = input.LA(1);
+			if ( ((LA30_0 >= T_CHAR && LA30_0 <= T_STRING)) ) {
+				alt30=1;
+			}
+			else if ( (LA30_0==ID) ) {
+				alt30=2;
+			}
+
+			else {
+				if (state.backtracking>0) {state.failed=true; return;}
+				NoViableAltException nvae =
+					new NoViableAltException("", 30, 0, input);
+				dbg.recognitionException(nvae);
+				throw nvae;
+			}
+
+			} finally {dbg.exitDecision(30);}
+
+			switch (alt30) {
+				case 1 :
+					dbg.enterAlt(1);
+
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:91:4: type ID r
+					{
+					dbg.location(91,4);
+					pushFollow(FOLLOW_type_in_assign_st619);
 					type();
 					state._fsp--;
-					if (state.failed) return;dbg.location(84,10);
-					match(input,ID,FOLLOW_ID_in_assign_st574); if (state.failed) return;dbg.location(84,13);
-					pushFollow(FOLLOW_r_in_assign_st576);
+					if (state.failed) return;dbg.location(91,10);
+					match(input,ID,FOLLOW_ID_in_assign_st622); if (state.failed) return;dbg.location(91,13);
+					pushFollow(FOLLOW_r_in_assign_st624);
 					r();
 					state._fsp--;
 					if (state.failed) return;
@@ -2626,11 +2818,11 @@ public class sParser extends DebugParser {
 				case 2 :
 					dbg.enterAlt(2);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:84:17: ID r
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:91:17: ID r
 					{
-					dbg.location(84,17);
-					match(input,ID,FOLLOW_ID_in_assign_st580); if (state.failed) return;dbg.location(84,20);
-					pushFollow(FOLLOW_r_in_assign_st582);
+					dbg.location(91,17);
+					match(input,ID,FOLLOW_ID_in_assign_st628); if (state.failed) return;dbg.location(91,20);
+					pushFollow(FOLLOW_r_in_assign_st630);
 					r();
 					state._fsp--;
 					if (state.failed) return;
@@ -2646,7 +2838,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(85, 1);
+		dbg.location(92, 1);
 
 		}
 		finally {
@@ -2661,22 +2853,22 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "r"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:1: r : ASSIGN e ;
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:94:1: r : ASSIGN e ;
 	public final void r() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "r");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(87, 0);
+		dbg.location(94, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:3: ( ASSIGN e )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:94:3: ( ASSIGN e )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:5: ASSIGN e
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:94:5: ASSIGN e
 			{
-			dbg.location(87,5);
-			match(input,ASSIGN,FOLLOW_ASSIGN_in_r594); if (state.failed) return;dbg.location(87,12);
-			pushFollow(FOLLOW_e_in_r596);
+			dbg.location(94,5);
+			match(input,ASSIGN,FOLLOW_ASSIGN_in_r642); if (state.failed) return;dbg.location(94,12);
+			pushFollow(FOLLOW_e_in_r644);
 			e();
 			state._fsp--;
 			if (state.failed) return;
@@ -2690,7 +2882,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(88, 1);
+		dbg.location(95, 1);
 
 		}
 		finally {
@@ -2705,56 +2897,56 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "type"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:92:1: type : type1 ( COPEN CCLOSE )* ;
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:1: type : type1 ( COPEN CCLOSE )* ;
 	public final void type() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "type");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(92, 0);
+		dbg.location(99, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:92:6: ( type1 ( COPEN CCLOSE )* )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:6: ( type1 ( COPEN CCLOSE )* )
 			dbg.enterAlt(1);
 
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:92:8: type1 ( COPEN CCLOSE )*
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:8: type1 ( COPEN CCLOSE )*
 			{
-			dbg.location(92,8);
-			pushFollow(FOLLOW_type1_in_type609);
+			dbg.location(99,8);
+			pushFollow(FOLLOW_type1_in_type657);
 			type1();
 			state._fsp--;
-			if (state.failed) return;dbg.location(92,14);
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:92:14: ( COPEN CCLOSE )*
-			try { dbg.enterSubRule(29);
+			if (state.failed) return;dbg.location(99,14);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:14: ( COPEN CCLOSE )*
+			try { dbg.enterSubRule(31);
 
-			loop29:
+			loop31:
 			while (true) {
-				int alt29=2;
-				try { dbg.enterDecision(29, decisionCanBacktrack[29]);
+				int alt31=2;
+				try { dbg.enterDecision(31, decisionCanBacktrack[31]);
 
-				int LA29_0 = input.LA(1);
-				if ( (LA29_0==COPEN) ) {
-					alt29=1;
+				int LA31_0 = input.LA(1);
+				if ( (LA31_0==COPEN) ) {
+					alt31=1;
 				}
 
-				} finally {dbg.exitDecision(29);}
+				} finally {dbg.exitDecision(31);}
 
-				switch (alt29) {
+				switch (alt31) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:92:15: COPEN CCLOSE
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:15: COPEN CCLOSE
 					{
-					dbg.location(92,15);
-					match(input,COPEN,FOLLOW_COPEN_in_type612); if (state.failed) return;dbg.location(92,21);
-					match(input,CCLOSE,FOLLOW_CCLOSE_in_type614); if (state.failed) return;
+					dbg.location(99,15);
+					match(input,COPEN,FOLLOW_COPEN_in_type660); if (state.failed) return;dbg.location(99,21);
+					match(input,CCLOSE,FOLLOW_CCLOSE_in_type662); if (state.failed) return;
 					}
 					break;
 
 				default :
-					break loop29;
+					break loop31;
 				}
 			}
-			} finally {dbg.exitSubRule(29);}
+			} finally {dbg.exitSubRule(31);}
 
 			}
 
@@ -2766,7 +2958,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(93, 1);
+		dbg.location(100, 1);
 
 		}
 		finally {
@@ -2781,20 +2973,20 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "type1"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:95:1: type1 : ( T_INT | T_FLOAT | T_CHAR | T_STRING );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:102:1: type1 : ( T_INT | T_FLOAT | T_CHAR | T_STRING );
 	public final void type1() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "type1");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(95, 0);
+		dbg.location(102, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:95:7: ( T_INT | T_FLOAT | T_CHAR | T_STRING )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:102:7: ( T_INT | T_FLOAT | T_CHAR | T_STRING )
 			dbg.enterAlt(1);
 
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:
 			{
-			dbg.location(95,7);
+			dbg.location(102,7);
 			if ( (input.LA(1) >= T_CHAR && input.LA(1) <= T_STRING) ) {
 				input.consume();
 				state.errorRecovery=false;
@@ -2816,7 +3008,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(96, 1);
+		dbg.location(103, 1);
 
 		}
 		finally {
@@ -2831,20 +3023,20 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "no"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:98:1: no : ( INT | FLOAT );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:105:1: no : ( INT | FLOAT );
 	public final void no() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "no");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(98, 0);
+		dbg.location(105, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:98:4: ( INT | FLOAT )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:105:4: ( INT | FLOAT )
 			dbg.enterAlt(1);
 
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:
 			{
-			dbg.location(98,4);
+			dbg.location(105,4);
 			if ( input.LA(1)==FLOAT||input.LA(1)==INT ) {
 				input.consume();
 				state.errorRecovery=false;
@@ -2866,7 +3058,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(99, 1);
+		dbg.location(106, 1);
 
 		}
 		finally {
@@ -2881,20 +3073,20 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "op"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:100:1: op : ( POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | SLL | SRL | AND | OR | XOR );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:107:1: op : ( POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | SLL | SRL | AND | OR | XOR );
 	public final void op() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "op");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(100, 0);
+		dbg.location(107, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:100:4: ( POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | SLL | SRL | AND | OR | XOR )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:107:4: ( POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | SLL | SRL | AND | OR | XOR )
 			dbg.enterAlt(1);
 
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:
 			{
-			dbg.location(100,4);
+			dbg.location(107,4);
 			if ( input.LA(1)==AND||input.LA(1)==DIVIDE||input.LA(1)==MULTIPLY||(input.LA(1) >= OR && input.LA(1) <= REM)||(input.LA(1) >= SLL && input.LA(1) <= SRL)||input.LA(1)==SUB||input.LA(1)==XOR ) {
 				input.consume();
 				state.errorRecovery=false;
@@ -2916,7 +3108,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(101, 1);
+		dbg.location(108, 1);
 
 		}
 		finally {
@@ -2931,21 +3123,21 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "conOp"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:103:1: conOp : ( NEQ | EQ | GT | GEQ | LT | LEQ );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:110:1: conOp : ( NEQ | EQ | GT | GEQ | LT | LEQ | B_AND | B_OR );
 	public final void conOp() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "conOp");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(103, 0);
+		dbg.location(110, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:103:7: ( NEQ | EQ | GT | GEQ | LT | LEQ )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:110:7: ( NEQ | EQ | GT | GEQ | LT | LEQ | B_AND | B_OR )
 			dbg.enterAlt(1);
 
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:
 			{
-			dbg.location(103,7);
-			if ( input.LA(1)==EQ||(input.LA(1) >= GEQ && input.LA(1) <= GT)||input.LA(1)==LEQ||input.LA(1)==LT||input.LA(1)==NEQ ) {
+			dbg.location(110,7);
+			if ( (input.LA(1) >= B_AND && input.LA(1) <= B_OR)||input.LA(1)==EQ||(input.LA(1) >= GEQ && input.LA(1) <= GT)||input.LA(1)==LEQ||input.LA(1)==LT||input.LA(1)==NEQ ) {
 				input.consume();
 				state.errorRecovery=false;
 				state.failed=false;
@@ -2966,7 +3158,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(104, 1);
+		dbg.location(111, 1);
 
 		}
 		finally {
@@ -2981,20 +3173,20 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "s"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:107:1: s : ( ID | INT | FLOAT | STRING | CHAR | SWITCH | CASE | ELIF | ELSE | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE | EQ | GT | GEQ | LT | LEQ | NEQ | COPEN | CCLOSE );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:114:1: s : ( ID | INT | FLOAT | STRING | CHAR | SWITCH | CASE | ELIF | ELSE | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE | EQ | GT | GEQ | LT | LEQ | NEQ | COPEN | CCLOSE );
 	public final void s() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "s");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
 		incRuleLevel();
-		dbg.location(107, 0);
+		dbg.location(114, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:107:3: ( ID | INT | FLOAT | STRING | CHAR | SWITCH | CASE | ELIF | ELSE | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE | EQ | GT | GEQ | LT | LEQ | NEQ | COPEN | CCLOSE )
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:114:3: ( ID | INT | FLOAT | STRING | CHAR | SWITCH | CASE | ELIF | ELSE | WHILE | DO | FOR | FUNCTION | RETURN | T_INT | T_FLOAT | T_CHAR | T_STRING | SEMI | POWER | REM | PLUS | SUB | MULTIPLY | DIVIDE | ASSIGN | SLL | SRL | AND | OR | XOR | B_AND | B_OR | LOPEN | LCLOSE | BOPEN | BCLOSE | EQ | GT | GEQ | LT | LEQ | NEQ | COPEN | CCLOSE )
 			dbg.enterAlt(1);
 
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:
 			{
-			dbg.location(107,3);
+			dbg.location(114,3);
 			if ( (input.LA(1) >= AND && input.LA(1) <= CHAR)||(input.LA(1) >= COPEN && input.LA(1) <= EQ)||(input.LA(1) >= FLOAT && input.LA(1) <= GT)||input.LA(1)==ID||(input.LA(1) >= INT && input.LA(1) <= NEQ)||(input.LA(1) >= OR && input.LA(1) <= T_STRING)||input.LA(1)==WHILE||input.LA(1)==XOR ) {
 				input.consume();
 				state.errorRecovery=false;
@@ -3016,7 +3208,7 @@ public class sParser extends DebugParser {
 		finally {
 			// do for sure before leaving
 		}
-		dbg.location(110, 2);
+		dbg.location(117, 2);
 
 		}
 		finally {
@@ -3045,99 +3237,120 @@ public class sParser extends DebugParser {
 	}
 	// $ANTLR end synpred4_s
 
-	// $ANTLR start synpred20_s
-	public final void synpred20_s_fragment() throws RecognitionException {
-		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:5: ( ( ',' ( type ID ) )* )
+	// $ANTLR start synpred21_s
+	public final void synpred21_s_fragment() throws RecognitionException {
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:5: ( ( ',' ( type ID ) )* )
 		dbg.enterAlt(1);
 
-		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:5: ( ',' ( type ID ) )*
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:5: ( ',' ( type ID ) )*
 		{
-		dbg.location(46,5);
-		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:5: ( ',' ( type ID ) )*
-		try { dbg.enterSubRule(31);
+		dbg.location(50,5);
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:5: ( ',' ( type ID ) )*
+		try { dbg.enterSubRule(33);
 
-		loop31:
+		loop33:
 		while (true) {
-			int alt31=2;
-			try { dbg.enterDecision(31, decisionCanBacktrack[31]);
+			int alt33=2;
+			try { dbg.enterDecision(33, decisionCanBacktrack[33]);
 
-			int LA31_0 = input.LA(1);
-			if ( (LA31_0==57) ) {
-				alt31=1;
+			int LA33_0 = input.LA(1);
+			if ( (LA33_0==57) ) {
+				alt33=1;
 			}
 
-			} finally {dbg.exitDecision(31);}
+			} finally {dbg.exitDecision(33);}
 
-			switch (alt31) {
+			switch (alt33) {
 			case 1 :
 				dbg.enterAlt(1);
 
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:6: ',' ( type ID )
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:6: ',' ( type ID )
 				{
-				dbg.location(46,6);
-				match(input,57,FOLLOW_57_in_synpred20_s314); if (state.failed) return;dbg.location(46,9);
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:9: ( type ID )
+				dbg.location(50,6);
+				match(input,57,FOLLOW_57_in_synpred21_s340); if (state.failed) return;dbg.location(50,9);
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:9: ( type ID )
 				dbg.enterAlt(1);
 
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:46:10: type ID
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:10: type ID
 				{
-				dbg.location(46,10);
-				pushFollow(FOLLOW_type_in_synpred20_s316);
+				dbg.location(50,10);
+				pushFollow(FOLLOW_type_in_synpred21_s342);
 				type();
 				state._fsp--;
-				if (state.failed) return;dbg.location(46,15);
-				match(input,ID,FOLLOW_ID_in_synpred20_s318); if (state.failed) return;
+				if (state.failed) return;dbg.location(50,15);
+				match(input,ID,FOLLOW_ID_in_synpred21_s344); if (state.failed) return;
 				}
 
 				}
 				break;
 
 			default :
-				break loop31;
+				break loop33;
 			}
 		}
-		} finally {dbg.exitSubRule(31);}
+		} finally {dbg.exitSubRule(33);}
 
 		}
 
 	}
-	// $ANTLR end synpred20_s
+	// $ANTLR end synpred21_s
 
-	// $ANTLR start synpred30_s
-	public final void synpred30_s_fragment() throws RecognitionException {
-		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:5: ( ( b_op condition2 )* )
+	// $ANTLR start synpred29_s
+	public final void synpred29_s_fragment() throws RecognitionException {
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:72:4: ( condition2 c )
 		dbg.enterAlt(1);
 
-		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:5: ( b_op condition2 )*
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:72:4: condition2 c
 		{
-		dbg.location(70,5);
-		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:5: ( b_op condition2 )*
-		try { dbg.enterSubRule(34);
+		dbg.location(72,4);
+		pushFollow(FOLLOW_condition2_in_synpred29_s490);
+		condition2();
+		state._fsp--;
+		if (state.failed) return;dbg.location(72,15);
+		pushFollow(FOLLOW_c_in_synpred29_s492);
+		c();
+		state._fsp--;
+		if (state.failed) return;
+		}
 
-		loop34:
+	}
+	// $ANTLR end synpred29_s
+
+	// $ANTLR start synpred31_s
+	public final void synpred31_s_fragment() throws RecognitionException {
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:5: ( ( b_op condition2 )* )
+		dbg.enterAlt(1);
+
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:5: ( b_op condition2 )*
+		{
+		dbg.location(74,5);
+		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:5: ( b_op condition2 )*
+		try { dbg.enterSubRule(36);
+
+		loop36:
 		while (true) {
-			int alt34=2;
-			try { dbg.enterDecision(34, decisionCanBacktrack[34]);
+			int alt36=2;
+			try { dbg.enterDecision(36, decisionCanBacktrack[36]);
 
-			int LA34_0 = input.LA(1);
-			if ( ((LA34_0 >= B_AND && LA34_0 <= B_OR)) ) {
-				alt34=1;
+			int LA36_0 = input.LA(1);
+			if ( ((LA36_0 >= B_AND && LA36_0 <= B_OR)) ) {
+				alt36=1;
 			}
 
-			} finally {dbg.exitDecision(34);}
+			} finally {dbg.exitDecision(36);}
 
-			switch (alt34) {
+			switch (alt36) {
 			case 1 :
 				dbg.enterAlt(1);
 
-				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:70:6: b_op condition2
+				// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:6: b_op condition2
 				{
-				dbg.location(70,6);
-				pushFollow(FOLLOW_b_op_in_synpred30_s486);
+				dbg.location(74,6);
+				pushFollow(FOLLOW_b_op_in_synpred31_s512);
 				b_op();
 				state._fsp--;
-				if (state.failed) return;dbg.location(70,11);
-				pushFollow(FOLLOW_condition2_in_synpred30_s488);
+				if (state.failed) return;dbg.location(74,11);
+				pushFollow(FOLLOW_condition2_in_synpred31_s514);
 				condition2();
 				state._fsp--;
 				if (state.failed) return;
@@ -3145,18 +3358,34 @@ public class sParser extends DebugParser {
 				break;
 
 			default :
-				break loop34;
+				break loop36;
 			}
 		}
-		} finally {dbg.exitSubRule(34);}
+		} finally {dbg.exitSubRule(36);}
 
 		}
 
 	}
-	// $ANTLR end synpred30_s
+	// $ANTLR end synpred31_s
 
 	// Delegated rules
 
+	public final boolean synpred29_s() {
+		state.backtracking++;
+		dbg.beginBacktrack(state.backtracking);
+		int start = input.mark();
+		try {
+			synpred29_s_fragment(); // can never throw exception
+		} catch (RecognitionException re) {
+			System.err.println("impossible: "+re);
+		}
+		boolean success = !state.failed;
+		input.rewind(start);
+		dbg.endBacktrack(state.backtracking, success);
+		state.backtracking--;
+		state.failed=false;
+		return success;
+	}
 	public final boolean synpred4_s() {
 		state.backtracking++;
 		dbg.beginBacktrack(state.backtracking);
@@ -3173,12 +3402,12 @@ public class sParser extends DebugParser {
 		state.failed=false;
 		return success;
 	}
-	public final boolean synpred20_s() {
+	public final boolean synpred21_s() {
 		state.backtracking++;
 		dbg.beginBacktrack(state.backtracking);
 		int start = input.mark();
 		try {
-			synpred20_s_fragment(); // can never throw exception
+			synpred21_s_fragment(); // can never throw exception
 		} catch (RecognitionException re) {
 			System.err.println("impossible: "+re);
 		}
@@ -3189,12 +3418,12 @@ public class sParser extends DebugParser {
 		state.failed=false;
 		return success;
 	}
-	public final boolean synpred30_s() {
+	public final boolean synpred31_s() {
 		state.backtracking++;
 		dbg.beginBacktrack(state.backtracking);
 		int start = input.mark();
 		try {
-			synpred30_s_fragment(); // can never throw exception
+			synpred31_s_fragment(); // can never throw exception
 		} catch (RecognitionException re) {
 			System.err.println("impossible: "+re);
 		}
@@ -3242,7 +3471,7 @@ public class sParser extends DebugParser {
 	public static final BitSet FOLLOW_BCLOSE_in_case_st170 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_FOR_in_for_st180 = new BitSet(new long[]{0x0000000200000000L});
 	public static final BitSet FOLLOW_LOPEN_in_for_st182 = new BitSet(new long[]{0x001E080010000000L});
-	public static final BitSet FOLLOW_assign_st_in_for_st184 = new BitSet(new long[]{0x0000080000000000L});
+	public static final BitSet FOLLOW_init_in_for_st184 = new BitSet(new long[]{0x0000080000000000L});
 	public static final BitSet FOLLOW_SEMI_in_for_st187 = new BitSet(new long[]{0x0000080250400000L});
 	public static final BitSet FOLLOW_condition_in_for_st189 = new BitSet(new long[]{0x0000080000000000L});
 	public static final BitSet FOLLOW_SEMI_in_for_st192 = new BitSet(new long[]{0x001E000090000000L});
@@ -3251,105 +3480,116 @@ public class sParser extends DebugParser {
 	public static final BitSet FOLLOW_BOPEN_in_for_st199 = new BitSet(new long[]{0x005F000030810000L});
 	public static final BitSet FOLLOW_statements_in_for_st201 = new BitSet(new long[]{0x0000000000000040L});
 	public static final BitSet FOLLOW_BCLOSE_in_for_st203 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_WHILE_in_while_st211 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_while_st213 = new BitSet(new long[]{0x0000000250400000L});
-	public static final BitSet FOLLOW_condition_in_while_st215 = new BitSet(new long[]{0x0000000080000000L});
-	public static final BitSet FOLLOW_LCLOSE_in_while_st217 = new BitSet(new long[]{0x0000000000000080L});
-	public static final BitSet FOLLOW_BOPEN_in_while_st219 = new BitSet(new long[]{0x005F000030810000L});
-	public static final BitSet FOLLOW_statements_in_while_st221 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_BCLOSE_in_while_st223 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_DO_in_do_st234 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_do_st236 = new BitSet(new long[]{0x0000000250400000L});
-	public static final BitSet FOLLOW_condition_in_do_st238 = new BitSet(new long[]{0x0000000080000000L});
-	public static final BitSet FOLLOW_LCLOSE_in_do_st240 = new BitSet(new long[]{0x0000000000000080L});
-	public static final BitSet FOLLOW_BOPEN_in_do_st242 = new BitSet(new long[]{0x005F000030810000L});
-	public static final BitSet FOLLOW_statements_in_do_st244 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_BCLOSE_in_do_st246 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_FUNCTION_in_function_def256 = new BitSet(new long[]{0x001E000000000000L});
-	public static final BitSet FOLLOW_type_in_function_def258 = new BitSet(new long[]{0x0000000010000000L});
-	public static final BitSet FOLLOW_ID_in_function_def260 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_function_def262 = new BitSet(new long[]{0x001E000080000000L});
-	public static final BitSet FOLLOW_def_params_in_function_def264 = new BitSet(new long[]{0x0000000080000000L});
-	public static final BitSet FOLLOW_LCLOSE_in_function_def266 = new BitSet(new long[]{0x0000000000000080L});
-	public static final BitSet FOLLOW_BOPEN_in_function_def268 = new BitSet(new long[]{0x005F000030810000L});
-	public static final BitSet FOLLOW_block_in_function_def270 = new BitSet(new long[]{0x0000040000000040L});
-	public static final BitSet FOLLOW_RETURN_in_function_def273 = new BitSet(new long[]{0x0000400050400000L});
-	public static final BitSet FOLLOW_no_in_function_def275 = new BitSet(new long[]{0x0000080000000000L});
-	public static final BitSet FOLLOW_STRING_in_function_def277 = new BitSet(new long[]{0x0000080000000000L});
-	public static final BitSet FOLLOW_ID_in_function_def279 = new BitSet(new long[]{0x0000080000000000L});
-	public static final BitSet FOLLOW_SEMI_in_function_def282 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_BCLOSE_in_function_def287 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_type_in_def_params298 = new BitSet(new long[]{0x0000000010000000L});
-	public static final BitSet FOLLOW_ID_in_def_params300 = new BitSet(new long[]{0x0200000000000000L});
-	public static final BitSet FOLLOW_m_in_def_params303 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_57_in_m314 = new BitSet(new long[]{0x001E000000000000L});
-	public static final BitSet FOLLOW_type_in_m316 = new BitSet(new long[]{0x0000000010000000L});
-	public static final BitSet FOLLOW_ID_in_m318 = new BitSet(new long[]{0x0200000000000002L});
-	public static final BitSet FOLLOW_ID_in_function_st335 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_function_st337 = new BitSet(new long[]{0x00004000D0400000L});
-	public static final BitSet FOLLOW_params_in_function_st339 = new BitSet(new long[]{0x0000000080000000L});
-	public static final BitSet FOLLOW_LCLOSE_in_function_st341 = new BitSet(new long[]{0x0000080000000002L});
-	public static final BitSet FOLLOW_SEMI_in_function_st343 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_e_in_params354 = new BitSet(new long[]{0x0200000000000000L});
-	public static final BitSet FOLLOW_STRING_in_params356 = new BitSet(new long[]{0x0200000000000000L});
-	public static final BitSet FOLLOW_f_in_params359 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_57_in_f370 = new BitSet(new long[]{0x0000400050400000L});
-	public static final BitSet FOLLOW_e_in_f372 = new BitSet(new long[]{0x0200000000000002L});
-	public static final BitSet FOLLOW_STRING_in_f374 = new BitSet(new long[]{0x0200000000000002L});
-	public static final BitSet FOLLOW_IF_in_if_st389 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_if_st391 = new BitSet(new long[]{0x0000000250400000L});
-	public static final BitSet FOLLOW_condition_in_if_st393 = new BitSet(new long[]{0x0000000080000000L});
-	public static final BitSet FOLLOW_LCLOSE_in_if_st395 = new BitSet(new long[]{0x0000000000000080L});
-	public static final BitSet FOLLOW_BOPEN_in_if_st397 = new BitSet(new long[]{0x005F000030810000L});
-	public static final BitSet FOLLOW_statements_in_if_st399 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_BCLOSE_in_if_st401 = new BitSet(new long[]{0x0000000000060002L});
-	public static final BitSet FOLLOW_else_if_st_in_if_st404 = new BitSet(new long[]{0x0000000000060002L});
-	public static final BitSet FOLLOW_else_st_in_if_st409 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ELIF_in_else_if_st422 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_else_if_st424 = new BitSet(new long[]{0x0000000250400000L});
-	public static final BitSet FOLLOW_condition_in_else_if_st426 = new BitSet(new long[]{0x0000000080000000L});
-	public static final BitSet FOLLOW_LCLOSE_in_else_if_st428 = new BitSet(new long[]{0x0000000000000080L});
-	public static final BitSet FOLLOW_BOPEN_in_else_if_st430 = new BitSet(new long[]{0x005F000030810000L});
-	public static final BitSet FOLLOW_statements_in_else_if_st432 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_BCLOSE_in_else_if_st434 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ELSE_in_else_st446 = new BitSet(new long[]{0x0000000000000080L});
-	public static final BitSet FOLLOW_BOPEN_in_else_st448 = new BitSet(new long[]{0x005F000030810000L});
-	public static final BitSet FOLLOW_statements_in_else_st450 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_BCLOSE_in_else_st452 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_condition2_in_condition464 = new BitSet(new long[]{0x0000000000000300L});
-	public static final BitSet FOLLOW_c_in_condition466 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LOPEN_in_condition470 = new BitSet(new long[]{0x0000000050400000L});
-	public static final BitSet FOLLOW_condition2_in_condition472 = new BitSet(new long[]{0x0000000080000000L});
-	public static final BitSet FOLLOW_LCLOSE_in_condition474 = new BitSet(new long[]{0x0000000000000300L});
-	public static final BitSet FOLLOW_c_in_condition476 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_b_op_in_c486 = new BitSet(new long[]{0x0000000050400000L});
-	public static final BitSet FOLLOW_condition2_in_c488 = new BitSet(new long[]{0x0000000000000302L});
-	public static final BitSet FOLLOW_b_op_in_c495 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_c497 = new BitSet(new long[]{0x0000000050400000L});
-	public static final BitSet FOLLOW_condition2_in_c499 = new BitSet(new long[]{0x0000000080000000L});
-	public static final BitSet FOLLOW_LCLOSE_in_c501 = new BitSet(new long[]{0x0000000000000302L});
-	public static final BitSet FOLLOW_e_in_condition2528 = new BitSet(new long[]{0x0000001506080000L});
-	public static final BitSet FOLLOW_conOp_in_condition2530 = new BitSet(new long[]{0x0000000050400000L});
-	public static final BitSet FOLLOW_e_in_condition2532 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ID_in_e545 = new BitSet(new long[]{0x0100B3C800008012L});
-	public static final BitSet FOLLOW_no_in_e547 = new BitSet(new long[]{0x0100B3C800008012L});
-	public static final BitSet FOLLOW_op_in_e551 = new BitSet(new long[]{0x0000000050400000L});
-	public static final BitSet FOLLOW_ID_in_e554 = new BitSet(new long[]{0x0100B3C800008012L});
-	public static final BitSet FOLLOW_no_in_e556 = new BitSet(new long[]{0x0100B3C800008012L});
-	public static final BitSet FOLLOW_type_in_assign_st571 = new BitSet(new long[]{0x0000000010000000L});
-	public static final BitSet FOLLOW_ID_in_assign_st574 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_r_in_assign_st576 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ID_in_assign_st580 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_r_in_assign_st582 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ASSIGN_in_r594 = new BitSet(new long[]{0x0000000050400000L});
-	public static final BitSet FOLLOW_e_in_r596 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_type1_in_type609 = new BitSet(new long[]{0x0000000000004002L});
-	public static final BitSet FOLLOW_COPEN_in_type612 = new BitSet(new long[]{0x0000000000000800L});
-	public static final BitSet FOLLOW_CCLOSE_in_type614 = new BitSet(new long[]{0x0000000000004002L});
+	public static final BitSet FOLLOW_assign_st_in_init213 = new BitSet(new long[]{0x0200000000000000L});
+	public static final BitSet FOLLOW_w_in_init215 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_57_in_w226 = new BitSet(new long[]{0x001E000010000000L});
+	public static final BitSet FOLLOW_assign_st_in_w227 = new BitSet(new long[]{0x0200000000000002L});
+	public static final BitSet FOLLOW_WHILE_in_while_st237 = new BitSet(new long[]{0x0000000200000000L});
+	public static final BitSet FOLLOW_LOPEN_in_while_st239 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_condition_in_while_st241 = new BitSet(new long[]{0x0000000080000000L});
+	public static final BitSet FOLLOW_LCLOSE_in_while_st243 = new BitSet(new long[]{0x0000000000000080L});
+	public static final BitSet FOLLOW_BOPEN_in_while_st245 = new BitSet(new long[]{0x005F000030810000L});
+	public static final BitSet FOLLOW_statements_in_while_st247 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_BCLOSE_in_while_st249 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_DO_in_do_st260 = new BitSet(new long[]{0x0000000200000000L});
+	public static final BitSet FOLLOW_LOPEN_in_do_st262 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_condition_in_do_st264 = new BitSet(new long[]{0x0000000080000000L});
+	public static final BitSet FOLLOW_LCLOSE_in_do_st266 = new BitSet(new long[]{0x0000000000000080L});
+	public static final BitSet FOLLOW_BOPEN_in_do_st268 = new BitSet(new long[]{0x005F000030810000L});
+	public static final BitSet FOLLOW_statements_in_do_st270 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_BCLOSE_in_do_st272 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_FUNCTION_in_function_def282 = new BitSet(new long[]{0x001E000000000000L});
+	public static final BitSet FOLLOW_type_in_function_def284 = new BitSet(new long[]{0x0000000010000000L});
+	public static final BitSet FOLLOW_ID_in_function_def286 = new BitSet(new long[]{0x0000000200000000L});
+	public static final BitSet FOLLOW_LOPEN_in_function_def288 = new BitSet(new long[]{0x001E000080000000L});
+	public static final BitSet FOLLOW_def_params_in_function_def290 = new BitSet(new long[]{0x0000000080000000L});
+	public static final BitSet FOLLOW_LCLOSE_in_function_def292 = new BitSet(new long[]{0x0000000000000080L});
+	public static final BitSet FOLLOW_BOPEN_in_function_def294 = new BitSet(new long[]{0x005F000030810000L});
+	public static final BitSet FOLLOW_block_in_function_def296 = new BitSet(new long[]{0x0000040000000040L});
+	public static final BitSet FOLLOW_RETURN_in_function_def299 = new BitSet(new long[]{0x0000400050400000L});
+	public static final BitSet FOLLOW_no_in_function_def301 = new BitSet(new long[]{0x0000080000000000L});
+	public static final BitSet FOLLOW_STRING_in_function_def303 = new BitSet(new long[]{0x0000080000000000L});
+	public static final BitSet FOLLOW_ID_in_function_def305 = new BitSet(new long[]{0x0000080000000000L});
+	public static final BitSet FOLLOW_SEMI_in_function_def308 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_BCLOSE_in_function_def313 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_type_in_def_params324 = new BitSet(new long[]{0x0000000010000000L});
+	public static final BitSet FOLLOW_ID_in_def_params326 = new BitSet(new long[]{0x0200000000000000L});
+	public static final BitSet FOLLOW_m_in_def_params329 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_57_in_m340 = new BitSet(new long[]{0x001E000000000000L});
+	public static final BitSet FOLLOW_type_in_m342 = new BitSet(new long[]{0x0000000010000000L});
+	public static final BitSet FOLLOW_ID_in_m344 = new BitSet(new long[]{0x0200000000000002L});
+	public static final BitSet FOLLOW_ID_in_function_st361 = new BitSet(new long[]{0x0000000200000000L});
+	public static final BitSet FOLLOW_LOPEN_in_function_st363 = new BitSet(new long[]{0x00004002D0400000L});
+	public static final BitSet FOLLOW_params_in_function_st365 = new BitSet(new long[]{0x0000000080000000L});
+	public static final BitSet FOLLOW_LCLOSE_in_function_st367 = new BitSet(new long[]{0x0000080000000002L});
+	public static final BitSet FOLLOW_SEMI_in_function_st369 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_e_in_params380 = new BitSet(new long[]{0x0200000000000000L});
+	public static final BitSet FOLLOW_STRING_in_params382 = new BitSet(new long[]{0x0200000000000000L});
+	public static final BitSet FOLLOW_f_in_params385 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_57_in_f396 = new BitSet(new long[]{0x0000400250400000L});
+	public static final BitSet FOLLOW_e_in_f398 = new BitSet(new long[]{0x0200000000000002L});
+	public static final BitSet FOLLOW_STRING_in_f400 = new BitSet(new long[]{0x0200000000000002L});
+	public static final BitSet FOLLOW_IF_in_if_st415 = new BitSet(new long[]{0x0000000200000000L});
+	public static final BitSet FOLLOW_LOPEN_in_if_st417 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_condition_in_if_st419 = new BitSet(new long[]{0x0000000080000000L});
+	public static final BitSet FOLLOW_LCLOSE_in_if_st421 = new BitSet(new long[]{0x0000000000000080L});
+	public static final BitSet FOLLOW_BOPEN_in_if_st423 = new BitSet(new long[]{0x005F000030810000L});
+	public static final BitSet FOLLOW_statements_in_if_st425 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_BCLOSE_in_if_st427 = new BitSet(new long[]{0x0000000000060002L});
+	public static final BitSet FOLLOW_else_if_st_in_if_st430 = new BitSet(new long[]{0x0000000000060002L});
+	public static final BitSet FOLLOW_else_st_in_if_st435 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ELIF_in_else_if_st448 = new BitSet(new long[]{0x0000000200000000L});
+	public static final BitSet FOLLOW_LOPEN_in_else_if_st450 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_condition_in_else_if_st452 = new BitSet(new long[]{0x0000000080000000L});
+	public static final BitSet FOLLOW_LCLOSE_in_else_if_st454 = new BitSet(new long[]{0x0000000000000080L});
+	public static final BitSet FOLLOW_BOPEN_in_else_if_st456 = new BitSet(new long[]{0x005F000030810000L});
+	public static final BitSet FOLLOW_statements_in_else_if_st458 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_BCLOSE_in_else_if_st460 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ELSE_in_else_st472 = new BitSet(new long[]{0x0000000000000080L});
+	public static final BitSet FOLLOW_BOPEN_in_else_st474 = new BitSet(new long[]{0x005F000030810000L});
+	public static final BitSet FOLLOW_statements_in_else_st476 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_BCLOSE_in_else_st478 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_condition2_in_condition490 = new BitSet(new long[]{0x0000000000000300L});
+	public static final BitSet FOLLOW_c_in_condition492 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_LOPEN_in_condition496 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_condition2_in_condition498 = new BitSet(new long[]{0x0000000080000000L});
+	public static final BitSet FOLLOW_LCLOSE_in_condition500 = new BitSet(new long[]{0x0000000000000300L});
+	public static final BitSet FOLLOW_c_in_condition502 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_b_op_in_c512 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_condition2_in_c514 = new BitSet(new long[]{0x0000000000000302L});
+	public static final BitSet FOLLOW_b_op_in_c521 = new BitSet(new long[]{0x0000000200000000L});
+	public static final BitSet FOLLOW_LOPEN_in_c523 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_condition2_in_c525 = new BitSet(new long[]{0x0000000080000000L});
+	public static final BitSet FOLLOW_LCLOSE_in_c527 = new BitSet(new long[]{0x0000000000000302L});
+	public static final BitSet FOLLOW_e_in_condition2554 = new BitSet(new long[]{0x0000001506080300L});
+	public static final BitSet FOLLOW_conOp_in_condition2556 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_e_in_condition2558 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_g_in_e570 = new BitSet(new long[]{0x0100B3C800008012L});
+	public static final BitSet FOLLOW_op_in_e573 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_g_in_e575 = new BitSet(new long[]{0x0100B3C800008012L});
+	public static final BitSet FOLLOW_ID_in_g591 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_no_in_g593 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_LOPEN_in_g596 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_g_in_g598 = new BitSet(new long[]{0x0100B3C880008010L});
+	public static final BitSet FOLLOW_op_in_g601 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_g_in_g603 = new BitSet(new long[]{0x0100B3C880008010L});
+	public static final BitSet FOLLOW_LCLOSE_in_g607 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_type_in_assign_st619 = new BitSet(new long[]{0x0000000010000000L});
+	public static final BitSet FOLLOW_ID_in_assign_st622 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_r_in_assign_st624 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ID_in_assign_st628 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_r_in_assign_st630 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ASSIGN_in_r642 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_e_in_r644 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_type1_in_type657 = new BitSet(new long[]{0x0000000000004002L});
+	public static final BitSet FOLLOW_COPEN_in_type660 = new BitSet(new long[]{0x0000000000000800L});
+	public static final BitSet FOLLOW_CCLOSE_in_type662 = new BitSet(new long[]{0x0000000000004002L});
 	public static final BitSet FOLLOW_statement_in_synpred4_s87 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_57_in_synpred20_s314 = new BitSet(new long[]{0x001E000000000000L});
-	public static final BitSet FOLLOW_type_in_synpred20_s316 = new BitSet(new long[]{0x0000000010000000L});
-	public static final BitSet FOLLOW_ID_in_synpred20_s318 = new BitSet(new long[]{0x0200000000000002L});
-	public static final BitSet FOLLOW_b_op_in_synpred30_s486 = new BitSet(new long[]{0x0000000050400000L});
-	public static final BitSet FOLLOW_condition2_in_synpred30_s488 = new BitSet(new long[]{0x0000000000000302L});
+	public static final BitSet FOLLOW_57_in_synpred21_s340 = new BitSet(new long[]{0x001E000000000000L});
+	public static final BitSet FOLLOW_type_in_synpred21_s342 = new BitSet(new long[]{0x0000000010000000L});
+	public static final BitSet FOLLOW_ID_in_synpred21_s344 = new BitSet(new long[]{0x0200000000000002L});
+	public static final BitSet FOLLOW_condition2_in_synpred29_s490 = new BitSet(new long[]{0x0000000000000300L});
+	public static final BitSet FOLLOW_c_in_synpred29_s492 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_b_op_in_synpred31_s512 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_condition2_in_synpred31_s514 = new BitSet(new long[]{0x0000000000000302L});
 }
