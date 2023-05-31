@@ -1,15 +1,3 @@
-function int main(int[][] a,int b){
-for(int i=0;i<n;i=i+1){
-if(a+b+m<=c+d && a-b>3)
-{
-print("hello",ali);
-a=d-75+23;
-}elif (a-c+74>=32){
+if((a==b)&&(a<=c)||(a!=b)&&a==m){
 a=m;
-}
-else{
-a=m;
-}
-}
-return 4;
 }

@@ -65,9 +65,9 @@ else_st	:	ELSE BOPEN statements BCLOSE
 	;
 	
 condition
-	:	condition2 c
+	:	condition2 c | LOPEN condition2 LCLOSE c
 	;
-c	:	(b_op condition2)*
+c	:	(b_op condition2)* | (b_op LOPEN condition2 LCLOSE)*
 	;
 	
 b_op	:	B_AND|B_OR
