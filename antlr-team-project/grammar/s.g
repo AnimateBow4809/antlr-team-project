@@ -84,7 +84,7 @@ condition2
 e	:	(g (op g)*) 
 	;
 	
-g	:	(ID|no)|LOPEN g (op g)* LCLOSE 
+g	:	'-'?(ID|no)|LOPEN g (op g)* LCLOSE 
 	;
 
 assign_st
@@ -265,7 +265,7 @@ CCLOSE	:	']'
 ID  :	('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
     ;
 
-INT :	'0'..'9'+
+INT :	 '0'..'9'+
     ;
 
 FLOAT

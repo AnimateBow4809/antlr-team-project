@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-31 22:05:39
+// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-31 22:19:09
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -1003,9 +1003,9 @@ public class sLexer extends Lexer {
 			int _type = INT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:268:5: ( ( '0' .. '9' )+ )
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:268:7: ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:268:8: ( '0' .. '9' )+
 			{
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:268:7: ( '0' .. '9' )+
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:268:8: ( '0' .. '9' )+
 			int cnt2=0;
 			loop2:
 			while (true) {

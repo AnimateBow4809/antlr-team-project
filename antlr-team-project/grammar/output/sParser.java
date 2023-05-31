@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-31 22:05:39
+// $ANTLR 3.5.1 C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g 2023-05-31 22:19:08
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -85,31 +85,31 @@ public class sParser extends DebugParser {
 
 
 	public static final String[] ruleNames = new String[] {
-		"invalidRule", "synpred13_s", "type", "synpred20_s", "synpred67_s", "synpred49_s", 
-		"start", "synpred91_s", "statements", "synpred80_s", "synpred69_s", "condition2", 
-		"synpred86_s", "synpred74_s", "while_st", "for_st", "function_st", "synpred97_s", 
-		"synpred72_s", "synpred16_s", "synpred23_s", "synpred57_s", "synpred11_s", 
-		"synpred3_s", "synpred63_s", "synpred37_s", "synpred84_s", "synpred78_s", 
-		"synpred104_s", "synpred83_s", "synpred34_s", "synpred35_s", "synpred18_s", 
-		"synpred68_s", "synpred100_s", "statement", "synpred101_s", "synpred27_s", 
-		"synpred6_s", "synpred58_s", "synpred82_s", "synpred29_s", "synpred103_s", 
-		"type1", "switch_st", "assign_st", "params", "synpred5_s", "else_st", 
-		"r", "synpred60_s", "blocks", "synpred32_s", "def_params", "b_op", "synpred10_s", 
-		"synpred93_s", "synpred99_s", "synpred4_s", "synpred56_s", "synpred17_s", 
-		"synpred77_s", "synpred95_s", "synpred75_s", "synpred98_s", "synpred52_s", 
-		"condition", "synpred12_s", "synpred43_s", "synpred64_s", "m", "synpred15_s", 
-		"synpred70_s", "synpred45_s", "synpred51_s", "synpred94_s", "synpred55_s", 
-		"synpred87_s", "case_st", "synpred53_s", "synpred90_s", "synpred88_s", 
-		"synpred44_s", "synpred38_s", "synpred61_s", "synpred2_s", "synpred85_s", 
-		"synpred7_s", "do_st", "synpred102_s", "synpred8_s", "synpred66_s", "block", 
-		"synpred28_s", "synpred39_s", "synpred46_s", "synpred33_s", "synpred24_s", 
-		"synpred96_s", "w", "synpred14_s", "synpred40_s", "synpred42_s", "synpred19_s", 
-		"synpred59_s", "synpred71_s", "synpred22_s", "synpred26_s", "conOp", "synpred48_s", 
-		"synpred36_s", "c", "synpred47_s", "op", "synpred62_s", "synpred65_s", 
-		"if_st", "synpred54_s", "synpred1_s", "init", "synpred79_s", "synpred81_s", 
-		"synpred50_s", "synpred73_s", "synpred25_s", "synpred92_s", "e", "synpred21_s", 
-		"no", "synpred31_s", "synpred76_s", "synpred89_s", "s", "synpred41_s", 
-		"f", "else_if_st", "synpred30_s", "function_def", "g", "synpred9_s"
+		"invalidRule", "synpred77_s", "synpred8_s", "synpred13_s", "synpred29_s", 
+		"synpred33_s", "synpred28_s", "synpred10_s", "synpred1_s", "function_st", 
+		"synpred52_s", "synpred66_s", "condition2", "params", "synpred72_s", "synpred23_s", 
+		"synpred50_s", "synpred70_s", "synpred27_s", "synpred51_s", "synpred61_s", 
+		"synpred55_s", "synpred39_s", "synpred63_s", "statement", "synpred100_s", 
+		"synpred47_s", "if_st", "synpred34_s", "synpred41_s", "synpred86_s", "synpred105_s", 
+		"synpred71_s", "synpred89_s", "synpred22_s", "synpred49_s", "synpred7_s", 
+		"synpred14_s", "synpred79_s", "synpred83_s", "synpred95_s", "synpred43_s", 
+		"synpred15_s", "synpred2_s", "synpred45_s", "conOp", "synpred69_s", "synpred16_s", 
+		"synpred68_s", "init", "synpred74_s", "synpred94_s", "synpred42_s", "synpred6_s", 
+		"b_op", "synpred65_s", "synpred91_s", "e", "function_def", "m", "synpred18_s", 
+		"statements", "synpred93_s", "synpred32_s", "synpred54_s", "synpred31_s", 
+		"synpred88_s", "synpred17_s", "synpred26_s", "synpred101_s", "synpred24_s", 
+		"while_st", "synpred78_s", "r", "synpred57_s", "synpred92_s", "f", "synpred38_s", 
+		"blocks", "synpred30_s", "synpred80_s", "for_st", "synpred87_s", "synpred64_s", 
+		"synpred25_s", "synpred21_s", "synpred81_s", "synpred5_s", "synpred53_s", 
+		"synpred82_s", "synpred12_s", "op", "condition", "synpred96_s", "synpred40_s", 
+		"start", "synpred84_s", "synpred62_s", "synpred60_s", "do_st", "synpred4_s", 
+		"synpred98_s", "synpred76_s", "synpred90_s", "synpred9_s", "synpred102_s", 
+		"else_st", "synpred99_s", "c", "type1", "synpred97_s", "type", "synpred85_s", 
+		"synpred58_s", "w", "synpred48_s", "synpred3_s", "synpred20_s", "case_st", 
+		"synpred56_s", "synpred46_s", "synpred73_s", "synpred75_s", "synpred11_s", 
+		"assign_st", "s", "synpred67_s", "switch_st", "else_if_st", "synpred37_s", 
+		"synpred104_s", "synpred19_s", "def_params", "synpred35_s", "no", "synpred44_s", 
+		"g", "synpred36_s", "synpred59_s", "synpred103_s", "block"
 	};
 
 	public static final boolean[] decisionCanBacktrack = new boolean[] {
@@ -117,7 +117,7 @@ public class sParser extends DebugParser {
 		false, false, true, false, false, false, false, false, false, false, false, 
 		    false, false, true, false, false, false, false, false, false, false, 
 		    true, false, false, true, false, false, false, false, false, false, 
-		    false, false, false, false, false, false
+		    false, false, false, false, false, false, false, false
 	};
 
  
@@ -907,7 +907,7 @@ public class sParser extends DebugParser {
 			try { dbg.enterDecision(7, decisionCanBacktrack[7]);
 
 			int LA7_0 = input.LA(1);
-			if ( (LA7_0==FLOAT||LA7_0==ID||LA7_0==INT||LA7_0==LOPEN) ) {
+			if ( (LA7_0==FLOAT||LA7_0==ID||LA7_0==INT||LA7_0==LOPEN||LA7_0==SUB) ) {
 				alt7=1;
 			}
 			} finally {dbg.exitDecision(7);}
@@ -1676,7 +1676,7 @@ public class sParser extends DebugParser {
 			try { dbg.enterDecision(17, decisionCanBacktrack[17]);
 
 			int LA17_0 = input.LA(1);
-			if ( (LA17_0==FLOAT||LA17_0==ID||LA17_0==INT||LA17_0==LOPEN||LA17_0==STRING) ) {
+			if ( (LA17_0==FLOAT||LA17_0==ID||LA17_0==INT||LA17_0==LOPEN||(LA17_0 >= STRING && LA17_0 <= SUB)) ) {
 				alt17=1;
 			}
 			else if ( (LA17_0==LCLOSE) ) {
@@ -1706,7 +1706,7 @@ public class sParser extends DebugParser {
 					try { dbg.enterDecision(16, decisionCanBacktrack[16]);
 
 					int LA16_0 = input.LA(1);
-					if ( (LA16_0==FLOAT||LA16_0==ID||LA16_0==INT||LA16_0==LOPEN) ) {
+					if ( (LA16_0==FLOAT||LA16_0==ID||LA16_0==INT||LA16_0==LOPEN||LA16_0==SUB) ) {
 						alt16=1;
 					}
 					else if ( (LA16_0==STRING) ) {
@@ -1830,7 +1830,7 @@ public class sParser extends DebugParser {
 					try { dbg.enterDecision(18, decisionCanBacktrack[18]);
 
 					int LA18_0 = input.LA(1);
-					if ( (LA18_0==FLOAT||LA18_0==ID||LA18_0==INT||LA18_0==LOPEN) ) {
+					if ( (LA18_0==FLOAT||LA18_0==ID||LA18_0==INT||LA18_0==LOPEN||LA18_0==SUB) ) {
 						alt18=1;
 					}
 					else if ( (LA18_0==STRING) ) {
@@ -2133,11 +2133,11 @@ public class sParser extends DebugParser {
 			try { dbg.enterDecision(22, decisionCanBacktrack[22]);
 
 			int LA22_0 = input.LA(1);
-			if ( (LA22_0==FLOAT||LA22_0==ID||LA22_0==INT) ) {
+			if ( (LA22_0==FLOAT||LA22_0==ID||LA22_0==INT||LA22_0==SUB) ) {
 				alt22=1;
 			}
 			else if ( (LA22_0==LOPEN) ) {
-				int LA22_3 = input.LA(2);
+				int LA22_4 = input.LA(2);
 				if ( (synpred29_s()) ) {
 					alt22=1;
 				}
@@ -2601,7 +2601,7 @@ public class sParser extends DebugParser {
 
 
 	// $ANTLR start "g"
-	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:1: g : ( ( ID | no ) | LOPEN g ( op g )* LCLOSE );
+	// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:1: g : ( ( '-' )? ( ID | no ) | LOPEN g ( op g )* LCLOSE );
 	public final void g() throws RecognitionException {
 		try { dbg.enterRule(getGrammarFileName(), "g");
 		if ( getRuleLevel()==0 ) {dbg.commence();}
@@ -2609,75 +2609,100 @@ public class sParser extends DebugParser {
 		dbg.location(87, 0);
 
 		try {
-			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:3: ( ( ID | no ) | LOPEN g ( op g )* LCLOSE )
-			int alt29=2;
-			try { dbg.enterDecision(29, decisionCanBacktrack[29]);
+			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:3: ( ( '-' )? ( ID | no ) | LOPEN g ( op g )* LCLOSE )
+			int alt30=2;
+			try { dbg.enterDecision(30, decisionCanBacktrack[30]);
 
-			int LA29_0 = input.LA(1);
-			if ( (LA29_0==FLOAT||LA29_0==ID||LA29_0==INT) ) {
-				alt29=1;
+			int LA30_0 = input.LA(1);
+			if ( (LA30_0==FLOAT||LA30_0==ID||LA30_0==INT||LA30_0==SUB) ) {
+				alt30=1;
 			}
-			else if ( (LA29_0==LOPEN) ) {
-				alt29=2;
+			else if ( (LA30_0==LOPEN) ) {
+				alt30=2;
 			}
 
 			else {
 				if (state.backtracking>0) {state.failed=true; return;}
 				NoViableAltException nvae =
-					new NoViableAltException("", 29, 0, input);
+					new NoViableAltException("", 30, 0, input);
 				dbg.recognitionException(nvae);
 				throw nvae;
 			}
 
-			} finally {dbg.exitDecision(29);}
+			} finally {dbg.exitDecision(30);}
 
-			switch (alt29) {
+			switch (alt30) {
 				case 1 :
 					dbg.enterAlt(1);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:5: ( ID | no )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:5: ( '-' )? ( ID | no )
 					{
 					dbg.location(87,5);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:5: ( ID | no )
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:5: ( '-' )?
 					int alt27=2;
 					try { dbg.enterSubRule(27);
 					try { dbg.enterDecision(27, decisionCanBacktrack[27]);
 
 					int LA27_0 = input.LA(1);
-					if ( (LA27_0==ID) ) {
+					if ( (LA27_0==SUB) ) {
 						alt27=1;
 					}
-					else if ( (LA27_0==FLOAT||LA27_0==INT) ) {
-						alt27=2;
-					}
-
-					else {
-						if (state.backtracking>0) {state.failed=true; return;}
-						NoViableAltException nvae =
-							new NoViableAltException("", 27, 0, input);
-						dbg.recognitionException(nvae);
-						throw nvae;
-					}
-
 					} finally {dbg.exitDecision(27);}
 
 					switch (alt27) {
 						case 1 :
 							dbg.enterAlt(1);
 
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:6: ID
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:5: '-'
 							{
-							dbg.location(87,6);
-							match(input,ID,FOLLOW_ID_in_g591); if (state.failed) return;
+							dbg.location(87,5);
+							match(input,SUB,FOLLOW_SUB_in_g590); if (state.failed) return;
+							}
+							break;
+
+					}
+					} finally {dbg.exitSubRule(27);}
+					dbg.location(87,9);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:9: ( ID | no )
+					int alt28=2;
+					try { dbg.enterSubRule(28);
+					try { dbg.enterDecision(28, decisionCanBacktrack[28]);
+
+					int LA28_0 = input.LA(1);
+					if ( (LA28_0==ID) ) {
+						alt28=1;
+					}
+					else if ( (LA28_0==FLOAT||LA28_0==INT) ) {
+						alt28=2;
+					}
+
+					else {
+						if (state.backtracking>0) {state.failed=true; return;}
+						NoViableAltException nvae =
+							new NoViableAltException("", 28, 0, input);
+						dbg.recognitionException(nvae);
+						throw nvae;
+					}
+
+					} finally {dbg.exitDecision(28);}
+
+					switch (alt28) {
+						case 1 :
+							dbg.enterAlt(1);
+
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:10: ID
+							{
+							dbg.location(87,10);
+							match(input,ID,FOLLOW_ID_in_g593); if (state.failed) return;
 							}
 							break;
 						case 2 :
 							dbg.enterAlt(2);
 
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:9: no
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:13: no
 							{
-							dbg.location(87,9);
-							pushFollow(FOLLOW_no_in_g593);
+							dbg.location(87,13);
+							pushFollow(FOLLOW_no_in_g595);
 							no();
 							state._fsp--;
 							if (state.failed) return;
@@ -2685,48 +2710,48 @@ public class sParser extends DebugParser {
 							break;
 
 					}
-					} finally {dbg.exitSubRule(27);}
+					} finally {dbg.exitSubRule(28);}
 
 					}
 					break;
 				case 2 :
 					dbg.enterAlt(2);
 
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:13: LOPEN g ( op g )* LCLOSE
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:17: LOPEN g ( op g )* LCLOSE
 					{
-					dbg.location(87,13);
-					match(input,LOPEN,FOLLOW_LOPEN_in_g596); if (state.failed) return;dbg.location(87,19);
-					pushFollow(FOLLOW_g_in_g598);
+					dbg.location(87,17);
+					match(input,LOPEN,FOLLOW_LOPEN_in_g598); if (state.failed) return;dbg.location(87,23);
+					pushFollow(FOLLOW_g_in_g600);
 					g();
 					state._fsp--;
-					if (state.failed) return;dbg.location(87,21);
-					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:21: ( op g )*
-					try { dbg.enterSubRule(28);
+					if (state.failed) return;dbg.location(87,25);
+					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:25: ( op g )*
+					try { dbg.enterSubRule(29);
 
-					loop28:
+					loop29:
 					while (true) {
-						int alt28=2;
-						try { dbg.enterDecision(28, decisionCanBacktrack[28]);
+						int alt29=2;
+						try { dbg.enterDecision(29, decisionCanBacktrack[29]);
 
-						int LA28_0 = input.LA(1);
-						if ( (LA28_0==AND||LA28_0==DIVIDE||LA28_0==MULTIPLY||(LA28_0 >= OR && LA28_0 <= REM)||(LA28_0 >= SLL && LA28_0 <= SRL)||LA28_0==SUB||LA28_0==XOR) ) {
-							alt28=1;
+						int LA29_0 = input.LA(1);
+						if ( (LA29_0==AND||LA29_0==DIVIDE||LA29_0==MULTIPLY||(LA29_0 >= OR && LA29_0 <= REM)||(LA29_0 >= SLL && LA29_0 <= SRL)||LA29_0==SUB||LA29_0==XOR) ) {
+							alt29=1;
 						}
 
-						} finally {dbg.exitDecision(28);}
+						} finally {dbg.exitDecision(29);}
 
-						switch (alt28) {
+						switch (alt29) {
 						case 1 :
 							dbg.enterAlt(1);
 
-							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:22: op g
+							// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:87:26: op g
 							{
-							dbg.location(87,22);
-							pushFollow(FOLLOW_op_in_g601);
+							dbg.location(87,26);
+							pushFollow(FOLLOW_op_in_g603);
 							op();
 							state._fsp--;
-							if (state.failed) return;dbg.location(87,25);
-							pushFollow(FOLLOW_g_in_g603);
+							if (state.failed) return;dbg.location(87,29);
+							pushFollow(FOLLOW_g_in_g605);
 							g();
 							state._fsp--;
 							if (state.failed) return;
@@ -2734,12 +2759,12 @@ public class sParser extends DebugParser {
 							break;
 
 						default :
-							break loop28;
+							break loop29;
 						}
 					}
-					} finally {dbg.exitSubRule(28);}
-					dbg.location(87,29);
-					match(input,LCLOSE,FOLLOW_LCLOSE_in_g607); if (state.failed) return;
+					} finally {dbg.exitSubRule(29);}
+					dbg.location(87,33);
+					match(input,LCLOSE,FOLLOW_LCLOSE_in_g609); if (state.failed) return;
 					}
 					break;
 
@@ -2776,40 +2801,40 @@ public class sParser extends DebugParser {
 
 		try {
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:91:2: ( type ID r | ID r )
-			int alt30=2;
-			try { dbg.enterDecision(30, decisionCanBacktrack[30]);
+			int alt31=2;
+			try { dbg.enterDecision(31, decisionCanBacktrack[31]);
 
-			int LA30_0 = input.LA(1);
-			if ( ((LA30_0 >= T_CHAR && LA30_0 <= T_STRING)) ) {
-				alt30=1;
+			int LA31_0 = input.LA(1);
+			if ( ((LA31_0 >= T_CHAR && LA31_0 <= T_STRING)) ) {
+				alt31=1;
 			}
-			else if ( (LA30_0==ID) ) {
-				alt30=2;
+			else if ( (LA31_0==ID) ) {
+				alt31=2;
 			}
 
 			else {
 				if (state.backtracking>0) {state.failed=true; return;}
 				NoViableAltException nvae =
-					new NoViableAltException("", 30, 0, input);
+					new NoViableAltException("", 31, 0, input);
 				dbg.recognitionException(nvae);
 				throw nvae;
 			}
 
-			} finally {dbg.exitDecision(30);}
+			} finally {dbg.exitDecision(31);}
 
-			switch (alt30) {
+			switch (alt31) {
 				case 1 :
 					dbg.enterAlt(1);
 
 					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:91:4: type ID r
 					{
 					dbg.location(91,4);
-					pushFollow(FOLLOW_type_in_assign_st619);
+					pushFollow(FOLLOW_type_in_assign_st621);
 					type();
 					state._fsp--;
 					if (state.failed) return;dbg.location(91,10);
-					match(input,ID,FOLLOW_ID_in_assign_st622); if (state.failed) return;dbg.location(91,13);
-					pushFollow(FOLLOW_r_in_assign_st624);
+					match(input,ID,FOLLOW_ID_in_assign_st624); if (state.failed) return;dbg.location(91,13);
+					pushFollow(FOLLOW_r_in_assign_st626);
 					r();
 					state._fsp--;
 					if (state.failed) return;
@@ -2821,8 +2846,8 @@ public class sParser extends DebugParser {
 					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:91:17: ID r
 					{
 					dbg.location(91,17);
-					match(input,ID,FOLLOW_ID_in_assign_st628); if (state.failed) return;dbg.location(91,20);
-					pushFollow(FOLLOW_r_in_assign_st630);
+					match(input,ID,FOLLOW_ID_in_assign_st630); if (state.failed) return;dbg.location(91,20);
+					pushFollow(FOLLOW_r_in_assign_st632);
 					r();
 					state._fsp--;
 					if (state.failed) return;
@@ -2867,8 +2892,8 @@ public class sParser extends DebugParser {
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:94:5: ASSIGN e
 			{
 			dbg.location(94,5);
-			match(input,ASSIGN,FOLLOW_ASSIGN_in_r642); if (state.failed) return;dbg.location(94,12);
-			pushFollow(FOLLOW_e_in_r644);
+			match(input,ASSIGN,FOLLOW_ASSIGN_in_r644); if (state.failed) return;dbg.location(94,12);
+			pushFollow(FOLLOW_e_in_r646);
 			e();
 			state._fsp--;
 			if (state.failed) return;
@@ -2911,42 +2936,42 @@ public class sParser extends DebugParser {
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:8: type1 ( COPEN CCLOSE )*
 			{
 			dbg.location(99,8);
-			pushFollow(FOLLOW_type1_in_type657);
+			pushFollow(FOLLOW_type1_in_type659);
 			type1();
 			state._fsp--;
 			if (state.failed) return;dbg.location(99,14);
 			// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:14: ( COPEN CCLOSE )*
-			try { dbg.enterSubRule(31);
+			try { dbg.enterSubRule(32);
 
-			loop31:
+			loop32:
 			while (true) {
-				int alt31=2;
-				try { dbg.enterDecision(31, decisionCanBacktrack[31]);
+				int alt32=2;
+				try { dbg.enterDecision(32, decisionCanBacktrack[32]);
 
-				int LA31_0 = input.LA(1);
-				if ( (LA31_0==COPEN) ) {
-					alt31=1;
+				int LA32_0 = input.LA(1);
+				if ( (LA32_0==COPEN) ) {
+					alt32=1;
 				}
 
-				} finally {dbg.exitDecision(31);}
+				} finally {dbg.exitDecision(32);}
 
-				switch (alt31) {
+				switch (alt32) {
 				case 1 :
 					dbg.enterAlt(1);
 
 					// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:99:15: COPEN CCLOSE
 					{
 					dbg.location(99,15);
-					match(input,COPEN,FOLLOW_COPEN_in_type660); if (state.failed) return;dbg.location(99,21);
-					match(input,CCLOSE,FOLLOW_CCLOSE_in_type662); if (state.failed) return;
+					match(input,COPEN,FOLLOW_COPEN_in_type662); if (state.failed) return;dbg.location(99,21);
+					match(input,CCLOSE,FOLLOW_CCLOSE_in_type664); if (state.failed) return;
 					}
 					break;
 
 				default :
-					break loop31;
+					break loop32;
 				}
 			}
-			} finally {dbg.exitSubRule(31);}
+			} finally {dbg.exitSubRule(32);}
 
 			}
 
@@ -3246,21 +3271,21 @@ public class sParser extends DebugParser {
 		{
 		dbg.location(50,5);
 		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:50:5: ( ',' ( type ID ) )*
-		try { dbg.enterSubRule(33);
+		try { dbg.enterSubRule(34);
 
-		loop33:
+		loop34:
 		while (true) {
-			int alt33=2;
-			try { dbg.enterDecision(33, decisionCanBacktrack[33]);
+			int alt34=2;
+			try { dbg.enterDecision(34, decisionCanBacktrack[34]);
 
-			int LA33_0 = input.LA(1);
-			if ( (LA33_0==57) ) {
-				alt33=1;
+			int LA34_0 = input.LA(1);
+			if ( (LA34_0==57) ) {
+				alt34=1;
 			}
 
-			} finally {dbg.exitDecision(33);}
+			} finally {dbg.exitDecision(34);}
 
-			switch (alt33) {
+			switch (alt34) {
 			case 1 :
 				dbg.enterAlt(1);
 
@@ -3285,10 +3310,10 @@ public class sParser extends DebugParser {
 				break;
 
 			default :
-				break loop33;
+				break loop34;
 			}
 		}
-		} finally {dbg.exitSubRule(33);}
+		} finally {dbg.exitSubRule(34);}
 
 		}
 
@@ -3325,21 +3350,21 @@ public class sParser extends DebugParser {
 		{
 		dbg.location(74,5);
 		// C:\\Users\\Admin\\OneDrive\\Desktop\\Java stuff\\antlr-team-project\\grammar\\s.g:74:5: ( b_op condition2 )*
-		try { dbg.enterSubRule(36);
+		try { dbg.enterSubRule(37);
 
-		loop36:
+		loop37:
 		while (true) {
-			int alt36=2;
-			try { dbg.enterDecision(36, decisionCanBacktrack[36]);
+			int alt37=2;
+			try { dbg.enterDecision(37, decisionCanBacktrack[37]);
 
-			int LA36_0 = input.LA(1);
-			if ( ((LA36_0 >= B_AND && LA36_0 <= B_OR)) ) {
-				alt36=1;
+			int LA37_0 = input.LA(1);
+			if ( ((LA37_0 >= B_AND && LA37_0 <= B_OR)) ) {
+				alt37=1;
 			}
 
-			} finally {dbg.exitDecision(36);}
+			} finally {dbg.exitDecision(37);}
 
-			switch (alt36) {
+			switch (alt37) {
 			case 1 :
 				dbg.enterAlt(1);
 
@@ -3358,10 +3383,10 @@ public class sParser extends DebugParser {
 				break;
 
 			default :
-				break loop36;
+				break loop37;
 			}
 		}
-		} finally {dbg.exitSubRule(36);}
+		} finally {dbg.exitSubRule(37);}
 
 		}
 
@@ -3472,7 +3497,7 @@ public class sParser extends DebugParser {
 	public static final BitSet FOLLOW_FOR_in_for_st180 = new BitSet(new long[]{0x0000000200000000L});
 	public static final BitSet FOLLOW_LOPEN_in_for_st182 = new BitSet(new long[]{0x001E080010000000L});
 	public static final BitSet FOLLOW_init_in_for_st184 = new BitSet(new long[]{0x0000080000000000L});
-	public static final BitSet FOLLOW_SEMI_in_for_st187 = new BitSet(new long[]{0x0000080250400000L});
+	public static final BitSet FOLLOW_SEMI_in_for_st187 = new BitSet(new long[]{0x0000880250400000L});
 	public static final BitSet FOLLOW_condition_in_for_st189 = new BitSet(new long[]{0x0000080000000000L});
 	public static final BitSet FOLLOW_SEMI_in_for_st192 = new BitSet(new long[]{0x001E000090000000L});
 	public static final BitSet FOLLOW_assign_st_in_for_st194 = new BitSet(new long[]{0x0000000080000000L});
@@ -3485,14 +3510,14 @@ public class sParser extends DebugParser {
 	public static final BitSet FOLLOW_57_in_w226 = new BitSet(new long[]{0x001E000010000000L});
 	public static final BitSet FOLLOW_assign_st_in_w227 = new BitSet(new long[]{0x0200000000000002L});
 	public static final BitSet FOLLOW_WHILE_in_while_st237 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_while_st239 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_LOPEN_in_while_st239 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_condition_in_while_st241 = new BitSet(new long[]{0x0000000080000000L});
 	public static final BitSet FOLLOW_LCLOSE_in_while_st243 = new BitSet(new long[]{0x0000000000000080L});
 	public static final BitSet FOLLOW_BOPEN_in_while_st245 = new BitSet(new long[]{0x005F000030810000L});
 	public static final BitSet FOLLOW_statements_in_while_st247 = new BitSet(new long[]{0x0000000000000040L});
 	public static final BitSet FOLLOW_BCLOSE_in_while_st249 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_DO_in_do_st260 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_do_st262 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_LOPEN_in_do_st262 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_condition_in_do_st264 = new BitSet(new long[]{0x0000000080000000L});
 	public static final BitSet FOLLOW_LCLOSE_in_do_st266 = new BitSet(new long[]{0x0000000000000080L});
 	public static final BitSet FOLLOW_BOPEN_in_do_st268 = new BitSet(new long[]{0x005F000030810000L});
@@ -3519,18 +3544,18 @@ public class sParser extends DebugParser {
 	public static final BitSet FOLLOW_type_in_m342 = new BitSet(new long[]{0x0000000010000000L});
 	public static final BitSet FOLLOW_ID_in_m344 = new BitSet(new long[]{0x0200000000000002L});
 	public static final BitSet FOLLOW_ID_in_function_st361 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_function_st363 = new BitSet(new long[]{0x00004002D0400000L});
+	public static final BitSet FOLLOW_LOPEN_in_function_st363 = new BitSet(new long[]{0x0000C002D0400000L});
 	public static final BitSet FOLLOW_params_in_function_st365 = new BitSet(new long[]{0x0000000080000000L});
 	public static final BitSet FOLLOW_LCLOSE_in_function_st367 = new BitSet(new long[]{0x0000080000000002L});
 	public static final BitSet FOLLOW_SEMI_in_function_st369 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_e_in_params380 = new BitSet(new long[]{0x0200000000000000L});
 	public static final BitSet FOLLOW_STRING_in_params382 = new BitSet(new long[]{0x0200000000000000L});
 	public static final BitSet FOLLOW_f_in_params385 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_57_in_f396 = new BitSet(new long[]{0x0000400250400000L});
+	public static final BitSet FOLLOW_57_in_f396 = new BitSet(new long[]{0x0000C00250400000L});
 	public static final BitSet FOLLOW_e_in_f398 = new BitSet(new long[]{0x0200000000000002L});
 	public static final BitSet FOLLOW_STRING_in_f400 = new BitSet(new long[]{0x0200000000000002L});
 	public static final BitSet FOLLOW_IF_in_if_st415 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_if_st417 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_LOPEN_in_if_st417 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_condition_in_if_st419 = new BitSet(new long[]{0x0000000080000000L});
 	public static final BitSet FOLLOW_LCLOSE_in_if_st421 = new BitSet(new long[]{0x0000000000000080L});
 	public static final BitSet FOLLOW_BOPEN_in_if_st423 = new BitSet(new long[]{0x005F000030810000L});
@@ -3539,7 +3564,7 @@ public class sParser extends DebugParser {
 	public static final BitSet FOLLOW_else_if_st_in_if_st430 = new BitSet(new long[]{0x0000000000060002L});
 	public static final BitSet FOLLOW_else_st_in_if_st435 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_ELIF_in_else_if_st448 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_else_if_st450 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_LOPEN_in_else_if_st450 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_condition_in_else_if_st452 = new BitSet(new long[]{0x0000000080000000L});
 	public static final BitSet FOLLOW_LCLOSE_in_else_if_st454 = new BitSet(new long[]{0x0000000000000080L});
 	public static final BitSet FOLLOW_BOPEN_in_else_if_st456 = new BitSet(new long[]{0x005F000030810000L});
@@ -3551,45 +3576,46 @@ public class sParser extends DebugParser {
 	public static final BitSet FOLLOW_BCLOSE_in_else_st478 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_condition2_in_condition490 = new BitSet(new long[]{0x0000000000000300L});
 	public static final BitSet FOLLOW_c_in_condition492 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LOPEN_in_condition496 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_LOPEN_in_condition496 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_condition2_in_condition498 = new BitSet(new long[]{0x0000000080000000L});
 	public static final BitSet FOLLOW_LCLOSE_in_condition500 = new BitSet(new long[]{0x0000000000000300L});
 	public static final BitSet FOLLOW_c_in_condition502 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_b_op_in_c512 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_b_op_in_c512 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_condition2_in_c514 = new BitSet(new long[]{0x0000000000000302L});
 	public static final BitSet FOLLOW_b_op_in_c521 = new BitSet(new long[]{0x0000000200000000L});
-	public static final BitSet FOLLOW_LOPEN_in_c523 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_LOPEN_in_c523 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_condition2_in_c525 = new BitSet(new long[]{0x0000000080000000L});
 	public static final BitSet FOLLOW_LCLOSE_in_c527 = new BitSet(new long[]{0x0000000000000302L});
 	public static final BitSet FOLLOW_e_in_condition2554 = new BitSet(new long[]{0x0000001506080300L});
-	public static final BitSet FOLLOW_conOp_in_condition2556 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_conOp_in_condition2556 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_e_in_condition2558 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_g_in_e570 = new BitSet(new long[]{0x0100B3C800008012L});
-	public static final BitSet FOLLOW_op_in_e573 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_op_in_e573 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_g_in_e575 = new BitSet(new long[]{0x0100B3C800008012L});
-	public static final BitSet FOLLOW_ID_in_g591 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_no_in_g593 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LOPEN_in_g596 = new BitSet(new long[]{0x0000000250400000L});
-	public static final BitSet FOLLOW_g_in_g598 = new BitSet(new long[]{0x0100B3C880008010L});
-	public static final BitSet FOLLOW_op_in_g601 = new BitSet(new long[]{0x0000000250400000L});
-	public static final BitSet FOLLOW_g_in_g603 = new BitSet(new long[]{0x0100B3C880008010L});
-	public static final BitSet FOLLOW_LCLOSE_in_g607 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_type_in_assign_st619 = new BitSet(new long[]{0x0000000010000000L});
-	public static final BitSet FOLLOW_ID_in_assign_st622 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_r_in_assign_st624 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ID_in_assign_st628 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_r_in_assign_st630 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ASSIGN_in_r642 = new BitSet(new long[]{0x0000000250400000L});
-	public static final BitSet FOLLOW_e_in_r644 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_type1_in_type657 = new BitSet(new long[]{0x0000000000004002L});
-	public static final BitSet FOLLOW_COPEN_in_type660 = new BitSet(new long[]{0x0000000000000800L});
-	public static final BitSet FOLLOW_CCLOSE_in_type662 = new BitSet(new long[]{0x0000000000004002L});
+	public static final BitSet FOLLOW_SUB_in_g590 = new BitSet(new long[]{0x0000000050400000L});
+	public static final BitSet FOLLOW_ID_in_g593 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_no_in_g595 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_LOPEN_in_g598 = new BitSet(new long[]{0x0000800250400000L});
+	public static final BitSet FOLLOW_g_in_g600 = new BitSet(new long[]{0x0100B3C880008010L});
+	public static final BitSet FOLLOW_op_in_g603 = new BitSet(new long[]{0x0000800250400000L});
+	public static final BitSet FOLLOW_g_in_g605 = new BitSet(new long[]{0x0100B3C880008010L});
+	public static final BitSet FOLLOW_LCLOSE_in_g609 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_type_in_assign_st621 = new BitSet(new long[]{0x0000000010000000L});
+	public static final BitSet FOLLOW_ID_in_assign_st624 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_r_in_assign_st626 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ID_in_assign_st630 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_r_in_assign_st632 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ASSIGN_in_r644 = new BitSet(new long[]{0x0000800250400000L});
+	public static final BitSet FOLLOW_e_in_r646 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_type1_in_type659 = new BitSet(new long[]{0x0000000000004002L});
+	public static final BitSet FOLLOW_COPEN_in_type662 = new BitSet(new long[]{0x0000000000000800L});
+	public static final BitSet FOLLOW_CCLOSE_in_type664 = new BitSet(new long[]{0x0000000000004002L});
 	public static final BitSet FOLLOW_statement_in_synpred4_s87 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_57_in_synpred21_s340 = new BitSet(new long[]{0x001E000000000000L});
 	public static final BitSet FOLLOW_type_in_synpred21_s342 = new BitSet(new long[]{0x0000000010000000L});
 	public static final BitSet FOLLOW_ID_in_synpred21_s344 = new BitSet(new long[]{0x0200000000000002L});
 	public static final BitSet FOLLOW_condition2_in_synpred29_s490 = new BitSet(new long[]{0x0000000000000300L});
 	public static final BitSet FOLLOW_c_in_synpred29_s492 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_b_op_in_synpred31_s512 = new BitSet(new long[]{0x0000000250400000L});
+	public static final BitSet FOLLOW_b_op_in_synpred31_s512 = new BitSet(new long[]{0x0000800250400000L});
 	public static final BitSet FOLLOW_condition2_in_synpred31_s514 = new BitSet(new long[]{0x0000000000000302L});
 }
