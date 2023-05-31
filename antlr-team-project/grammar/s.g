@@ -22,9 +22,14 @@ statements
 	;
 	
 statement
-	:	assign_st SEMI | if_st | function_st | while_st |do_st |for_st
+	:	assign_st SEMI | if_st | function_st | while_st |do_st |for_st |switch_st
 	;
 	
+switch_st
+	: SWITCH LOPEN ID LCLOSE BOPEN case_st* BCLOSE	
+	;
+case_st	:	CASE LOPEN no LCLOSE BOPEN statements BCLOSE 
+	;
 for_st	:	FOR LOPEN(assign_st? SEMI condition? SEMI assign_st?)LCLOSE BOPEN statements BCLOSE
 	;
 while_st:	WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE 
@@ -33,7 +38,7 @@ while_st:	WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE
 do_st	:	DO LOPEN condition LCLOSE BOPEN statements BCLOSE
 	;
 function_def
-	:	type ID LOPEN def_params LCLOSE BOPEN block (RETURN(no|STRING|ID) SEMI)?  BCLOSE
+	:	FUNCTION type ID LOPEN def_params LCLOSE BOPEN block (RETURN(no|STRING|ID) SEMI)?  BCLOSE
 	;
 def_params
 	:	(type ID) m|
@@ -46,7 +51,7 @@ function_st
 	;
 params	:	(e|STRING) f|
 	;
-f	:	(','(e|STRING))* |
+f	:	(','(e|STRING))* 
 	;
 	
 if_st:		IF LOPEN condition LCLOSE BOPEN statements BCLOSE (else_if_st)* (else_st)?
@@ -60,6 +65,15 @@ else_st	:	ELSE BOPEN statements BCLOSE
 	;
 	
 condition
+	:	condition2 c
+	;
+c	:	(b_op condition2)*
+	;
+	
+b_op	:	B_AND|B_OR
+	;
+	
+condition2
 	:	e conOp e	
 	;
 
@@ -83,7 +97,7 @@ type1	:	T_INT|T_FLOAT|T_CHAR|T_STRING
 	
 no	:	INT|FLOAT
 	;
-op	:	POWER|REM|PLUS|SUB|MULTIPLY|DIVIDE
+op	:	POWER|REM|PLUS|SUB|MULTIPLY|DIVIDE|SLL|SRL|AND|OR|XOR
 	;
 	
 conOp	:	NEQ|EQ|GT|GEQ|LT|LEQ
