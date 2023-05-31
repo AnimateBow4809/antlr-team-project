@@ -1,11 +1,12 @@
+int main(int[][] a,int b){
+if(a+b+m==c+d)
 {
-  char m[20]=RED;
-  char z[20]=ANSI_COLOR_RESET;
-  if (l==c)
-  {
-    
-    strcat(m,l[0]);
-    
-    strcpy(l[0],m);
-  }
+print("hello",ali);
+a=d-75+23;
+}elif (a-c+74!=32){
+a=m;
+}
+else{
+a=m;
+}
 }

@@ -2,45 +2,76 @@ grammar s;
 
 // parser
 
-start	:	block* EOF//s* EOF 
+options {
+    backtrack=true;
+    // please comment it in for correct lexer generation!
+    // the definitions of many operators require backtracking!
+} 
+
+start	:	blocks* EOF//s* EOF 
+;
+
+blocks	:	 function_def |BOPEN block BCLOSE | block 
 	;
 
-if_st	:	IF LOPEN condition LCLOSE block elsepart
-	;
-	
-elsepart:	ELSE block |
-	;
-	
-	
-block	:	BOPEN statements BCLOSE | statement SEMI
-	;
-	
-
-condition
-	:	(e relope e)
-	;	
-	
-relope	:	B_AND|B_OR|EQ|GT|GEQ|LT|LEQ|NEQ|COPEN|CCLOSE
+block	:	statements 
 	;
 	
 statements
-	:	(statement SEMI)*
-	;
-statement
-	:	 if_st | assignmentStatement
-			
-	;
-assignmentStatement
-	:	ID ASSIGN e | type ID ASSIGN e
+	:	statement statement*
 	;
 	
-type	:	T_INT|T_FLOAT|T_CHAR|T_STRING	
+statement
+	:	assign_st | if_st | function_st
+	;
+	
+function_def
+	:	type ID LOPEN def_params LCLOSE BOPEN block BCLOSE
+	;
+def_params
+	:	(type ID) m|
+	;
+m	:	(','(type ID))* |
+	;
+	
+function_st
+	:	ID LOPEN params LCLOSE SEMI?
+	;
+params	:	(e|STRING) f|
+	;
+f	:	(','(e|STRING))* |
+	;
+	
+if_st:		IF LOPEN condition LCLOSE BOPEN statements BCLOSE (else_if_st)* (else_st)?
 	;
 
-e	:	(f) (((op)e)*)*
+else_if_st
+	:	ELIF LOPEN condition LCLOSE BOPEN statements BCLOSE 
 	;
 	
-f	:	ID|no|LOPEN e LCLOSE
+else_st	:	ELSE BOPEN statements BCLOSE
+	;
+	
+condition
+	:	e (NEQ|EQ) e	
+	;
+
+e	:	((ID|no) (op (ID|no))*)
+	;
+
+assign_st
+	:	type  ID r | ID r
+	;	
+	
+r	:	ASSIGN e SEMI
+	;
+
+
+
+type	:	type1 (COPEN CCLOSE)*
+	;
+	
+type1	:	T_INT|T_FLOAT|T_CHAR|T_STRING	
 	;
 	
 no	:	INT|FLOAT
@@ -49,7 +80,7 @@ op	:	POWER|REM|PLUS|SUB|MULTIPLY|DIVIDE
 	;
 
 
-s	:	ID|INT|FLOAT|STRING|CHAR|SWITCH|CASE|if_st|ELIF|ELSE|WHILE|DO|FOR|FUNCTION|RETURN|T_INT|
+s	:	ID|INT|FLOAT|STRING|CHAR|SWITCH|CASE|ELIF|ELSE|WHILE|DO|FOR|FUNCTION|RETURN|T_INT|
 		T_FLOAT|T_CHAR|T_STRING|SEMI|POWER|REM|PLUS|SUB|MULTIPLY|DIVIDE|ASSIGN|SLL|SRL|AND|OR|XOR|
 		B_AND|B_OR|LOPEN|LCLOSE|BOPEN|BCLOSE|EQ|GT|GEQ|LT|LEQ|NEQ|COPEN|CCLOSE
 	 ;
