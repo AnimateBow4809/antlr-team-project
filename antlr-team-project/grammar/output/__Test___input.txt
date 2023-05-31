@@ -1,4 +1,5 @@
 int main(int[][] a,int b){
+for(int i=0;i<n;i=i+1){
 if(a+b+m<=c+d)
 {
 print("hello",ali);
@@ -8,6 +9,7 @@ a=m;
 }
 else{
 a=m;
+}
 }
 return 4;
 }

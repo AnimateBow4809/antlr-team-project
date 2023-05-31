@@ -22,9 +22,11 @@ statements
 	;
 	
 statement
-	:	assign_st | if_st | function_st | while_st |do_st
+	:	assign_st SEMI | if_st | function_st | while_st |do_st |for_st
 	;
 	
+for_st	:	FOR LOPEN(assign_st? SEMI condition? SEMI assign_st?)LCLOSE BOPEN statements BCLOSE
+	;
 while_st:	WHILE LOPEN condition LCLOSE BOPEN statements BCLOSE 
 	;
 
@@ -68,7 +70,7 @@ assign_st
 	:	type  ID r | ID r
 	;	
 	
-r	:	ASSIGN e SEMI
+r	:	ASSIGN e 
 	;
 
 
