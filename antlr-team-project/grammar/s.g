@@ -84,6 +84,7 @@ condition2
 e	:	(g (op g)*) 
 	;
 	
+
 g	:	'-'?(ID|no)|LOPEN g (op g)* LCLOSE 
 	;
 
@@ -91,10 +92,14 @@ assign_st
 	:	type  ID r | ID r
 	;	
 	
-r	:	ASSIGN e 
+r	:	ASSIGN v |
 	;
-
-
+	
+v	:	'{'e n'}'|e
+	;
+	
+n	:	(',' e)*
+	;
 
 type	:	type1 (COPEN CCLOSE)*
 	;
