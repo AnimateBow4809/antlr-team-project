@@ -85,17 +85,17 @@ e	:	(g (op g)*)
 	;
 	
 
-g	:	'-'?(ID|no)|LOPEN g (op g)* LCLOSE 
+g	:	'-'?(ID|no)(COPEN e CCLOSE)* |LOPEN g (op g)* LCLOSE 
 	;
 
 assign_st
-	:	type  ID r | ID r
+	:	type  ID r | ID (COPEN e CCLOSE)* r
 	;	
 	
 r	:	ASSIGN v |
 	;
 	
-v	:	'{'e n'}'|e
+v	:	'{'e n'}'|e | '{' v(',' v)* '}'
 	;
 	
 n	:	(',' e)*
